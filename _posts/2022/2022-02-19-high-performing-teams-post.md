@@ -7,7 +7,7 @@ description: 5 things high performing teams do differently.
 tags: [business, culture, organisation, teams, leadership, performance]
 categories: [business]
 comments: true
-featured_image: '/images/posts/2022/teams.jpg'
+image: '/images/posts/2022/teams.jpg'
 ---
 ![](/images/posts/2022/teams.jpg)
 
