@@ -8,10 +8,10 @@ For 20+ years, I have been honing my skills as a technology and business leader 
 
 <div class="gallery-box">
   <div class="gallery gallery--post">
-    <img src="/images/aerospace.jpg" loading="lazy" alt="Aerospace">
-    <img src="/images/coding.jpg" loading="lazy" alt="Digitalization">
-    <img src="/images/ocv.jpg" loading="lazy" alt="Analytics">
-    <img src="/images/supply.jpg" loading="lazy" alt="Supply Chain">
+    <img src="/images/headers/aerospace.jpg" loading="lazy" alt="Aerospace">
+    <img src="/images/headers/coding.jpg" loading="lazy" alt="Digitalization">
+    <img src="/images/headers/ocv.jpg" loading="lazy" alt="Analytics">
+    <img src="/images/headers/supply.jpg" loading="lazy" alt="Supply Chain">
   </div>
 </div>
 
