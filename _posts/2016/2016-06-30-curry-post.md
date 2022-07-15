@@ -7,7 +7,7 @@ description: Simple but tasty chicken curry.
 tags: [cooking, curry, chicken, masala, tandoori]
 categories: cooking
 comments: true
-featured_image: '/images/posts/2016/curry.jpg'
+image: '/images/posts/2016/curry.jpg'
 ---
 ![](/images/posts/2016/curry.jpg)
 
