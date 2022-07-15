@@ -14,16 +14,16 @@ So I've been clearing out some of my folders of stored images and decided to thr
 <div class="gallery-box">
   <div class="gallery">
   	<img src="/images/posts/2022/batman-01.png" loading="lazy">
-  	<img src="/images/posts/2022/batman-02.png" loading="lazy">
-  	<img src="/images/posts/2022/batman-03.png" loading="lazy">
-  	<img src="/images/posts/2022/batman-04.png" loading="lazy">
-  	<img src="/images/posts/2022/batman-05.png" loading="lazy">
-  	<img src="/images/posts/2022/batman-06.png" loading="lazy">
+  	<img src="/images/posts/2022/batman-02.jpg" loading="lazy">
+  	<img src="/images/posts/2022/batman-03.jpg" loading="lazy">
+  	<img src="/images/posts/2022/batman-04.jpg" loading="lazy">
+  	<img src="/images/posts/2022/batman-05.jpg" loading="lazy">
+  	<img src="/images/posts/2022/batman-06.jpg" loading="lazy">
   	<img src="/images/posts/2022/batman-07.png" loading="lazy">
   	<img src="/images/posts/2022/batman-08.png" loading="lazy">
-  	<img src="/images/posts/2022/batman-09.png" loading="lazy">
+  	<img src="/images/posts/2022/batman-09.jpg" loading="lazy">
   	<img src="/images/posts/2022/batman-10.png" loading="lazy">
-  	<img src="/images/posts/2022/batman-11.png" loading="lazy">
+  	<img src="/images/posts/2022/batman-11.jpg" loading="lazy">
   	<img src="/images/posts/2022/batman-12.png" loading="lazy">
   </div>
   <em><a href="https://www.salvatierstudios.com/" target="_blank">Dennis Salvatier</a></em>
