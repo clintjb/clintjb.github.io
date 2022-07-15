@@ -7,10 +7,10 @@
 
           <div class="section-author__image{% if site.data.settings.author__section.author__section__big__image and site.data.settings.author__section.author__section__small__image %} two-author-images{% endif %}">
             {% if site.data.settings.author__section.author__section__big__image %}
-              <img class="lazy author__big__image" data-src="{{ site.data.settings.author__section.author__section__big__image }}" alt="{{ site.data.settings.author.author__name }}">
+              <img class="lazy author__big__image"  fetchpriority="high" data-src="{{ site.data.settings.author__section.author__section__big__image }}" alt="{{ site.data.settings.author.author__name }}">
             {% endif %}
             {% if site.data.settings.author__section.author__section__small__image %}
-              <img class="lazy author__small__image" fetchpriority="high" data-src="{{ site.data.settings.author__section.author__section__small__image }}" alt="{{ site.data.settings.author.author__name }}">
+              <img class="lazy author__small__image" fetchpriority="medium" data-src="{{ site.data.settings.author__section.author__section__small__image }}" alt="{{ site.data.settings.author.author__name }}">
             {% endif %}
           </div>
 
