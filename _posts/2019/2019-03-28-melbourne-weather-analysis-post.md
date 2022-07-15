@@ -103,7 +103,7 @@ temps.iplot(kind="line", theme="white",
             title="Global Warming Trends", xTitle='Year', yTitle='Average Temperature')
 ```
 
-<p><iframe src="https://chart-studio.plotly.com/~clintjb/3/.embed" height="500" width="360" frameborder="0" scrolling="no" seamless="seamless"></iframe></p>
+<p><iframe style="height: 500px; width: 98%; overflow: auto;" src="ttps://chart-studio.plotly.com/~clintjb/3/.embed" frameborder="0"></iframe></p>
 
 ```python
 # Last 50 years summary
