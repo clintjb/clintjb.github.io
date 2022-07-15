@@ -92,7 +92,7 @@ fig.update_layout(
 
 Here you can see the outcome of this chart
 
-{% include a350.html %}
+{% include a350_map.html %}
 
 Next, I would also like to keep the high-level details and output these directly into a table. To do this I decided to clean the columns, and extract the data as a CSV (you can find that [here][] at the same time also extracting the map as a [static image][] and the map as a [self-contained HTML][]):
 
@@ -117,29 +117,9 @@ fig.write_html("_data/flight_data_a350.html")
 fig.write_image("flight_data_a350.png", width=1280, height=720)
 ```
 
-Finally, I wanted to be able to dynamically load this CSV as a table via JS in Jekyll itself:
-
-_**UPDATE**: The final solution was actually based on a Tabulate function which you can find [here](https://jekyllrb.com/tutorials/csv-to-table/) - I created another action which simply pushes the files each day from the other repo to this one in the data directory and allows it to be grabbed accordingly. This solution (as well as time spent highlighting an ENORMOUS number of other minor learnings, fixes, best practices etc) were all provided by [Michael Currin](https://github.com/MichaelCurrin) - this guy was absolutely gold throughout this whole process and honestly a brilliant example of the open-source & dev community at large - thanks mate_ 🙏
-
-![thanks](/images/posts/2021/thanks.gif)
+Finally, I wanted to be able to dynamically load this CSV as a table via JS in Jekyll itself - the final solution was actually based on a Tabulate function which you can find [here](https://jekyllrb.com/tutorials/csv-to-table/)
 
 {% include a350_csv.html %}
-
-<table>
-  {% for row in site.data.flight_data_a350 %}
-    {% if forloop.first %}
-    <tr>
-      {% for pair in row %}
-        <th>{{ pair[0] }}</th>
-      {% endfor %}
-    </tr>
-    {% endif %}
-
-    {% tablerow pair in row %}
-      {{ pair[1] }}
-    {% endtablerow %}
-  {% endfor %}
-</table>
 
 ### Part 2 - GitHub Actions & Automation
 
@@ -212,8 +192,5 @@ This has also been fixed via a setting up a specific page rule on my Cloudflare 
 http://*clintbird.com/blog/ghactions-a350-flights-post
 Rocket Loader: Off, Cache Level: Bypass
 ```
-
-~~Secondly having Jekyll reach over to the other repo to load the data I think also isn't a great solution - here Id like to integrate writing the CSV to the _data_ directory of my Jekyll site direct and pull it locally, same with the dynamic chart. Pushing this to the _includes_ folder and running everything locally would be a nicer solution.~~
-This has now been fixed via the action you can find [here](https://github.com/clintjb/A350-Tracking/blob/main/.github/workflows/file_push.yml)
 
 Lastly, the Plotly chart would be nicer via utilizing Mapbox - here though would require securing integration of the access tokens in a public site which I couldn't be bothered with for a quick & dirty proof of concept. Nevertheless was super interesting for a quick project and enormously impressed by what GitHub actions bring to the average joe!
