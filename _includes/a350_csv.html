@@ -1,0 +1,26 @@
+<table border="0" style='font-size:50%' id="A350"></table>
+
+<script>
+  const FLIGHT_DATA_CSV_URL = 'https://raw.githubusercontent.com/clintjb/A350-Tracking/main/_data/flight_data_a350.csv'
+
+  function csvToTable(csvData) {
+    return csvData.split('\n')
+      .map(function (tr, i) {
+        const rowValue = tr.replace(/,/g, '</td><td>');
+        
+        return `<tr><td>${rowValue}</td></tr>`;
+      })
+      .join('\n');
+  }
+
+  window.onload = function () {
+    fetch(FLIGHT_DATA_CSV_URL)
+      .then(resp => resp.text())
+      .then(text => {
+        const result = csvToTable(text);
+        const tableEl = document.getElementById('A350');
+        tableEl.innerHTML = result;
+      })
+  }
+
+</script>
