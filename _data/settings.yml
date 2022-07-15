@@ -73,8 +73,8 @@ author__section:
   author__section__description: A 40 something year old father, husband, lean, digital enthusiast and aspiring chef! I'm originally from Australia, but due to some of life's unforeseen adventures am now happily settled in Hamburg Germany.<br><br>In my spare time <strike>I'm also</strike> <i>I was</i> also the co-founder of the <strike>social</strike> <i>failed</i> startup  <a href="https://clintbird.com/blog/weave-post">Weave</a>. Our ultimate goal was to help users explore and share meaningful moments through their social network.<br><br>I'm really passionate about lean, continuous improvement and applying the principles to all parts of my life - be it data science, business transformation or BBQ'ing!<br><br>I've set this site up to act mainly just as a repository of stuff I find interesting & fun - hopefully, others find it the same as well. If you would like to connect with me, share a story or just have a chat about anything, then feel free to have a look around and get in touch.
   aurhor__section__button__text: More About Me
   aurhor__section__button__link: /cv
-  author__section__big__image: /images/clint.jpg
-  author__section__small__image: /images/desk.jpg
+  author__section__big__image: /images/clint.webp
+  author__section__small__image: /images/desk.webp
 
 
 #-------------------------------
