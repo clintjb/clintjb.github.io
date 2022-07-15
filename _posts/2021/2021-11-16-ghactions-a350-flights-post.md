@@ -123,6 +123,8 @@ _**UPDATE**: The final solution was actually based on a Tabulate function which 
 
 ![thanks](/images/posts/2021/thanks.gif)
 
+{% include a350_csv.html %}
+
 <table>
   {% for row in site.data.flight_data_a350 %}
     {% if forloop.first %}
