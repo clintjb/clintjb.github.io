@@ -23,4 +23,5 @@ While no one can really predict who will succeed, we can try and educate ourselv
   
 <center>{% include crypto.html %}</center>
 
+
 At some point, this will change, and I believe XRP/TRX looks to be in a strong position to be some of the remaining players while others fade into obscurity. But for now the market is controlled by private investors who likely don't care, about the technology but just follow trends and market cap/value - So keep your hats on and HODL!
