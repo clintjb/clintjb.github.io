@@ -20,9 +20,7 @@ The .com bubble was worth ca [5 trillion](http://ac360.blogs.cnn.com/2009/11/24/
 Although I believe most coins will fail; the ones that provide legitimate technological advantages and are solving real-world problems will likely explode and be household names in the next 3-5 years once the technology is regulated and largely adopted (I would assume what most long-term XRP investors are likely hoping for) 
 
 While no one can really predict who will succeed, we can try and educate ourselves on the technology and what it can legitimately offer. For the time being though, as long as crypto is literally just commodities with an artificial value (e.g. BTC is somewhat similar to gold) it causes the market to be treated like commodity trading and not buying the shares of a company.
-
-<br>
+  
 <center>{% include crypto.html %}</center>
-<br>
 
 At some point, this will change, and I believe XRP/TRX looks to be in a strong position to be some of the remaining players while others fade into obscurity. But for now the market is controlled by private investors who likely don't care, about the technology but just follow trends and market cap/value - So keep your hats on and HODL!
