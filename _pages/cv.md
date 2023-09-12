@@ -24,15 +24,14 @@ I love developing teams with an entrepreneurial spirit and get the greatest feel
 I’ve also completed an online MBA developed entirely out of MOOCs from some of the worlds top business programmes. You can find my curriculum & transcript [here](/mba/)
 
 ### Skills
-- Operations & Supply Chain
+- Operations, Supply Chain & Lean Methodologies
 - Technological / Digital Literacy
-- Presenting / Public Speaking
-- LEAN Methods
+- Storytelling / Public Speaking
+- Data Strategy & Governance
 - Python, Data Analytics & Algorithms
 - DevOps Tools & Technologies
-- Project Management (PRINCE2 & Airbus Bronze)
+- Project Management (PRINCE2 & Airbus Silver)
 - Cost Reduction & Value Engineering
-- Financial Analysis & Forecasting
-- Adobe Design Suite
+- Financial Analysis, Modeling & Forecasting
 
 <a class="button button--medium" target="_blank" rel="noopener noreferrer" href="https://www.clintbird.com/files/resume.pdf">Download CV</a>
