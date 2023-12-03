@@ -407,9 +407,9 @@ body #cdawrap {
 .content__text-tiny {
 	text-transform: none;
 	font-family: 'Tenon', sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: 300;
-	max-width: 400px;
+	max-width: 500px;
 	line-height: 1.2;
 	margin-top: 10vh;
 }
