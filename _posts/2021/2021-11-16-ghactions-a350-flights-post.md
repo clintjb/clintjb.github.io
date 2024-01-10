@@ -11,16 +11,9 @@ image: '/images/posts/2021/a350.jpg'
 ---
 ![Aeroplane](/images/posts/2021/a350.jpg)
 
-<div class="warning">
+> _❗ **The API From OpenSky Has Been Down For ~3 Months, As Its A Community Project Its Not Clear When This Will Be Working Again**_
 
-**NOTE:**
-Find the docs [here](http://example.com/).
-
-</div>
-
-> :warning: **If you are using mobile browser**: Be very careful here!
-
-_⚠️ **IF USING MOBILE BROWSER**: I never designed this experiment / POC for mobile devices (was tricky enough to embed dynamically updated charts & data into a static site so didn't bother with responsive as well) I would highly recommend checking this out on a desktop to ensure everything renders correctly._
+> _⚠️ **IF USING MOBILE BROWSER**: I never designed this experiment / POC for mobile devices (was tricky enough to embed dynamically updated charts & data into a static site so didn't bother with responsive as well) I would highly recommend checking this out on a desktop to ensure everything renders correctly._
 
 Some time ago I come across an article on GitHub Actions functionality and was really curious to come up with a little project to use as an excuse to dive deeper into what they could do. 
 In a nutshell, actions enable you to create custom software workflows directly in your Github repository - these workflows basically allow you to run container setups by adding support for docker and docker-compose files to your workflows (in my case a Python 3.9 environment)
