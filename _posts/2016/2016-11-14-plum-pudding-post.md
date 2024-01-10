@@ -13,15 +13,15 @@ image: '/images/posts/2016/plum-pudding.jpg'
 
 This was my Mums recipe that I grew up with as a kid. As a child, I remember our whole laundry smelling of plum pudding while it was hanging during December. This smell still to this day, takes me back.... I can only recommend this as a brilliant finish to any traditional Christmas dinner.
 
-* 1kg mixed dry fruit
+* 750g mixed dry fruit
 * 3 eggs
-* 1 cup brown sugar
-* 300ml carton cream
-* 2 1/4 cups plain flour
+* 3/4 cup brown sugar
+* 200ml carton cream
+* 3/4 cup port
+* 1 3/4 cups plain flour
 * 1 teaspoon nutmeg
 * 1 teaspoon cinnamon
 * 1 teaspoon bicarb soda
-* 1 cup port
 * 70cm x 70cm calico cloth OR 2.5l steamed pudding mold
 
 Firstly its good to note this recipe can be used for a traditional cloth or mold method. Just adjust the steps accordingly.
@@ -36,7 +36,7 @@ Add the fruit, cream and port to the egg mixture and mix well. Add all the dry i
 
 or
 
-* Lightly butter the pudding mold and sprinkle a little flour inside. Pour the batter inside the mold and sprinkle a little more flour at the end. Place a piece of fabric over the base and then secure the lid.
+* Lightly butter a 2l pudding mold and sprinkle a little flour inside. Pour the batter inside the mold and sprinkle a little more flour at the end. Place a piece of fabric over the base and then secure the lid.
 
 Bring a pot of water to the boil and float the pudding off the bottom of the pot for 5 hours. Once finished hang or sit the pudding in a cold dry spot for anywhere between 1-3 months.
 
