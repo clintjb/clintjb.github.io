@@ -98,6 +98,7 @@ footer__description: A 40 something year old father, husband, lean, digital enth
 social:
 - {icon: "logo-linkedin", link: "https://linkedin.com/in/clintjb"}
 - {icon: "logo-github", link: "https://github.com/clintjb"}
+- {icon: "logo-headset", link: "https://listenbrainz.org/user/clintjb"}
 - {icon: "logo-whatsapp", link: "/contact/"}
 - {icon: "logo-rss", link: "https://www.clintbird.com/feed.xml"}
 
