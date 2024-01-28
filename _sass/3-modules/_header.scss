@@ -32,6 +32,10 @@
   max-height: 35px;
 }
 
+.dark-mode #logo__mode {
+  filter: invert(100%);
+}
+
 /* Nav */
 .main-nav {
   display: flex;
