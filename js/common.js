@@ -74,12 +74,12 @@ document.addEventListener("DOMContentLoaded", function() {
   function darkMode() {
     if (html.classList.contains('dark-mode')) {
       html.classList.remove('dark-mode');
-      modeLogo.src = "{{ site.baseurl }}{{ site.data.settings.logo }}";
+      modeLogo.src = "/images/logo.gif";
       localStorage.removeItem("theme");
       document.documentElement.removeAttribute("dark");
     } else {
       html.classList.add('dark-mode');
-      modeLogo.src = "{{ site.baseurl }}{{ site.data.settings.logo_dark }}";
+      modeLogo.src = "/images/logo-dark.gif";
       localStorage.setItem("theme", "dark");
       document.documentElement.setAttribute("dark", "");
     }
