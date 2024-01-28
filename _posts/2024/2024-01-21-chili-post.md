@@ -3,7 +3,7 @@ layout: post
 tags_color: '#666e76'
 title: 'Over The Top Chili'
 date: 2024-01-21
-description: Our fabourite chili recipe cooked with the "over the top" method
+description: Our favorite chili recipe cooked with the "over the top" method
 tags: [cooking, chili, smoker, con carne, recipe]
 categories: cooking
 comments: true
