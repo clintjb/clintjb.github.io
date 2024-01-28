@@ -75,10 +75,10 @@ document.addEventListener("DOMContentLoaded", function() {
     if (html.classList.contains('dark-mode')) {
       html.classList.remove('dark-mode');
       localStorage.removeItem("theme");
-      modeLogo.src = '/images/logo-dark.gif';
       document.documentElement.removeAttribute("dark");
     } else {
       html.classList.add('dark-mode');
+      modeLogo.src = '/images/logo-dark.gif';
       localStorage.setItem("theme", "dark");
       document.documentElement.setAttribute("dark", "");
     }
