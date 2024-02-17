@@ -11,7 +11,9 @@ image: '/images/posts/2024/fortnite.jpg'
 ---
 ![Fortnite](/images/posts/2024/fortnite.jpg)
 
-My son recently got his first PC and we were discussing over breakfast that there's more you can use PCs for than just playing games! 🤯 - This led us to have a think about what interesting projects we could do together over the weekend and hence the idea of creating a profile card of his Fortnite account and all the top stats would be something cool; you can see the final results below:
+My son recently got his first PC and we were discussing over breakfast that there's more you can use PCs for than just playing games! 🤯
+
+This led us to have a think about what interesting projects we could do together over the weekend and hence the idea of creating a profile card of his Fortnite account and all the top stats would be something cool - you can see the final results below:
 
 {% include fortnite.html %}
 
