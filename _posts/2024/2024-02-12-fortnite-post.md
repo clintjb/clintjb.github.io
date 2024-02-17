@@ -1,7 +1,7 @@
 ---
 layout: post
 tags_color: '#666e76'
-title: '¨Fortnite Stat Tracking'
+title: 'Fortnite Stat Tracking'
 date: 2024-02-12
 description: A Fortnite API combined with GitHub actions & secrets to generate a player profile card.
 tags: [digitalization, stuff, data, devops, API, fortnite, actions, automation, stats, games, cicd, secrets]
@@ -11,17 +11,15 @@ image: '/images/posts/2024/fortnite.jpg'
 ---
 ![Fortnite](/images/posts/2024/fortnite.jpg)
 
-My son recently got his first PC and we were discussing over breakfast that there's more you can use PCs for than just playing games! 🤯 - This led us to have a think about what interesting projects we could do together over the weekend and hence the idea of creating a profile card of his Fortnite account and all the top stats would be something cool.
+My son recently got his first PC and we were discussing over breakfast that there's more you can use PCs for than just playing games! 🤯 - This led us to have a think about what interesting projects we could do together over the weekend and hence the idea of creating a profile card of his Fortnite account and all the top stats would be something cool; you can see the final results below:
 
-My thinking here was to utilize GitHub actions to automate the pipeline and probably build a variant of the [A350 tracking project](https://clintbird.com/blog/ghactions-a350-flights-post) I created some time ago. So our plan was to come up with a simple workflow running in a Python script, continuously updating via a schedule. The high-level plan was as follows:
+{% include fortnite.html %}
+
+Our thought process was here was to utilize GitHub actions to automate the pipeline and probably build a variant of the [A350 tracking project](https://clintbird.com/blog/ghactions-a350-flights-post) I created some time ago. So our plan was to come up with a simple workflow running in a Python script, continuously updating via a schedule. The high-level plan was as follows:
 
 * Call an API and get current account data
 * Filter & aggregate payload down to the stats that interested us
 * Embed the results into the profile card / HTML template (with skin/profile pic) and extract them for use in my static Jekyll website
-
-You can see the results below:
-
-{% include fortnite.html %}
 
 ### Part 1 - API Call
 
