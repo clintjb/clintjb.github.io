@@ -17,8 +17,8 @@ Here's a bit of a follow-up to my previous post - [Cool Gifs](https://clintbird.
   	<img src="/images/posts/2021/comics-02.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-03.gif" loading="lazy">
  </div>
- <script async="async" data-cfasync="false" src="//pl16227749.profitablegatecpm.com/a971dc3bdf349ced803ffc02aadb0749/invoke.js"></script>
- <div id="container-a971dc3bdf349ced803ffc02aadb0749"></div>
+ <script type='text/javascript' src='//pl16227699.profitablegatecpm.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
+ <p><iframe src="https://www.videosprofitnetwork.com/watch.xml?key=f6968e15bd8d2fda77dad66cb42c0872" frameborder="0"</iframe></p>
  <div class="gallery">
   	<img src="/images/posts/2021/comics-04.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-05.gif" loading="lazy">
