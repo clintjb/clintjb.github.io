@@ -17,6 +17,7 @@ Here's a bit of a follow-up to my previous post - [Cool Gifs](https://clintbird.
   	<img src="/images/posts/2021/comics-02.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-03.gif" loading="lazy">
  </div>
+ <script tdata-cfasync="false" ype='text/javascript' src='//pl16227699.profitablegatecpm.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
  <script async="async" data-cfasync="false" src="//pl16227749.profitablegatecpm.com/a971dc3bdf349ced803ffc02aadb0749/invoke.js"></script>
  <div id="container-a971dc3bdf349ced803ffc02aadb0749"></div>
  <div class="gallery">
@@ -30,7 +31,16 @@ Here's a bit of a follow-up to my previous post - [Cool Gifs](https://clintbird.
   	<img src="/images/posts/2021/comics-11.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-12.gif" loading="lazy">
  </div>
- <script tdata-cfasync="false" ype='text/javascript' src='//pl16227699.profitablegatecpm.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '91de69b2484c2a1a1ce0f7f8fd0e0916',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/91de69b2484c2a1a1ce0f7f8fd0e0916/invoke.js"></scr' + 'ipt>');
+</script>
  <div class="gallery">
   	<img src="/images/posts/2021/comics-13.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-14.gif" loading="lazy">
