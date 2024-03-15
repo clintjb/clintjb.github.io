@@ -11,7 +11,6 @@ image: '/images/posts/2021/comics.jpg'
 ---
 Here's a bit of a follow-up to my previous post - [Cool Gifs](https://clintbird.com/blog/cool-gifs-post). I'm an avid comic reader so really enjoyed these, think the gif format really does bring some of these to life - honestly, no idea where I've collected these so if you have any hints / ideas do please let me know...
 
-<script type='text/javascript' src='//pl16227699.profitablegatecpm.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
 <div class="gallery-box">
   <div class="gallery">
   	<img src="/images/posts/2021/comics-01.gif" loading="lazy">
@@ -20,6 +19,7 @@ Here's a bit of a follow-up to my previous post - [Cool Gifs](https://clintbird.
  </div>
  <script async="async" data-cfasync="false" src="//pl16227749.profitablegatecpm.com/a971dc3bdf349ced803ffc02aadb0749/invoke.js"></script>
  <div id="container-a971dc3bdf349ced803ffc02aadb0749"></div>
+ <script type='text/javascript' src='//pl16227699.profitablegatecpm.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
  <div class="gallery">
   	<img src="/images/posts/2021/comics-04.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-05.gif" loading="lazy">
