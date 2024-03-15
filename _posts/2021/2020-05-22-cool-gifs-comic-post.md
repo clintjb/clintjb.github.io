@@ -29,6 +29,10 @@ Here's a bit of a follow-up to my previous post - [Cool Gifs](https://clintbird.
   	<img src="/images/posts/2021/comics-10.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-11.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-12.gif" loading="lazy">
+ </div>
+ <script async="async" data-cfasync="false" src="//pl16227749.profitablegatecpm.com/a971dc3bdf349ced803ffc02aadb0749/invoke.js"></script>
+ <div id="container-a971dc3bdf349ced803ffc02aadb0749"></div>
+ <div class="gallery">
   	<img src="/images/posts/2021/comics-13.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-14.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-15.gif" loading="lazy">
