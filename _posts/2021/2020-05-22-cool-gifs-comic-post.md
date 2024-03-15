@@ -16,11 +16,13 @@ Here's a bit of a follow-up to my previous post - [Cool Gifs](https://clintbird.
   	<img src="/images/posts/2021/comics-01.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-02.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-03.gif" loading="lazy">
-	<div id="container-a971dc3bdf349ced803ffc02aadb0749"></div>
+ </div>
+ <script async="async" data-cfasync="false" src="//pl16227749.profitablegatecpm.com/a971dc3bdf349ced803ffc02aadb0749/invoke.js"></script>
+ <div id="container-a971dc3bdf349ced803ffc02aadb0749"></div>
+ <div class="gallery">
   	<img src="/images/posts/2021/comics-04.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-05.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-06.gif" loading="lazy">
-    	<script type='text/javascript' src='//pl16227687.profitablegatecpm.com/1b/4d/c9/1b4dc95e3a1bcb151f9938936158e6c2.js'></script>
   	<img src="/images/posts/2021/comics-07.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-08.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-09.gif" loading="lazy">
@@ -32,4 +34,3 @@ Here's a bit of a follow-up to my previous post - [Cool Gifs](https://clintbird.
   	<img src="/images/posts/2021/comics-15.gif" loading="lazy">
   </div>
 </div>
-<script async="async" data-cfasync="false" src="//pl16227749.profitablegatecpm.com/a971dc3bdf349ced803ffc02aadb0749/invoke.js"></script>
