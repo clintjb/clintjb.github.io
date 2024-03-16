@@ -9,8 +9,7 @@ comments: true
 image: '/images/posts/2017/gifs.jpg'
 ---
 Here's some cool little animations I've come across over the course of this year - most of them were likely found on [Dribbble](https://dribbble.com/). Also be sure to check out the recently created "part 2" of this, focussed predominantly on comic based gifs which you can find [here](https://clintbird.com/blog/cool-gifs-comic-post).
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6030108871824040" crossorigin="anonymous"></script>     
+  
 <div class="gallery-box">
   <div class="gallery">
   	<img src="/images/posts/2017/gifs-1.gif" loading="lazy">
@@ -24,3 +23,6 @@ Here's some cool little animations I've come across over the course of this year
   	<img src="/images/posts/2017/gifs-9.gif" loading="lazy">
   </div>
 </div>
+<body>
+<script data-cfasync="false" type='text/javascript' src='//pl16227699.profitablegatecpm.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
+</body>
