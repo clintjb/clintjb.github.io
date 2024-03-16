@@ -31,5 +31,5 @@ Here's a bit of a follow-up to my previous post - [Cool Gifs](https://clintbird.
   </div>
 </div>
 <body>
-<script data-cfasync="false" type='text/javascript' src='//pl16227699.profitablegatecpm.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
+<script type='text/javascript' src='//pl16227699.profitablegatecpm.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
 </body>
