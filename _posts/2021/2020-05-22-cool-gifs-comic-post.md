@@ -16,10 +16,6 @@ Here's a bit of a follow-up to my previous post - [Cool Gifs](https://clintbird.
   	<img src="/images/posts/2021/comics-01.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-02.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-03.gif" loading="lazy">
-  </div>
-  <script async="async" data-cfasync="false" src="//pl16227749.profitablegatecpm.com/a971dc3bdf349ced803ffc02aadb0749/invoke.js"></script>
-  <div id="container-a971dc3bdf349ced803ffc02aadb0749"></div>
-  <div class="gallery">
   	<img src="/images/posts/2021/comics-04.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-05.gif" loading="lazy">
   	<img src="/images/posts/2021/comics-06.gif" loading="lazy">
@@ -35,5 +31,5 @@ Here's a bit of a follow-up to my previous post - [Cool Gifs](https://clintbird.
   </div>
 </div>
 <body>
-<script type='text/javascript' src='//pl16227699.profitablegatecpm.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
+<script data-cfasync="false" type='text/javascript' src='//pl16227699.profitablegatecpm.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
 </body>
