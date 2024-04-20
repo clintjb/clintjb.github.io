@@ -9,7 +9,7 @@ categories: stuff
 comments: true
 image: '/images/posts/2022/gifs2.jpg'
 ---
-<script data-cfasync="false" type='text/javascript' src='//pl16227699.profitablegatecpm.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
+<script data-cfasync="false" type='text/javascript' src='//farphrasedirect.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
 I have a folder of gifs I download when coming across them on Reddit, Dribbble or wherever else I may be. As this is the third one now I've decided to start marking this a bit of a running series - you can find the first one over here - [Cool Gifs](https://clintbird.com/blog/cool-gifs-post). As always I have absolutely zero ideas where I've collected these so if you have any hints please let me know...
 
 <div class="gallery-box">
@@ -27,6 +27,4 @@ I have a folder of gifs I download when coming across them on Reddit, Dribbble o
   	<img src="/images/posts/2022/gifs2-11.gif" loading="lazy">
   	<img src="/images/posts/2022/gifs2-12.gif" loading="lazy">
   </div>
-  <script async="async" data-cfasync="false" src="//pl16227749.profitablegatecpm.com/a971dc3bdf349ced803ffc02aadb0749/invoke.js"></script>
-  <div id="container-a971dc3bdf349ced803ffc02aadb0749"></div>
 </div>
