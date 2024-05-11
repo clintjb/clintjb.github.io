@@ -9,7 +9,6 @@ categories: stuff
 comments: true
 image: '/images/posts/2022/gifs2.jpg'
 ---
-<script data-cfasync="false" type='text/javascript' src='//farphrasedirect.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
 I have a folder of gifs I download when coming across them on Reddit, Dribbble or wherever else I may be. As this is the third one now I've decided to start marking this a bit of a running series - you can find the first one over here - [Cool Gifs](https://clintbird.com/blog/cool-gifs-post). As always I have absolutely zero ideas where I've collected these so if you have any hints please let me know...
 
 <div class="gallery-box">
