@@ -9,7 +9,6 @@ categories: stuff
 comments: true
 image: '/images/posts/2016/animation.jpg'
 ---
-<script data-cfasync="false" type='text/javascript' src='//farphrasedirect.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
 ![](/images/posts/2016/animation.jpg)
 Here's some cool little animations based on some videogame and films - it was originally created by Alex Griendling [here](https://dribbble.com/alexgriendling).
 
