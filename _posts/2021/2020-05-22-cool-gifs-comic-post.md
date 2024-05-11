@@ -9,7 +9,6 @@ categories: stuff
 comments: true
 image: '/images/posts/2021/comics.jpg'
 ---
-<script data-cfasync="false" type='text/javascript' src='//farphrasedirect.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
 Here's a bit of a follow-up to my previous post - [Cool Gifs](https://clintbird.com/blog/cool-gifs-post). I'm an avid comic reader so really enjoyed these, think the gif format really does bring some of these to life - honestly, no idea where I've collected these so if you have any hints / ideas do please let me know...
 
 <div class="gallery-box">
