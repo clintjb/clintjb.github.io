@@ -8,7 +8,6 @@ categories: stuff
 comments: true
 image: '/images/posts/2017/gifs.jpg'
 ---
-<script data-cfasync="false" type='text/javascript' src='//farphrasedirect.com/89/08/8d/89088df83b3387bd619feb101237ac53.js'></script>
 Here's some cool little animations I've come across over the course of this year - most of them were likely found on [Dribbble](https://dribbble.com/). Also be sure to check out the recently created "part 2" of this, focussed predominantly on comic based gifs which you can find [here](https://clintbird.com/blog/cool-gifs-comic-post).
   
 <div class="gallery-box">
