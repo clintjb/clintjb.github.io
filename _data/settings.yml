@@ -125,15 +125,13 @@ footer__menu__settings:
 #-------------------------------
 # Contact Settings
 contact:
-  email: xjvjyrol
-  description: If you'd like to connect, share a story, or just chat about anything, feel free to drop me a line below:
+  email: non_applicable
+  description: If you'd like to connect, share a story, or just chat about anything, feel free to drop me a line below.
 
 
 #-------------------------------
 # Comment Section (Disqus)
 disqus-identifier: clintbird
-
-
 #-------------------------------
 # Google Analytics
 google-analytics: G-ZGNEJ3RZ6F
