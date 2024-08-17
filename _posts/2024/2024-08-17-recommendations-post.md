@@ -3,8 +3,8 @@ layout: post
 tags_color: '#666e76'
 title: 'Movie Recommendations Overview For The Family'
 date: 2024-08-17
-description: A Fortnite API combined with GitHub actions & secrets to generate a player profile card.
-tags: [digitalization, stuff, data, devops, API, fortnite, actions, automation, stats, games, cicd, secrets]
+description: blah blah.
+tags: [digitalization, stuff, data, devops, API, movies, actions, automation, stats, games, cicd, secrets]
 categories: [digitalization, stuff]
 comments: true
 image: '/images/posts/2024/recommendations.jpg'
