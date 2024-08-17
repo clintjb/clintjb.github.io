@@ -1,1 +1,10 @@
-<iframe style="width: 98%; overflow: auto;" src="https://htmlpreview.github.io/?https://raw.githubusercontent.com/clintjb/Movie-Recomendations/main/recommendations.html" frameborder="0"></iframe>
+<iframe id="contentFrame" style="width: 98%; overflow: auto;" src="https://htmlpreview.github.io/?https://raw.githubusercontent.com/clintjb/Movie-Recomendations/main/recommendations.html" frameborder="0"></iframe>
+
+<script>
+    function resizeIframe() {
+        var iframe = document.getElementById('contentFrame');
+        iframe.style.height = iframe.contentWindow.document.documentElement.scrollHeight + 'px';
+    }
+
+    document.getElementById('contentFrame').addEventListener('load', resizeIframe);
+</script>
