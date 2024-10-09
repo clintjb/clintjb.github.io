@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic SC|Roboto");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+#welcome {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #d35400;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: top linear .2s, bottom linear .2s;
+  color: #fff;
+}
+#welcome p {
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 20vmin;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+#welcome.hidden {
+  top: -100vh;
+  bottom: 100vh;
+}
+#welcome .button {
+  font-size: 4vmin;
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 2vmin 5vmin;
+  background: rgba(255, 255, 255, 0);
+  transition: background linear .2s;
+  cursor: pointer;
+  border-radius: 50px;
+}
+#welcome .button:focus {
+  outline: none;
+}
+#welcome .button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#cells {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c3e50;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-size: 20px;
+}
+#cells.items-9 .cell {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+}
+#cells.items-16 .cell {
+  width: calc(100% / 4);
+  height: calc(100% / 4);
+}
+
+.cell {
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform cubic-bezier(0.5, 0.005, 0.5, 1.5) 0.2s;
+}
+.cell:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+.cell .content {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  background: #ecf0f1;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background linear .2s;
+}
+.cell.selected:nth-child(0) {
+  transform: scale(0.9) rotate(2deg);
+}
+.cell.selected:nth-child(1) {
+  transform: scale(0.9) rotate(-1deg);
+}
+.cell.selected:nth-child(2) {
+  transform: scale(0.9) rotate(-2deg);
+}
+.cell.selected:nth-child(3) {
+  transform: scale(0.9) rotate(-4deg);
+}
+.cell.selected:nth-child(4) {
+  transform: scale(0.9) rotate(5deg);
+}
+.cell.selected:nth-child(5) {
+  transform: scale(0.9) rotate(4deg);
+}
+.cell.selected:nth-child(6) {
+  transform: scale(0.9) rotate(2deg);
+}
+.cell.selected:nth-child(7) {
+  transform: scale(0.9) rotate(-4deg);
+}
+.cell.selected:nth-child(8) {
+  transform: scale(0.9) rotate(-1deg);
+}
+.cell.selected:nth-child(9) {
+  transform: scale(0.9) rotate(4deg);
+}
+.cell.selected:nth-child(10) {
+  transform: scale(0.9) rotate(-2deg);
+}
+.cell.selected:nth-child(11) {
+  transform: scale(0.9) rotate(-2deg);
+}
+.cell.selected:nth-child(12) {
+  transform: scale(0.9) rotate(1deg);
+}
+.cell.selected:nth-child(13) {
+  transform: scale(0.9) rotate(3deg);
+}
+.cell.selected:nth-child(14) {
+  transform: scale(0.9) rotate(0deg);
+}
+.cell.selected:nth-child(15) {
+  transform: scale(0.9) rotate(-4deg);
+}
+.cell.selected .content {
+  background: #f1c40f;
+}
+.cell.selected .content .text {
+  text-decoration: line-through;
+}
+
+#bingo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2ecc71;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: transform cubic-bezier(0.5, 0.005, 0.5, 1.5) 0.2s;
+  color: #fff;
+}
+#bingo.visible {
+  transform: scale(1);
+}
+#bingo div {
+  font-family: 'Lobster', sans-serif;
+  font-size: 30vmin;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+#bingo #retry {
+  font-size: 06vmin;
+  cursor: pointer;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  text-shadow: none;
+}
