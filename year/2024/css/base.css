@@ -24,7 +24,7 @@ body {
 	color: var(--color-text);
 	background-color: var(--color-bg); 
 	font-family: "area-variable", sans-serif;
-	font-variation-settings: "slnt" 0, "wdth" 150, "wght" 500, "INKT" 0;
+	font-variation-settings: "slnt" 0, "wdth" 150, "wght" 500;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	width: 100%;
@@ -257,12 +257,12 @@ a:focus-visible {
 	margin-left: -0.065em;
 	font-size: clamp(2.5rem,12vw,7rem);
 	letter-spacing: -0.105em;
-	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
+	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900;
 }
 
 i {
 	font-style: normal;
-	font-variation-settings: "slnt" 0, "wdth" 100, "wght" 400, "INKT" 400;
+	font-variation-settings: "slnt" 0, "wdth" 100, "wght" 400;
 }
 
 .frame__heading p {
@@ -297,7 +297,7 @@ i {
 	max-width: 900px;
 	margin: 0 0 0.85em 0;
 	line-height: 1.2;
-	font-variation-settings: "slnt" 0, "wdth" 100, "wght" 500, "INKT" 100;
+	font-variation-settings: "slnt" 0, "wdth" 100, "wght" 500;
 }
 
 .content--sticky {
@@ -394,7 +394,7 @@ i {
 	font-weight: normal;
 	font-size: clamp(2rem,6vw,5rem);
 	margin: 0;
-	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
+	font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900;
 }
 
 .content__text {
@@ -408,7 +408,7 @@ i {
 }
 
 .content__text--narrow {
-	max-width: 500px;
+	max-width: 300px;
 }
 
 .content--intro {
