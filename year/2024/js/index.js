@@ -1,4 +1,4 @@
-import { preloadImages } from '../utils.js';
+import { preloadImages } from 'utils.js';
 
 // Variable to store the Lenis smooth scrolling object
 let lenis;
