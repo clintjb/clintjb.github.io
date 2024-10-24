@@ -368,7 +368,7 @@ i {
 .content__img {
 	grid-area: content-img;
 	width: 50%;
-	max-width: 500px;
+	max-width: 300px;
 	height: auto;
 }
 
