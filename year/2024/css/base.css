@@ -336,7 +336,7 @@ i {
 	flex-direction: column;
 	height: 80vh;
 	width: 95vw;
-	max-width: 300px;
+	max-width: 500px;
 	aspect-ratio: 0.8;
 	top: 10vh;
 	margin: auto;
@@ -466,7 +466,7 @@ i {
 		align-self: center;
 	}
 	.frame #cdawrap {
-		max-width: 500px;
+		max-width: 300px;
 		text-align: right;
 	}
 	.frame #cdawrap, 
