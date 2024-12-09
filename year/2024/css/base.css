@@ -386,7 +386,7 @@ i {
 }
 
 .content__img--small {
-	height: 35%;
+	height: auto;
 	width: auto;
 }
 
@@ -416,7 +416,7 @@ i {
 }
 
 .content__text--narrow {
-	max-width: 500px;
+	max-width: 90%;
 }
 
 .content--intro {
