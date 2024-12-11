@@ -5,7 +5,7 @@
 }
 
 :root {
-	font-size: 16px;
+	font-size: 14px;
 	--page-padding: 1.5rem;
 	--color-text: #fff;
 	--color-bg: #12100e;
@@ -409,7 +409,7 @@ i {
 	margin: 0;
 	max-width: 500px;
 	grid-area: content-text;
-	text-align: center;
+	text-align: left;
 	line-height: 1.5;
 	padding: 0 1rem;
 	backface-visibility: hidden;
@@ -426,8 +426,8 @@ i {
 }
 
 .content--outro {
-	padding-top: 50vh;
-	padding-bottom: 30vh;
+	padding-top: 20vh;
+	padding-bottom: 10vh;
 }
 
 .bg-1 { background: var(--color-bg-1); }
