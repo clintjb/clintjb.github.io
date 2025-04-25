@@ -4,7 +4,7 @@ tags_color: '#666e76'
 title: 'Vibe Coding'
 date: 2025-04-24
 description: Quote from the I Am Developer Account
-tags: [business, digitalization, GPT, quote, vibe, debt]
+tags: [digitalization, GPT, quote, vibe, tech, debt, chatgpt]
 categories: digitalization
 comments: true
 image: '/images/posts/2025/vibe.jpg'
