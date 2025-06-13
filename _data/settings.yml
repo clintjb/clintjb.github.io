@@ -70,7 +70,7 @@ tag__settings:
 author__section:
   enable: false
   author__section__title: Hi, I'm Clint
-  author__section__description: A 40 something year old father, husband, lean, digital enthusiast and aspiring chef! Originally from Australia, but due to some of life's unforeseen adventures am now happily settled in Hamburg Germany.<br><br>I'm deeply passionate about lean, technology and continuous improvement. I love applying these principles to every aspect of my life, whether it's data science, business transformation or my latest BBQ experiments!<br><br>I've set this site up to act mainly just as a repository of stuff I find interesting & fun - hopefully, others find it the same as well. If you'd like to connect, share a story, or just chat about anything, feel free to explore the site and get in touch.
+  author__section__description: A 40 something year old father, husband, lean, digital enthusiast and aspiring chef! Originally from Australia, but due to some of life's unforeseen adventures am now happily settled in Hamburg Germany.<br><br>I'm deeply passionate about lean, technology and continuous improvement. I love applying these principles to every aspect of my life, whether it's data science, business transformation or my latest experiments in BBQ!<br><br>I've set this site up to act mainly just as a repository of stuff I find interesting & fun - hopefully, others find it the same as well. If you'd like to connect, share a story, or just chat about anything, feel free to explore the site and get in touch.
   aurhor__section__button__text: More About Me
   aurhor__section__button__link: /cv
   author__section__big__image: /images/clint.webp
@@ -91,7 +91,7 @@ mailchimp__settings:
 
 #-------------------------------
 # Footer Settings
-footer__description: A 40 something year old father, husband, lean, digital enthusiast and aspiring chef! Originally from Australia, but due to some of life's unforeseen adventures am now happily settled in Hamburg Germany.<br><br>I'm deeply passionate about lean, technology and continuous improvement. I love applying these principles to every aspect of my life, whether it's data science, business transformation or my latest BBQ experiments!<br><br>I've set this site up to act mainly just as a repository of stuff I find interesting & fun - hopefully, others find it the same as well. If you'd like to connect, share a story, or just chat about anything, feel free to explore the site and get in touch.
+footer__description: A 40 something year old father, husband, lean, digital enthusiast and aspiring chef! Originally from Australia, but due to some of life's unforeseen adventures am now happily settled in Hamburg Germany.<br><br>I'm deeply passionate about lean, technology and continuous improvement. I love applying these principles to every aspect of my life, whether it's data science, business transformation or my latest experiments in BBQ!<br><br>I've set this site up to act mainly just as a repository of stuff I find interesting & fun - hopefully, others find it the same as well. If you'd like to connect, share a story, or just chat about anything, feel free to explore the site and get in touch.
 
 
 # Social Links
