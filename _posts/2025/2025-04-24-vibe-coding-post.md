@@ -13,11 +13,3 @@ image: '/images/posts/2025/vibe.jpg'
 
 > Vibe coding, where 2 engineers can now create the tech debt of at least 50 engineers.
 > [I Am Developer](https://x.com/iamdevloper?lang=en)
-
-{% include weekly-post.html %}
-
-<script>
-document.getElementById('weekly-post-iframe').onload = function() {
-    this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';
-};
-</script>
