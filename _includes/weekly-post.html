@@ -1,1 +1,7 @@
-<iframe style="overflow: auto;" src="https://htmlpreview.github.io/?https://raw.githubusercontent.com/clintjb/Weekly-Post/refs/heads/main/blog_post.html" frameborder="0"></iframe>
+<iframe id="weekly-post-iframe" src="https://htmlpreview.github.io/?https://raw.githubusercontent.com/clintjb/Weekly-Post/refs/heads/main/blog_post.html" frameborder="0" style="width: 100%; border: none;"></iframe>
+
+<script>
+document.getElementById('weekly-post-iframe').onload = function() {
+    this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';
+};
+</script>
