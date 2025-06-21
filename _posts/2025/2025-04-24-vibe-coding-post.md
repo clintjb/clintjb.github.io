@@ -15,3 +15,9 @@ image: '/images/posts/2025/vibe.jpg'
 > [I Am Developer](https://x.com/iamdevloper?lang=en)
 
 {% include weekly-post.html %}
+
+<script>
+document.getElementById('weekly-post-iframe').onload = function() {
+    this.style.height = this.contentWindow.document.documentElement.scrollHeight + 'px';
+};
+</script>
