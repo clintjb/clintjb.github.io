@@ -13,42 +13,36 @@ image: '/images/posts/2025/weekly.jpg'
 
 _⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated each week based on the number one article from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [LLMAPI](https://docs.llmapi.com/quickstart#available-models)_
 
-# A Weekend Tinkering with TPUs  
+# My Love Affair with Vintage Typewriters (and Why I Can’t Stop Fixing Them)
 
-There’s something deeply satisfying about peeling back the layers of a piece of technology—especially one that’s built for a singular, almost obsessive purpose. That’s how I felt the first time I really dug into TPUs. On the surface, they’re just another kind of accelerator, another tool in the AI toolbox. But spend a little time with them, and you start to see the philosophy behind the design: a machine built not just for raw speed, but for *elegant* speed.  
+There’s something hypnotic about the *clack* of a typewriter key striking paper. Not the soft tap of a mechanical keyboard, not the digital silence of an iPad—no, the real deal. A weighted, analog *thunk* that leaves ink on the page like a signature.  
 
-## Why TPUs Feel Different  
+I didn’t set out to become a typewriter hoarder. It started innocently enough: a rusty 1967 Olympia SM9 at a flea market in Berlin, priced at what felt like criminal theft. "Just for decoration," I told myself. A week later, I was elbow-deep in mineral spirits, cleaning century-old grease off typebars, and I was hooked.  
 
-Coming from a GPU-heavy background, my first reaction to TPU architecture was mild bewilderment. The memory hierarchy? Different. The execution model? Different. The sheer *focus* on matrix multiplication? Very different. It’s like switching from a Swiss Army knife to a perfectly balanced chef’s blade—one is versatile, the other is *made* for a single, devastatingly efficient purpose.  
+### The Allure of Broken Things  
+Most people see a jammed carriage or a missing ribbon spool and think, *junk*. I see a puzzle. A mechanical haiku. A stubborn old machine that just needs the right nudge—and maybe a new spring from a Soviet-era parts bin.  
 
-Take the memory, for example. GPUs throw enormous caches and HBM at the problem, betting that fast access to tons of data will keep those thousands of CUDA cores fed. TPUs, though? Smaller HBM, *way* more on-chip memory, and this wild assumption that if you know *exactly* what your workload is doing, you can cut out the guesswork entirely. It’s bold, but when it works, it’s a thing of beauty.  
+Take the Olivetti Lettera 32, for example. A gorgeous, avocado-green portable from the ’70s. I found one in a dusty antique shop with half the keys stuck and a drawband so frayed it looked like overcooked spaghetti. Three hours (and one coffee-fueled tantrum) later, that little beast was typing like it had something urgent to say. That moment—when the first clear imprint of a word forms on fresh paper—is pure, unadulterated joy.  
 
-## The Systolic Array Magic  
+### The Dark Side of the Hobby  
+It’s not all romantic nostalgia. There’s the time I accidentally launched a tiny screw into the abyss of my apartment floorboards (RIP, Royal Quiet De Luxe alignment). Or the eBay seller who swore a 1920s Underwood was "fully functional," only for it to arrive with a carriage held together by hope and duct tape.  
 
-The heart of a TPU is its systolic array—that rigid, mathematical grid of processing elements that crunches matrix multiplication like it’s clockwork. No branching, no surprises, just data flowing in and results flowing out. There’s an almost poetic efficiency to it, like watching a well-drilled assembly line where every movement is deliberate, every step optimized.  
+Then there’s the *smell*. Decades of dust, oxidized oil, and sometimes… questionable organic residue. Nothing a can of WD-40 and sheer determination can’t fix, but still—wear gloves.  
 
-Of course, the trade-off is rigidity. If your workload doesn’t play nice with systolic arrays, TPUs will feel like trying to hammer a screw. Sparse matrices? Dynamic control flow? Yeah, good luck. But for the vast, matrix-heavy world of deep learning? It’s a match made in silicon heaven.  
+### Why Bother?  
+In an age where my phone autocorrects *because* to *beeswax*, there’s something rebellious about a machine that demands precision. No undo button. No delete key. Just you, the paper, and the consequences of your spelling errors.  
 
-## The Compiler’s Heavy Lift  
+Plus, there’s magic in the engineering. These weren’t designed for planned obsolescence. They were built to outlast their owners—and many have. A well-maintained typewriter from the 1940s will still outlive the laptop I’m typing this on.  
 
-What really *gets* me about TPUs is how much responsibility they offload to the compiler. GPU programmers are used to wrestling with warp divergence and cache locality, but XLA (and by extension, JAX) just *assumes* it can figure everything out ahead of time. No guessing, no dynamic adjustments—just a cold, hard binary that knows *exactly* how to dance with the hardware.  
+### The Current Obsession  
+Right now, I’m neck-deep in restoring a 1953 Groma Kolibri—a tiny East German clamshell typewriter so compact it fits in a handbag. It’s missing three screws, the platen’s hard as a hockey puck, and the space bar sticks if you look at it wrong. But when it works? Pure poetry.  
 
-It’s a double-edged sword, obviously. Debugging a misbehaving XLA output can feel like staring into the void. But when the stars align, and your model compiles down to something the TPU can execute without a single wasted cycle? *Chef’s kiss.*  
+(Yes, I *could* buy a new keyboard. But where’s the fun in that?)  
 
-## Scaling = TPU Party Trick  
+So here’s to the stubborn, the broken, and the beautifully obsolete. May your keys clack, your ribbons stay inked, and your repair bills remain questionable.  
 
-The real jaw-dropper, though, is how TPUs scale. A single chip is impressive, but the moment you start connecting them into pods—racks of 64 chips, then *thousands*—you see the real vision. The interconnect, the optical links, the way data can snake through this 3D torus of processors without bottlenecks… it’s engineering that feels almost *arrogant* in its ambition.  
-
-I remember the first time I saw a TPUv4 pod in Google’s marketing materials. Eight racks, thousands of chips, all humming in sync. It’s one thing to *say* “scalable,” but another to see a machine where the *entire design* screams it.  
-
-## The Takeaway  
-
-TPUs aren’t for everything. They’re not *trying* to be. What they are is a masterclass in specialization—a bet that if you build hardware and software in lockstep, if you make the compiler as much a part of the architecture as the silicon itself, you can wring out performance that feels almost unfair.  
-
-And honestly? I’m here for it. There’s a lesson in there somewhere—about focus, about co-design, about the beauty of constraints. Or maybe it’s just fun to geek out over a machine that’s *this* opinionated. Either way, if you haven’t played with TPUs yet, do yourself a favor: spin one up, write some JAX, and see how it feels. You might just fall in love.  
-
-(Or you’ll rage-quit over XLA errors. Both are valid.)  
+Got a typewriter story (or a spare screwdriver)? Drop me a line. Or better yet, send me your worst eBay misfire. I dare you.  
 
 —  
 
-*PS: If you’ve got a favorite TPU war story—or a trick for wrangling JAX into submission—drop it in the comments. Always looking to learn from the trenches.* 🚀
+*P.S. No, I will not "just switch to a PDF." Fight me.*
