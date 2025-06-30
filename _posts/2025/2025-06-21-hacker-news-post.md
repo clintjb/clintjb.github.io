@@ -13,36 +13,42 @@ image: '/images/posts/2025/weekly.jpg'
 
 _⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated each week based on the number one article from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [LLMAPI](https://docs.llmapi.com/quickstart#available-models)_
 
-# My Love Affair with Vintage Typewriters (and Why I Can’t Stop Fixing Them)
+# Why I Started Emulating Obscure 90s Hardware in QEMU  
 
-There’s something hypnotic about the *clack* of a typewriter key striking paper. Not the soft tap of a mechanical keyboard, not the digital silence of an iPad—no, the real deal. A weighted, analog *thunk* that leaves ink on the page like a signature.  
+Somewhere between my third coffee and a Saturday morning debugging session, I had a ridiculous thought: *What if I could make modern software believe it’s running on a 1998 Toshiba Satellite?*  
 
-I didn’t set out to become a typewriter hoarder. It started innocently enough: a rusty 1967 Olympia SM9 at a flea market in Berlin, priced at what felt like criminal theft. "Just for decoration," I told myself. A week later, I was elbow-deep in mineral spirits, cleaning century-old grease off typebars, and I was hooked.  
+This isn’t about nostalgia (okay, maybe 10% nostalgia). It’s about the thrill of reverse-engineering the obscure quirks of forgotten hardware—like convincing a VM that its graphics card is a pre-Y2K Trident Blade 3D with exactly 4MB of shared memory. Because *obviously*, that’s a sane way to spend a weekend.  
 
-### The Allure of Broken Things  
-Most people see a jammed carriage or a missing ribbon spool and think, *junk*. I see a puzzle. A mechanical haiku. A stubborn old machine that just needs the right nudge—and maybe a new spring from a Soviet-era parts bin.  
+## The Rabbit Hole Begins with ACPI  
 
-Take the Olivetti Lettera 32, for example. A gorgeous, avocado-green portable from the ’70s. I found one in a dusty antique shop with half the keys stuck and a drawband so frayed it looked like overcooked spaghetti. Three hours (and one coffee-fueled tantrum) later, that little beast was typing like it had something urgent to say. That moment—when the first clear imprint of a word forms on fresh paper—is pure, unadulterated joy.  
+Turns out, getting a modern OS to boot on faux-vintage hardware isn’t just about slapping `-cpu pentium2` in your QEMU flags. Oh no. You’ve got to *commit*.  
 
-### The Dark Side of the Hobby  
-It’s not all romantic nostalgia. There’s the time I accidentally launched a tiny screw into the abyss of my apartment floorboards (RIP, Royal Quiet De Luxe alignment). Or the eBay seller who swore a 1920s Underwood was "fully functional," only for it to arrive with a carriage held together by hope and duct tape.  
+For example:  
+- **ACPI in the late 90s was a suggestion, not a standard.** Some laptops barely implemented it, others spat out tables so broken Windows 95 just shrugged and disabled power management entirely.  
+- **PIIX4 southbridge or GTFO.** Forget virtio. If your emulated IDE controller isn’t slower than a USB 1.1 floppy drive, are you even *trying* to authenticate the retro experience?  
+- **Sound Blaster 16 emulation isn’t a feature—it’s a moral obligation.** Bonus points if you tweak the IRQ/DMA conflicts to match the chaos of an actual Plug-and-Play (lol) BIOS from 1997.  
 
-Then there’s the *smell*. Decades of dust, oxidized oil, and sometimes… questionable organic residue. Nothing a can of WD-40 and sheer determination can’t fix, but still—wear gloves.  
+I ended up patching QEMU to report a 440FX chipset with *deliberately* incorrect PCI latency because—get this—some late-90s drivers *hardcoded timing loops* assuming everyone was running on a 66MHz FSB. Miss those extra cycles? Crash city.  
 
-### Why Bother?  
-In an age where my phone autocorrects *because* to *beeswax*, there’s something rebellious about a machine that demands precision. No undo button. No delete key. Just you, the paper, and the consequences of your spelling errors.  
+## Why Bother?  
 
-Plus, there’s magic in the engineering. These weren’t designed for planned obsolescence. They were built to outlast their owners—and many have. A well-maintained typewriter from the 1940s will still outlive the laptop I’m typing this on.  
+Three reasons:  
+1. **Malware analysis.** Some ancient ransomware still checks for ‘90s hardware quirks before detonating (yes, really).  
+2. **Software preservation.** Ever tried running a “Windows 98 compatible” CAD program from 2001 on anything post-XP? *Exactly.*  
+3. **Sheer, unrepentant nerd joy.** There’s something poetic about wrestling with a virtual Phoenix BIOS just to hear the Gateway 2000 startup chime again.  
 
-### The Current Obsession  
-Right now, I’m neck-deep in restoring a 1953 Groma Kolibri—a tiny East German clamshell typewriter so compact it fits in a handbag. It’s missing three screws, the platen’s hard as a hockey puck, and the space bar sticks if you look at it wrong. But when it works? Pure poetry.  
+## The Moment of Truth  
 
-(Yes, I *could* buy a new keyboard. But where’s the fun in that?)  
+After a week of tweaking SMBIOS tables and faking a 800x600 CRT monitor through EDID overrides, I finally booted Windows 98 SE. The resolution was *glorious*. The drivers complained. The virtual hard disk screeched like a real 4200rpm IDE drive.  
 
-So here’s to the stubborn, the broken, and the beautifully obsolete. May your keys clack, your ribbons stay inked, and your repair bills remain questionable.  
+And then—like magic—a forgotten Win32 popup appeared:  
+*“This program is optimized for Intel Pentium II processors.”*  
 
-Got a typewriter story (or a spare screwdriver)? Drop me a line. Or better yet, send me your worst eBay misfire. I dare you.  
+**Perfection.**  
 
-—  
+---
 
-*P.S. No, I will not "just switch to a PDF." Fight me.*
+*Footnotes for the curious:*  
+- Yes, you *can* emulate a specific Award BIOS checksum by hex-editing QEMU’s DSDT. No, your partner will not understand why you’re grinning about it.  
+- The project repo is 70% code, 30% angry comments like *“WHY DID COMPAQ USE THIS NON-STANDARD APIC?!”*  
+- Next goal: Emulate a Toshiba *with* the infamous ‘docking station detect’ bug. Because suffering builds character.*
