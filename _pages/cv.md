@@ -4,7 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
-For 20+ years, I have been honing my skills as a technology and business leader in the fields of operations, digitalization, cost reduction and project management. This experience has been developed in increasingly responsible leadership positions in various industries including automotive, aerospace and military.
+For 20+ years, I’ve been honing my skills as a transformation and business leader, specializing in operations, digital transformation, project delivery, and organizational change management. This experience has been developed in increasingly responsible leadership positions across automotive, aerospace, and military sectors.
 
 <div class="gallery-box">
   <div class="gallery gallery--post">
@@ -15,23 +15,23 @@ For 20+ years, I have been honing my skills as a technology and business leader 
   </div>
 </div>
 
-Quite often strategies aren’t effectively implemented, as the disconnect between high-level vision and operational reality is never truly closed. I enjoy nothing more than bringing clever, pragmatic solutions to life to solve these complex problems.
+Too often, strategies fall short in execution because the gap between high level vision and operational reality is never truly closed. I enjoy nothing more than bringing clever, pragmatic solutions to life to solve these complex challenges.
 
-I am passionate about applying lean culture and principles to data science, transformation and new technologies - with a focus on truly understanding the impacts and drivers at the operational level.
+I’m passionate about applying lean culture and principles to processes, transformation initiatives, and emerging technologies - with a focus on understanding the real drivers and impacts at the operational level.
 
-I love developing teams with an entrepreneurial spirit and get the greatest feeling of satisfaction when employees are enabled to think creatively, practice continuous improvement and focus on the things they do best - bringing value to the business.
+I take pride in developing teams with an entrepreneurial mindset, and nothing is more rewarding than seeing people empowered to think creatively, pursue continuous improvement, and focus on what they do best: delivering value through meaningful change and operational excellence.
 
 I’ve also completed an online MBA developed entirely out of MOOCs from some of the worlds top business programmes. You can find my curriculum & transcript [here](/mba/)
 
 ### Skills
-- Operations, Supply Chain & Lean Methodologies
-- Technological / Digital Literacy
+- Transformation, Strategy & Change Management
+- Operations Excellence & Lean Methodologies
+- Team Development & Leadership
+- Digital Transformation & Technology Integration
 - Storytelling / Public Speaking
-- Data Strategy & Governance
-- Python, Data Analytics & Algorithms
-- DevOps Tools & Technologies
 - Project Management (PRINCE2 & Airbus Silver)
-- Cost Reduction & Value Engineering
-- Financial Analysis, Modeling & Forecasting
+- Data Analytics, Modeling & Forecasting
+- Data Strategy & Governance
+- DevOps Tools, Cloud & Technologies
 
 <a class="button button--medium" target="_blank" rel="noopener noreferrer" href="https://www.clintbird.com/files/resume.pdf">Download CV</a>
