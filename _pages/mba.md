@@ -4,12 +4,11 @@ title: MBA
 permalink: /mba/
 image: '/images/headers/mba.jpg'
 ---
-As someone who has spent their professional life devoted to reducing costs out of operations; a cost-conscious ethos becomes quite ingrained. Challenging the 100% solution to find the best "bang for the buck" is part of my role and what I do on an allmost daily basis.
+As someone who has dedicated their professional life to reducing operational costs, a cost-conscious ethos is deeply ingrained in me. Challenging the 100% solution to find the best 'bang for the buck' is a core part of my role and something I do almost daily.
 
-It was with this mindset I approached the challenge to study an MBA that would also work with my family and travel constraints.
-Online degree programmes have been around for years, and distance learning as a whole is much older. So with the increase in online course popularity/availability; I decided to look into the feasibility of being able to blend together an online MBA developed entirely out of MOOCs from some of the worlds top business programmes. 
+It was with this mindset that I approached the challenge of pursuing an MBA that would also accommodate my family and travel commitments. While online degree programs and distance learning have existed for years, the recent surge in online course popularity and availability led me to explore the feasibility of building an MBA entirely from MOOCs offered by some of the world's top business programs.
 
-After doing some research into the curriculum of some reputable university’s (Harvard / Berkeley / Wharton / Stanford etc) I have come to the following list of course content that needs to be covered as the “core curriculum”
+After researching the curricula of reputable universities like Harvard, Berkeley, Wharton, and Stanford, I identified the following core curriculum:
 
 * Accounting
 * Business Strategy
@@ -22,9 +21,9 @@ After doing some research into the curriculum of some reputable university’s (
 * Ethics
 * Entrepreneurship
 
-Most information I found had suggested somewhere between 8-12 hours per week per subject is required to complete the courses. As a father of two and quite a demanding job, I had decided to look at this as a long-term goal and take one subject at a time. 
+Most resources suggested dedicating 8-12 hours per week per subject. As a father of two with a demanding job, I decided to treat this as a long-term goal, tackling one subject at a time. My commute offered a perfect opportunity, allowing me to allocate an hour per workday to study on my tablet during transit.
 
-I have a reasonable distance to travel to work so generally allocated one hour per work day to study during transit on my tablet. All in all, it was a 2.5 year effort; but the flexibility this way of working gave really allowed me to manage it well within my schedule. The quality of the courses was phenomenal and I would highly recommend to all. If you have any questions or would like to know more from my experience on the topic, please drop me a line.
+All told, it was a 2.5-year effort. However, the flexibility this approach provided allowed me to manage it effectively within my schedule. The quality of the courses was phenomenal, and I highly recommend this path to anyone considering it. If you have questions or would like to learn more about my experience, please feel free to reach out.
 
 ---
 ![Wharton](/images/mba/wharton.png){: style="float:left; padding-right:10px"}
