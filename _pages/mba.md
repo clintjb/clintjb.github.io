@@ -30,7 +30,7 @@ All told, it was a 2.5-year effort. However, the flexibility this approach provi
 
 #### Financial Accounting (Wharton University)
 
-Master the technical skills needed to analyze financial statements and disclosures for use in financial analysis, and learn how accounting standards and managerial incentives affect the financial reporting process. By the end of this course, you’ll be able to read the three most common financial statements: the income statement, balance sheet, and statement of cash flows.
+This course develops the technical skills required to analyze financial statements and disclosures for financial analysis purposes. Students learn how accounting standards and managerial incentives influence the financial reporting process. The curriculum covers the three fundamental financial statements: income statement, balance sheet, and statement of cash flows, providing practical expertise in financial statement interpretation and analysis.
 
 <a class="external" target="_blank" rel="noopener noreferrer" href="https://www.clintbird.com/files/accounting.pdf">Transcript & Final Grade - 82.0%</a>
 
@@ -39,7 +39,7 @@ Master the technical skills needed to analyze financial statements and disclosur
 
 #### Foundations of Business Strategy (Darden School Of Business)
 
-In this course, we will explore the underlying theory and frameworks that provide the foundations of a successful business strategy. We will develop your ability to think strategically by providing you the tools for conducting a strategic analysis. Strategic analysis is critical for analyzing the competitive context in which an organization operates and for making reasoned and reasonable recommendations for how that organization should position itself and what actions it should take to maximize value creation. Aspiring managers, entrepreneurs, social entrepreneurs, analysts, and consultants all may find value in mastering these fundamentals.
+This course explores the underlying theory and frameworks that form the foundation of successful business strategy. Students develop strategic thinking capabilities through tools for conducting comprehensive strategic analysis. The curriculum focuses on analyzing competitive contexts, making reasoned organizational recommendations, and maximizing value creation. Content is designed for aspiring managers, entrepreneurs, social entrepreneurs, analysts, and consultants seeking to master strategic fundamentals.
 
 <a class="external" target="_blank" rel="noopener noreferrer" href="https://www.clintbird.com/files/strategy.pdf">Transcript & Final Grade - 85.0%</a>
 
@@ -48,7 +48,7 @@ In this course, we will explore the underlying theory and frameworks that provid
 
 #### Microeconomics Principles (University of Illinois)
 
-This course offers an introduction to the functions of individual decision-makers—both consumers and producers—within the larger economic system. Emphasis is on the nature and functions of product markets, the theory of the firm under varying conditions of competition and monopoly, and the role of government in promoting efficiency in the economy.
+This course provides an introduction to individual decision-making within the broader economic system, covering both consumer and producer behavior. Students explore product market functions, firm theory under various competitive conditions including monopoly scenarios, and government's role in promoting economic efficiency. The curriculum emphasizes practical application of microeconomic principles to real-world situations.
 
 <a class="external" target="_blank" rel="noopener noreferrer" href="https://www.clintbird.com/files/economics.pdf">Transcript & Final Grade - 86.7%</a>
 
@@ -64,7 +64,7 @@ This course provides the fundamentals of finance, emphasizing their application 
 ![Wharton](/images/mba/wharton.png){: style="float:left; padding-right:10px"}
 #### Marketing (Wharton University)
 
-This course will teach the fundamentals of marketing by getting to the root of customer decision making. The course will focus on branding strategies, customer centricity and new market entry.The course explores practical, go-to-market strategies to help students understand the drivers that influence customers and see how these are implemented prior to making an investment.
+This course teaches marketing fundamentals through the lens of customer decision-making processes. Students explore branding strategies, customer centricity, and new market entry approaches. The curriculum focuses on practical go-to-market strategies, helping students understand customer drivers and their implementation prior to investment decisions.
 
 <a class="external" target="_blank" rel="noopener noreferrer" href="https://www.clintbird.com/files/marketing.pdf">Transcript & Final Grade - 94.0%</a>
 
@@ -72,7 +72,7 @@ This course will teach the fundamentals of marketing by getting to the root of c
 ![Bocconi](/images/mba/bocconi.png){: style="float:right; padding-left:10px"}
 #### International Leadership and Organizational Behavior (Bocconi University)
 
-Leaders in business and non-profit organizations increasingly work across national boarders and in multi-cultural environments. You may work regularly with customers or suppliers abroad, or be part of a globally dispersed cross-functional team, or an expatriate manager on an international assignment. You may be a member of a global online community, or a development aid worker collaborating with an international network of partner organizations. In all of these contexts, your effectiveness as a leader depends on how well you understand and are able to manage individual and collective behaviors in an intercultural context.
+This course addresses leadership challenges in increasingly global and multicultural business environments. Students learn to work effectively with international customers, suppliers, and globally dispersed teams. The curriculum covers individual and collective behavior management in intercultural contexts, preparing students for expatriate assignments, global online communities, and international development work.
 
 <a class="external" target="_blank" rel="noopener noreferrer" href="https://www.clintbird.com/files/leadership.pdf">Transcript & Final Grade - 96.6%</a>
 
@@ -80,7 +80,7 @@ Leaders in business and non-profit organizations increasingly work across nation
 ![Wharton](/images/mba/wharton.png){: style="float:left; padding-right:10px"}
 #### Operations Management (Wharton University)
 
-This course will teach you how to analyze and improve business processes, be it in services or in manufacturing. You will learn how to improve productivity, how to provide more choice to customers, how to reduce response times, and how to improve quality. Along the way, you will learn about topics such as Lean Operations, Six Sigma, and the Toyota production system, you will learn about bottlenecks, flows rates, and inventory levels. And, much, much more.
+This course teaches business process analysis and improvement techniques for both service and manufacturing environments. Students learn to enhance productivity, expand customer choice, reduce response times, and improve quality. The curriculum covers Lean Operations, Six Sigma, Toyota Production System, bottleneck analysis, flow rates, and inventory management principles.
 
 <a class="external" target="_blank" rel="noopener noreferrer" href="https://www.clintbird.com/files/operations.pdf">Transcript & Final Grade - 90.4%</a>
 
@@ -88,7 +88,7 @@ This course will teach you how to analyze and improve business processes, be it 
 ![Columbia](/images/mba/columbia.png){: style="float:right; padding-left:10px"}
 #### Statistical Thinking for Data Science and Analytics (Columbia University)
 
-This statistics and data analysis course will pave the statistical foundation for our discussion on data science. You will learn how data scientists exercise statistical thinking in designing data collection, derive insights from visualizing data, obtain supporting evidence for data-based decisions and construct models for predicting future trends from data.
+This course establishes the statistical foundation for data science applications. Students learn how data scientists apply statistical thinking in data collection design, data visualization for insight generation, evidence-based decision making, and predictive model construction. The curriculum bridges statistical theory with practical data science applications.
 
 <a class="external" target="_blank" rel="noopener noreferrer" href="https://www.clintbird.com/files/statistics.pdf">Transcript & Final Grade - 88.0%</a>
 
@@ -96,7 +96,7 @@ This statistics and data analysis course will pave the statistical foundation fo
 ![Santa Clara](/images/mba/clara.png){: style="float:left; padding-right:10px"}
 #### Business Ethics for the Real World (Santa Clara University)
 
-The course provides an understanding of the nature of ethics, the role ethics plays in business, and the most commonly encountered ethical dilemmas in a business career. It provides practical advice on how to identify ethical dilemmas when they arise, how to get enough information to assess one’s responsibilities, how to analyze a complex ethical choice, and how to marshal one’s own resources and courage to act ethically. While the course includes some ethical theory, it is designed to be approachable by the seasoned manager, the novice businessperson, and students in business schools.
+This course provides comprehensive understanding of ethics in business contexts and commonly encountered ethical dilemmas. Students learn practical approaches to identifying ethical challenges, gathering assessment information, analyzing complex ethical choices, and developing resources for ethical action. The curriculum balances theoretical foundations with practical applications for managers at all career levels.
 
 <a class="external" target="_blank" rel="noopener noreferrer" href="https://www.clintbird.com/files/ethics.pdf">Transcript & Final Grade - 94.2%</a>
 
@@ -104,6 +104,6 @@ The course provides an understanding of the nature of ethics, the role ethics pl
 ![MIT/Sloan](/images/mba/sloan.png){: style="float:right; padding-left:10px"}
 #### Entrepreneurship 101 (MIT / Sloan University)
 
-This is entrepreneurship – so don't expect a lecture.  Every class session is an in-depth and focused case study of MIT entrepreneurs from areas as diverse as mobile applications, 3D printing, power electronics, international development, and watchmaking. You will learn, through the stories of MIT entrepreneurs, how to go from idea or technology to the necessary understanding of who and why will want to buy your product.
+This course employs case study methodology featuring MIT entrepreneurs across diverse sectors including mobile applications, 3D printing, power electronics, international development, and manufacturing. Students learn the entrepreneurial journey from initial idea or technology to market understanding, focusing on identifying target customers and value propositions. The curriculum emphasizes practical application through real entrepreneur stories and experiences.
 
 <a class="external" target="_blank" rel="noopener noreferrer" href="https://www.clintbird.com/files/entrepreneurship.pdf">Transcript & Final Grade - 90.0%</a>
