@@ -4,7 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
-For 20+ years, I’ve been honing my skills as a transformation and business leader, specializing in operations, digital transformation, project delivery, and organizational change management. This experience has been developed in increasingly responsible leadership positions across automotive, aerospace, and military sectors.
+For 20+ years, I’ve been honing my skills as a transformation and business leader, adept at navigating the intersection between operational excellence and digital innovation. My expertise spans operations, digital transformation, project delivery, and organizational change management. This experience has been developed in increasingly responsible leadership positions across automotive, aerospace, and military sectors.
 
 <div class="gallery-box">
   <div class="gallery gallery--post">
@@ -19,9 +19,9 @@ Too often, strategies fall short in execution because the gap between high level
 
 I’m passionate about applying lean culture and principles to processes, transformation initiatives, and emerging technologies - with a focus on understanding the real drivers and impacts at the operational level.
 
-I take pride in developing teams with an entrepreneurial mindset, and nothing is more rewarding than seeing people empowered to think creatively, pursue continuous improvement, and focus on what they do best: delivering value through meaningful change and operational excellence.
+I take pride in developing teams with strong identities and an entrepreneurial mindset, and nothing is more rewarding than seeing people empowered to think creatively, pursue continuous improvement, and focus on what they do best: delivering value through meaningful change and operational excellence.
 
-I’ve also completed an online MBA developed entirely out of MOOCs from some of the worlds top business programmes. You can find my curriculum & transcript [here](/mba/)
+I’ve also completed a comprehensive Business Administration Program (MBA equivalent) developed entirely out of MOOCs from some of the worlds top business programmes. You can find my curriculum & transcript [here](/mba/)
 
 ### Skills
 - Transformation, Strategy & Change Management
