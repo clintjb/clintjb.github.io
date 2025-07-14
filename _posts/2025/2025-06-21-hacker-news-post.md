@@ -13,18 +13,57 @@ image: '/images/posts/2025/weekly.jpg'
 
 _⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated each week based on the number one article from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [LLMAPI](https://docs.llmapi.com/quickstart#available-models)_
 
-# Forgotten Gems of Early Digital Art  
+# A Decade of Putting One Foot in Front of the Other  
 
-I’ve always had a soft spot for digital archaeology—digging through old files, abandoned projects, and forgotten software just to see what creative treasure might be hiding in there. Recently, I fell down a rabbit hole of early Macintosh art, and I was struck by how much character and charm these simple, monochrome creations still have today.  
+Ten years. Three thousand, six hundred and fifty-seven days. Nearly twelve thousand miles.  
 
-There’s something almost magical about what people were able to do with *MacPaint* in the mid-80s—limited to a tiny 512×342 pixel canvas, no layers, no undo (well, other than the famously quirky "fat bits" pixel editor), and yet artists still managed to craft illustrations with personality, humor, and style. I spent an evening sifting through archives, grinning at the creativity on display. Some were clearly goofy experiments, while others had the precision of someone who really knew their way around a mouse (or maybe even a tablet—who remembers the KoalaPad?).  
+I never set out to be "that guy" who runs every single day. In fact, if you'd told me a decade ago that I’d still be doing this, I’d have laughed (and then probably taken a nap). But here we are—July 11, 2025 marks the day this ridiculous, stubborn streak hits double digits.  
 
-What I love most is how *raw* these pieces feel. There’s no smoothing, no anti-aliasing, just pure, unapologetic pixels. It’s a far cry from today’s ultra-polished digital art, and weirdly refreshing. You can almost see the artist squinting at that tiny CRT, carefully nudging shapes into place, relying more on imagination than technical perfection.  
+It started with a simple thought: *"Hey, I could probably do four days in a row."* Four became seven. Seven became thirty. Thirty became *"Well, I’ve come this far…"* And suddenly, skipping a day felt like cheating—not just my goals, but myself.  
 
-It got me thinking—how many of these artists kept creating? Did they move on to Photoshop, 3D modeling, or abandon digital art altogether? I’d love to track some of them down and ask. If they could do *this* with a 1-bit display, imagine what they’re capable of now.  
+### The Runs That Stick With You  
 
-There’s also something oddly inspiring about it. No fancy tools, no endless options—just constraint breeding creativity. Makes me want to fire up an emulator and see what I could whip up under the same limitations. Maybe a weekend project...  
+There’s something about lacing up day after day that changes you. Not just physically, though my knees might have a few opinions there. It’s the way running worms its way into your perspective.  
 
-Anyway, if you’ve got a soft spot for retro tech or early digital art, do yourself a favor and dig through some old *MacPaint* or *DeluxePaint* files. There’s gold in there—rough, pixelated, glorious gold.  
+I’ve logged miles in blizzards and heatwaves, on city streets and mountain trails, before sunrise and—when life got hectic—at 11:52 PM. I’ve run with a stress fracture (not smart), post-heart procedure (even less smart), and once, memorably, while fighting off what was definitely the flu (borderline idiotic). There were days I floated and days I dragged, but I always showed up.  
 
-(And if anyone reading this *was* making *MacPaint* art back in ’85, I’d love to hear about it! Drop a comment.)
+Some runs blur together. Others? Impossible to forget:  
+
+- The **33-miler** in 2017, fueled by sheer curiosity (*"How far can I go?"*) and an embarrassing number of energy gels.  
+- The **Antarctica half-marathon**, where the cold seared my lungs and the silence was louder than any finish-line crowd.  
+- The **"streak savers"**—those pitiful one-mile shuffles after long flights or brutal workdays, where the only victory was not breaking the chain.  
+
+### What a Decade Teaches You  
+
+1. **Discipline > Motivation**  
+   Motivation flickers. Discipline sticks around. There were maybe five truly euphoric runs in ten years—the rest were just showing up.  
+
+2. **Slow Down to Go Further**  
+   Early on, I ran hard every single day. Then I learned the magic of the "easy run." Turns out, you last longer when you’re not treating every jog like a race.  
+
+3. **The World Feels Smaller at 6 AM**  
+   Pre-dawn runs in foreign cities are my cheat code for travel. Empty streets, bakeries firing up, the occasional fox judging your pace—better than any tour guide.  
+
+4. **Your Body Lies (Sometimes)**  
+   That "I’m too tired" feeling? 80% of the time, it evaporates after the first mile. The other 20%? Well, that’s what streak savers are for.  
+
+### The Real Secret? A Patient Partner  
+
+My wife, Molly, deserves a medal. Not just for pretending to care about my splits, but for hearing *"Just heading out for a quick run!"* approximately 3,657 times—knowing full well "quick" could mean anything from 10 minutes to 4 hours.  
+
+### So… What Now?  
+
+Honestly? Keep going. Not for stats or streaks, but because after ten years, running’s not something I *do*—it’s part of who I am. Even on the worst days, I’ve never once regretted lacing up.  
+
+Here’s to the next mile, wherever it takes me.  
+
+*— Adrien*  
+
+*(P.S. For the data nerds: Yes, there are [charts](https://nodaysoff.run). So many charts.)*  
+
+---  
+
+**Footnote for the Curious**  
+- **Longest streak saver:** 0.01 miles (a literal lap around a hotel lobby).  
+- **Weirdest place run:** A parking garage in Denver during a hailstorm.  
+- **Best running snack:** Frozen grapes, hands down. Fight me.
