@@ -31,7 +31,7 @@ I’ve also completed a comprehensive Business Administration Program (MBA equiv
 - Team Development & Leadership
 - Digital Transformation & Technology Integration
 - Storytelling / Public Speaking
-- Project Management<sup>(PRINCE2 & Airbus Silver)</sup>
+- Project Management <sup>(PRINCE2 & Airbus Silver)</sup>
 - Data Analytics, Modeling & Forecasting
 - Data Strategy & Governance
 - DevOps Tools, Cloud & Technologies
