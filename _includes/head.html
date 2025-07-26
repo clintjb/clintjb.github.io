@@ -5,7 +5,7 @@
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
   <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.settings.description }}{% endif %}'>
-  <meta name='deLorean_egg' content='great scott marty - youve found it! weve got to go back - clintbird.com/21102015/'>
+  <meta name='deLorean_egg' content='Great Scott, Marty - youve found it! Weve got to go back! - clintbird.com/21102015/'>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
