@@ -11,49 +11,31 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated each week based on the number one article from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai)_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated each week based on the number one article from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Thursday 07 August 2025_
 
-# Helsinki’s Quiet Traffic Revolution  
+**Open Models & Why They’re More Than Just a Trend**  
 
-Let’s talk about something quietly remarkable: an entire year without a single traffic death in Helsinki.  
+Ever had one of those moments where you stumble onto something in tech and think, *“Wait, why isn’t this everywhere yet?”* That’s been my relationship with open models lately. As someone who geeks out over lean principles and the democratization of technology, the rise of openly available models feels like watching a puzzle finally click into place.  
 
-Now, I love progress you can *measure*. Something about seeing hard numbers—especially when they plummet to zero—just hits different. And this? This is the kind of milestone that doesn’t happen by accident. It’s the result of years of stubborn, unglamorous work: tweaking speed limits, rethinking intersections, and making safety the default rather than the exception.  
+For years, the magic of AI felt like it was locked behind velvet ropes—exclusive, expensive, and just out of reach unless you had the right credentials (or budget). But now? It’s like someone handed out backstage passes to everyone. The implications are wild.  
 
-### The Power of Incremental Wins  
+**Why This Matters (At Least to Me)**  
+I’ve spent my career in the messy, exhilarating world of digital transformation—where the biggest hurdles are rarely the tech itself, but the gatekeeping and inertia around it. Open models flip that on its head. Suddenly, a developer in Hamburg (hello!) or a student in Nairobi can iterate, tweak, and deploy without begging for access or burning venture capital. That’s not just progress; it’s a cultural shift.  
 
-Fifty years ago, most Helsinki streets had 50 km/h speed limits. Today? Over half are capped at 30 km/h—especially around schools. That shift alone is fascinating because it’s *boringly effective*. Lower speeds don’t just reduce fatalities; they transform the entire rhythm of a city. Walkability improves. Cyclists breathe easier. Drivers, instead of treating streets like race tracks, start seeing them as shared space.  
+And let’s be real: the best ideas rarely come from echo chambers. When you open the floodgates, you get weird, scrappy, brilliant solutions—the kind that emerge when a hobbyist’s curiosity collides with a problem nobody else bothered to solve. I’ve seen it happen in lean manufacturing, and now it’s happening in AI.  
 
-But here’s what really stands out to me: this wasn’t some overnight moonshot. It was a slow, grinding effort—better data collection, smarter infrastructure, and relentless tweaks to enforcement. The kind of work that doesn’t make headlines until the results do.  
+**The Pragmatic Side**  
+Of course, “open” doesn’t mean “free-for-all chaos.” There are real challenges—governance, bias, sustainability—but these aren’t dealbreakers. They’re just the next problems to solve, the same way we refined open-source software over decades. What excites me is the *potential*:  
 
-### The Human Factor  
+- **Faster iteration**: No more waiting for a monolithic org to release the next big thing.  
+- **Tailored solutions**: Models fine-tuned for niche use cases (like that Fortnite API project I hacked together with my kid).  
+- **Transparency**: Fewer black boxes mean more trust, or at least better-informed debates.  
 
-One quote from a city traffic engineer stuck with me: *“It’s about how the goal guides our everyday actions.”* That’s Lean thinking in practice. You don’t just slap on a “Vision Zero” slogan and call it a day. You bake it into every decision—street design, public transport, even how electric scooters are regulated (turns out, parking rules matter).  
+**The Human Bit**  
+Here’s what sticks with me, though: open models aren’t just about code. They’re about people. The same way my team thrives when we ditch bureaucracy and just *build*, the AI community thrives when barriers come down. It’s the difference between watching a revolution and rolling up your sleeves to join it.  
 
-And let’s not forget the unsung heroes here: the people. Drivers slowing down. Pedestrians staying alert. A cultural shift where safety isn’t just enforced—it’s *expected*.  
+So yeah, I’m bullish on this. Not because it’s perfect, but because it’s *alive*—messy, evolving, and full of possibilities. And if there’s one thing I’ve learned from BBQ experiments and failed Python scripts, it’s that the best outcomes usually start with someone saying, *“Let’s just try it.”*  
 
-### Why This Matters Beyond Helsinki  
+Now, who’s up for hacking something together? 🚀  
 
-Cities love copying each other’s successes (and mistakes). If Helsinki can pull this off, what’s stopping others? The blueprint’s there:  
-
-- **Speed kills, so throttle it back.** 30 km/h zones work.  
-- **Design for mistakes.** Streets should forgive human error, not punish it.  
-- **Data beats guesswork.** Monitor, tweak, repeat.  
-
-But the real lesson? Big change often looks like small changes, stacked patiently over time.  
-
-Here’s to more cities taking notes—and more years at zero. 🚦  
-
-*— Dave*  
-
-*(P.S. If you’ve got a city doing something equally clever, drop it in the comments. Always hunting for the next case study.)*  
-
-*(P.P.S. My kid asked why we can’t just make *all* streets 30 km/h. Smart kid.)*  
-
----
-
-**Formatting notes**:  
-- Conversational but structured—short paragraphs, occasional bold or italics for emphasis.  
-- Mix of reflection, analysis, and personal voice (e.g., "I love progress you can *measure*").  
-- Light humor and relatable hooks (kid’s question, "boringly effective").  
-- Ends with an open loop (inviting discussion) and a personal signature.  
-- Avoids formal subheadings but uses spacing and **bold** to guide flow.
+*(Whisky optional, but strongly encouraged.)*
