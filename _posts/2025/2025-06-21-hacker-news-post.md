@@ -11,31 +11,64 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated each week based on the number one article from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Thursday 07 August 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Sunday 10 August 2025_
 
-**Open Models & Why They’re More Than Just a Trend**  
+# There’s Something Magic About Keeping It Local  
 
-Ever had one of those moments where you stumble onto something in tech and think, *“Wait, why isn’t this everywhere yet?”* That’s been my relationship with open models lately. As someone who geeks out over lean principles and the democratization of technology, the rise of openly available models feels like watching a puzzle finally click into place.  
+A few months ago, I caught myself reflexively pasting a chunk of sensitive code into an online AI tool—something I’d never do with a human stranger but somehow felt *fine* handing over to a faceless cloud service. That moment bugged me. Why were we all so comfortable outsourcing our thinking (and our data) just because the interface had a friendly chatbot UX?  
 
-For years, the magic of AI felt like it was locked behind velvet ropes—exclusive, expensive, and just out of reach unless you had the right credentials (or budget). But now? It’s like someone handed out backstage passes to everyone. The implications are wild.  
+Turns out, I wasn’t the only one uneasy about it. "I want everything local—no cloud, no remote execution," a colleague said over coffee. Simple demand. Shockingly hard to implement in 2025.  
 
-**Why This Matters (At Least to Me)**  
-I’ve spent my career in the messy, exhilarating world of digital transformation—where the biggest hurdles are rarely the tech itself, but the gatekeeping and inertia around it. Open models flip that on its head. Suddenly, a developer in Hamburg (hello!) or a student in Nairobi can iterate, tweak, and deploy without begging for access or burning venture capital. That’s not just progress; it’s a cultural shift.  
+## The Local-Only Dream  
 
-And let’s be real: the best ideas rarely come from echo chambers. When you open the floodgates, you get weird, scrappy, brilliant solutions—the kind that emerge when a hobbyist’s curiosity collides with a problem nobody else bothered to solve. I’ve seen it happen in lean manufacturing, and now it’s happening in AI.  
+Modern AI tools are like those all-inclusive resorts: convenient, polished, and utterly dependent on someone else’s infrastructure. Need to generate a chart? Off to the cloud. Want to tweak a photo? Upload it. Even editing a damn grocery list often routes through third-party servers these days.  
 
-**The Pragmatic Side**  
-Of course, “open” doesn’t mean “free-for-all chaos.” There are real challenges—governance, bias, sustainability—but these aren’t dealbreakers. They’re just the next problems to solve, the same way we refined open-source software over decades. What excites me is the *potential*:  
+But open-source models have gotten *good*. Ollama, local LLMs, lightweight VMs—the pieces exist. The real challenge was stitching them together into something that felt seamless. Not just a jury-rigged terminal script, but a proper self-contained workspace where:  
 
-- **Faster iteration**: No more waiting for a monolithic org to release the next big thing.  
-- **Tailored solutions**: Models fine-tuned for niche use cases (like that Fortnite API project I hacked together with my kid).  
-- **Transparency**: Fewer black boxes mean more trust, or at least better-informed debates.  
+- The AI runs on my machine  
+- Code executes in an isolated sandbox (because blindly running `curl | bash` is the digital equivalent of licking subway poles)  
+- I can still pull in outside info when needed—but on *my* terms  
 
-**The Human Bit**  
-Here’s what sticks with me, though: open models aren’t just about code. They’re about people. The same way my team thrives when we ditch bureaucracy and just *build*, the AI community thrives when barriers come down. It’s the difference between watching a revolution and rolling up your sleeves to join it.  
+## The Frankenstein Stack That (Mostly) Worked  
 
-So yeah, I’m bullish on this. Not because it’s perfect, but because it’s *alive*—messy, evolving, and full of possibilities. And if there’s one thing I’ve learned from BBQ experiments and failed Python scripts, it’s that the best outcomes usually start with someone saying, *“Let’s just try it.”*  
+Let’s be honest: the first attempt was a monstrosity.  
 
-Now, who’s up for hacking something together? 🚀  
+I started with grand visions of a slick native Mac app. **Reality check:** After wrestling with Electron for a weekend (and nearly tossing my laptop into the Elbe), I admitted defeat. The web UI would do just fine.  
 
-*(Whisky optional, but strongly encouraged.)*
+Then came the real puzzle—tool calling. Some models claim to support it, but try actually using those features via Ollama and you’ll get hit with:  
+
+```json  
+{"error":"registry.ollama.ai/library/deepseek-r1:8b does not support tools"}  
+```  
+
+Classic. The AI space moves so fast that even the documentation is a hallucination.  
+
+The breakthrough came with Apple’s new(ish) Container tool. Lightweight, isolated VMs perfect for running untrusted code. Combined with a Jupyter server exposed via MCP, suddenly Claude and Gemini could execute Python snippets in a sandbox without ever leaving my machine. Watching an LLM seamlessly pipe code into a container—*that* felt like magic.  
+
+## The Sweet Spot  
+
+After the thousandth configuration tweak, it finally clicked. Here’s what the workflow looks like now:  
+
+1. **Chat with a local model** (or a cloud one if I’m feeling impatient)  
+2. **Generate code → execute in container** (goodbye, `rm -rf` anxiety)  
+3. **Pull external data via headless browser** (Playwright pretending *not* to be a bot)  
+
+Real-world test: I had it edit a vacation video—trimming clips, adding subtitles, the works—without uploading a single frame to a third party. That’s the dream right there.  
+
+## The Trade-Offs  
+
+Of course, local-first means compromises:  
+
+- **Small models still stumble** on complex tasks (though they’re improving *fast*)  
+- **Apple Silicon only** for now (blame my M2’s fanless smugness)  
+- **Some sites block the headless browser** (looking at you, Stack Overflow)  
+
+But the philosophy is what matters. This isn’t about rejecting the cloud entirely—it’s about reclaiming agency. Knowing that my data, my experiments, my workflows *can* exist offline by default changes how I interact with tech.  
+
+## Try It, Break It, Make It Better  
+
+If this resonates with you, grab the [coderunner-ui](https://github.com/instavm/coderunner-ui) code and hack away. No grand claims here—just a working proof that local AI doesn’t have to mean sacrificing modern conveniences.  
+
+And if you improve it? Shoot me a note. I’ll be over here, editing videos and parsing CSV files like it’s 1999—blissfully disconnected.  
+
+*(Whisky optional but recommended.)* 🥃
