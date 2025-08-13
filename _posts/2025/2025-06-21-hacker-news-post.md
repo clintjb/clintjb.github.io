@@ -11,64 +11,63 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Sunday 10 August 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Wednesday 13 August 2025_
 
-# There’s Something Magic About Keeping It Local  
+**How I Finally Stopped Organizing My Life and Started Living It**  
 
-A few months ago, I caught myself reflexively pasting a chunk of sensitive code into an online AI tool—something I’d never do with a human stranger but somehow felt *fine* handing over to a faceless cloud service. That moment bugged me. Why were we all so comfortable outsourcing our thinking (and our data) just because the interface had a friendly chatbot UX?  
+I’ve spent more time tweaking productivity systems than most people spend on actual work. There’s something seductive about the idea of the *perfect* setup—the right app, the flawless workflow, the magical process that turns chaos into order. And like a fool, I kept chasing it.  
 
-Turns out, I wasn’t the only one uneasy about it. "I want everything local—no cloud, no remote execution," a colleague said over coffee. Simple demand. Shockingly hard to implement in 2025.  
+I tried it all: complicated Kanban boards with color-coded labels, task managers that promised to change my life, note-taking apps with more features than my first car. I even spent a weekend building my own custom solution (which, ironically, I abandoned halfway through because I got distracted optimizing it).  
 
-## The Local-Only Dream  
+Then one morning, my laptop died mid-work sprint. No notes, no tasks, no beautifully organized digital life. Just me, a scrap of paper, and a pen. I scribbled:  
 
-Modern AI tools are like those all-inclusive resorts: convenient, polished, and utterly dependent on someone else’s infrastructure. Need to generate a chart? Off to the cloud. Want to tweak a photo? Upload it. Even editing a damn grocery list often routes through third-party servers these days.  
+- *Finish presentation*  
+- *Call vet about the cat*  
+- *Pay rent*  
+- *Email client update*  
 
-But open-source models have gotten *good*. Ollama, local LLMs, lightweight VMs—the pieces exist. The real challenge was stitching them together into something that felt seamless. Not just a jury-rigged terminal script, but a proper self-contained workspace where:  
+And guess what? For the first time in months, I didn’t just *feel* productive—I **was** productive. No tags. No priorities. No syncing. Just a stupidly simple list.  
 
-- The AI runs on my machine  
-- Code executes in an isolated sandbox (because blindly running `curl | bash` is the digital equivalent of licking subway poles)  
-- I can still pull in outside info when needed—but on *my* terms  
+### The Breaking Point  
+The truth hit me like a bad Wi-Fi signal: I wasn’t optimizing productivity. I was procrastinating *through* productivity tools. Every new app was another excuse to *prepare* instead of *do*. Every feature was a distraction disguised as help.  
 
-## The Frankenstein Stack That (Mostly) Worked  
+And the worst part? The more complex the system, the less I trusted it. If I couldn’t see my tasks at a glance, they didn’t exist. If adding a new item took more than two clicks, it wasn’t getting added.  
 
-Let’s be honest: the first attempt was a monstrosity.  
+### The Glorious, Ugly Text File  
+Now? **One file.** `do.txt`, sitting right on my desktop, glaring at me like a disapproving parent. Here’s what a typical day looks like:  
 
-I started with grand visions of a slick native Mac app. **Reality check:** After wrestling with Electron for a weekend (and nearly tossing my laptop into the Elbe), I admitted defeat. The web UI would do just fine.  
+```  
+2025-09-14  
+9am - Draft project proposal  
+- Check research notes from last week  
+- Ping Maya for feedback  
 
-Then came the real puzzle—tool calling. Some models claim to support it, but try actually using those features via Ollama and you’ll get hit with:  
+11:30 - Lunch with Alex @ Cafe Lorenz  
+- Ask about the Berlin trip  
 
-```json  
-{"error":"registry.ollama.ai/library/deepseek-r1:8b does not support tools"}  
+3pm - Fix the damn analytics bug  
+- Probably a timezone thing?  
+
+Evening:  
+- Laundry (don’t forget detergent this time)  
+- Reply to Mom’s email  
 ```  
 
-Classic. The AI space moves so fast that even the documentation is a hallucination.  
+That’s it. No frills. No widgets. If it’s important, it’s in the file. If it’s done, it gets crossed out. If it’s not done, it stares at me until I either do it or admit I’m never going to.  
 
-The breakthrough came with Apple’s new(ish) Container tool. Lightweight, isolated VMs perfect for running untrusted code. Combined with a Jupyter server exposed via MCP, suddenly Claude and Gemini could execute Python snippets in a sandbox without ever leaving my machine. Watching an LLM seamlessly pipe code into a container—*that* felt like magic.  
+### Why This Sticks When Everything Else Failed  
+1. **Zero friction** – No login, no loading spinner, no "syncing conflicts." Just open and go.  
+2. **No illusions** – Fancy apps let you *feel* productive without doing much. A text file is brutally honest.  
+3. **It’s mine** – No company can sunset it. No update can break it. It’s just words on a screen, the digital equivalent of a battered notebook.  
 
-## The Sweet Spot  
+### The Counterarguments (And Why They’re Wrong)  
+*"But what about reminders?"* My calendar handles time-bound stuff. If it’s not urgent enough for a calendar event, it’s not urgent.  
+*"What about collaboration?"* Tools like Slack and email exist for a reason. This is for *my* brain, not a team’s.  
+*"What if you’re not at your computer?"* The file syncs to my phone. A text editor is a text editor.  
 
-After the thousandth configuration tweak, it finally clicked. Here’s what the workflow looks like now:  
+### The Real Secret  
+Productivity isn’t about the tool. It’s about the habit. The simplest system is the one you’ll actually *use*, not the one you’ll obsess over tweaking.  
 
-1. **Chat with a local model** (or a cloud one if I’m feeling impatient)  
-2. **Generate code → execute in container** (goodbye, `rm -rf` anxiety)  
-3. **Pull external data via headless browser** (Playwright pretending *not* to be a bot)  
+So here’s my challenge: For the next week, ditch the apps. Open a text file. Write down what you need to do. Then do it.  
 
-Real-world test: I had it edit a vacation video—trimming clips, adding subtitles, the works—without uploading a single frame to a third party. That’s the dream right there.  
-
-## The Trade-Offs  
-
-Of course, local-first means compromises:  
-
-- **Small models still stumble** on complex tasks (though they’re improving *fast*)  
-- **Apple Silicon only** for now (blame my M2’s fanless smugness)  
-- **Some sites block the headless browser** (looking at you, Stack Overflow)  
-
-But the philosophy is what matters. This isn’t about rejecting the cloud entirely—it’s about reclaiming agency. Knowing that my data, my experiments, my workflows *can* exist offline by default changes how I interact with tech.  
-
-## Try It, Break It, Make It Better  
-
-If this resonates with you, grab the [coderunner-ui](https://github.com/instavm/coderunner-ui) code and hack away. No grand claims here—just a working proof that local AI doesn’t have to mean sacrificing modern conveniences.  
-
-And if you improve it? Shoot me a note. I’ll be over here, editing videos and parsing CSV files like it’s 1999—blissfully disconnected.  
-
-*(Whisky optional but recommended.)* 🥃
+You might just find that the solution wasn’t an upgrade—it was a downgrade. And sometimes, that’s exactly what you needed.
