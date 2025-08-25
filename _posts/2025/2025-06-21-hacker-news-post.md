@@ -11,22 +11,28 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Friday 22 August 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Monday 25 August 2025_
 
-**AI Won’t Steal Junior Jobs—It’ll Make Them More Human**  
+# DNS Shenanigans and the Slippery Slope of Opaque Blocking  
 
-Let me start with a confession: I’ve never been a fan of the "AI will replace us all" doomsday chatter. Sure, I love geeking out over the latest LLM breakthroughs or automating the hell out of my BBQ temperature logs with Python scripts. But the idea that we’d use AI to phase out entry-level roles? That’s not just shortsighted—it’s *lazy leadership*.  
+It's been one of *those* weeks—the kind where you stumble into a rabbit hole so deep you emerge questioning whether the internet is a public good or just a corporate playground with arbitrary rules. The latest chapter? A bizarre case of an ISP apparently tweaking their DNS behavior *specifically* to throw a wrench in my little transparency project.  
 
-Here’s why.  
+For context: I’ve been poking at Germany’s murky copyright blocklist system for a while now. There’s this shadowy group, the CUII, where ISPs and copyright holders quietly decide what domains get vanished from the internet—no judges, no public oversight, just a closed-door “trust us, we know best” approach. Naturally, I built a tool to scrape together what they’re blocking, because sunlight is the best disinfectant.  
 
-Somewhere along the way, we convinced ourselves that junior staff are just cheap labor for grunt work. Spreadsheets, data entry, drafting emails—tasks we’re now gleefully offloading to bots. But that misses the point entirely. Those early roles? They’re where people *learn*. Where they absorb the rhythm of a business, the unwritten rules, the art of solving messy real-world problems. You don’t automate apprenticeship. You *invest* in it.  
+Things were chugging along predictably until last Friday. Around lunchtime, someone from Telefonica’s network (yes, *the* Telefonica, parent of O2) decided to pay my site a visit. Curious, right? Even more curious: they queried a domain called `blau-sicherheit.info`. Spoiler: *Telefonica owns that domain*. And yet, their own DNS servers were cheerfully reporting it as blocked by the CUII.  
 
-Take it from someone who’s spent years in tech and ops: the best teams I’ve built weren’t stacked with senior hires. They were *grown*. Fresh perspectives paired with seasoned experience. A junior dev who questions why we’ve always done something a certain way. A new grad spotting inefficiencies in a process we’d all glossed over. That’s the magic AI can’t replicate—*curiosity*.  
+Now, I’m no conspiracy theorist, but the timeline here is *chef’s kiss* poetic:  
 
-And let’s talk about the human side. My son’s just getting into coding (Fortnite stats dashboards count, right?), and the thrill on his face when his script finally runs? That’s the spark we’d extinguish if we gatekept entry points behind AI gatekeepers. Growth isn’t just about output; it’s about *ownership*. About letting people stumble, debug, and—yes—waste a few hours on a solution that already exists… because that’s how they’ll invent the next one that doesn’t.  
+1. Telefonica queries their own domain on my site.  
+2. My tool, doing its job, flags it as blocked.  
+3. Two hours later—boom—their DNS servers stop using the CUII block notice altogether. Suddenly, blocked domains don’t return a "this is blocked" note anymore; they just… vanish, as if they never existed.  
 
-So here’s my take: AI should *elevate* junior roles, not erase them. Automate the tedious bits? Absolutely. Free up mental space for creativity, mentorship, and strategic thinking? *Hell yes.* But if your big innovation is replacing interns with chatbots, you’re not cutting-edge—you’re just cutting corners.  
+Coincidence? Maybe. But the optics are *rough*. It’s hard not to see this as a ham-fisted attempt to break my ability to track their blocking habits. And sure, I patched my tool (cross-referencing other blocklists, because ISPs love redundancy in opacity), but the bigger issue remains: when corporations get to rewrite the internet’s phone book on a whim, *without even a footnote*, we’re all just passengers on a ride we didn’t sign up for.  
 
-The future of work isn’t fewer humans. It’s *smarter humans*. And that starts with giving the next generation the tools, the trust, and the room to grow.  
+The kicker? This all blew up right after a major outlet covered the CUII’s latest faceplant—blocking domains that *literally didn’t exist anymore*. Not exactly a great look for the "trust our secret list" crowd.  
 
-Now, if you’ll excuse me, I’ve got a GitHub repo to debug with a 12-year-old. (Wish me patience.) 🍻
+So here we are. The DNS tweak is live, my Friday was spent debugging, and the transparency battle just got a little harder. But hey, if there’s one thing I’ve learned, it’s that the internet’s rulebook is written in pencil—and some folks really hate when you peek over their shoulder while they’re erasing.  
+
+**Final thought for the day**: Next time your favorite site mysteriously fails to load, ask yourself: is it *actually* offline? Or did someone, somewhere, quietly decide you shouldn’t see it?  
+
+(Now, if you'll excuse me, I need a whisky. Debugging DNS is *not* a spectator sport.) 🥃
