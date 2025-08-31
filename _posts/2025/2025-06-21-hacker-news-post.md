@@ -11,36 +11,26 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Thursday 28 August 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Sunday 31 August 2025_
 
-# Why I Fell in Love with ASCII Art All Over Again  
+When you’re building something—anything, really—it’s tempting to chase perfection right out of the gate. You want the elegant solution, the scalable architecture, the thing that looks impressive on a whiteboard. I get it. I’ve been there. But over the years, I’ve come to believe that the real art isn’t in building for the future you imagine—it’s in building for the reality you have.
 
-Somewhere between debugging Python scripts and tweaking my smoked brisket rub this weekend, I stumbled into a delightful rabbit hole: **ASCII art**. Not the kind you half-heartedly throw into a README file with `===` and `>>>` symbols, but *proper* diagrams, flowcharts, even mind maps—all crafted from plain text.  
+Do the simplest thing that could possibly work.
 
-Turns out, there’s something deeply satisfying about building visuals without ever leaving the keyboard. Maybe it’s the hacker ethos of it—no fancy design tools, just raw characters shaping ideas. Or maybe I’m just nostalgic for the days when my brother and I would try (and fail) to draw stick figures in MS-DOS. Either way, I’m hooked.  
+It sounds almost too straightforward, doesn’t it? Like something you’d tell a junior developer on their first day. But here’s the thing: simplicity isn’t easy. It’s not about cutting corners or being lazy. It’s about understanding the problem so deeply that the solution becomes obvious—and often, underwhelmingly simple.
 
-### The Beauty of Plain Text  
+I remember working on a project a while back where we needed to add some basic user analytics. The team immediately started sketching out data pipelines, event tracking systems, real-time dashboards. It was exciting stuff. But then we paused and asked: what’s the simplest thing that could possibly work here?
 
-There’s a reason plain text has outlived every tech trend since the ‘70s. It’s universal. Lightweight. *Stubbornly* portable. Need to slap a diagram into Slack, a Git commit, or a Confluence doc? No export/import drama—just copy and paste. And if you’ve ever tried explaining a data structure or workflow to a teammate, you know that a well-placed ASCII diagram cuts through confusion faster than a five-slide deck.  
+Turns out, a couple of log files and a cron job were all we really needed at that stage. Not glamorous. Not “scalable” in the way people love to talk about. But it worked. And more importantly, it gave us time to understand what we actually needed before investing in complexity.
 
-But let’s be real: crafting this stuff manually is *tedious*. Counting spaces, aligning pipes and dashes, realizing you’re one character off and having to start over… It’s like hand-coding CSS in 2002. That’s where **[redacted]** came in for me—a tool that lets you *design* ASCII art visually, then spit it out as text. Game changer.  
+There’s a kind of beauty in systems that just… work. They don’t draw attention to themselves. They don’t require endless meetings to explain or maintain. They’re like well-oiled machines—quiet, reliable, almost boring. And that’s exactly the point.
 
-### What I’ve Been Building  
+I think a lot of us fall into the trap of equating complexity with competence. We want to prove we know the latest tools, the hottest frameworks, the most distributed architectures. But real mastery often looks like doing less, not more. It’s knowing when to say, “We don’t need that yet.” Or better still: “We may never need that.”
 
-1. **Team Retrospectives in Terminal Format** – Our last sprint review included a flowchart of “Why the Deployment Failed” (Spoiler: `(╯°□°)╯︵ ┻━┻` was involved). It got more laughs—and more clarity—than the Jira tickets.  
-2. **Smoker Recipes as Flowcharts** – Because nothing says "low and slow BBQ" like a CLI-friendly rendering of `MEAT → RUB → SMOKE (225°F) → 🍖`.  
-3. **My Kid’s Homework "Cheat Sheets"** – His teacher may regret encouraging creativity when he submits a binary tree diagram drawn entirely with `┌─┐` and `│║`.  
+This isn’t just a technical philosophy—it’s something I try to apply everywhere. In my BBQ experiments (yes, really), in how I structure my team’s workflow, even in how I approach learning something new. Start simple. Understand the basics. Add complexity only when it’s demanded, not because you’re afraid of what might happen if you don’t.
 
-### The Unexpected Perks  
+Of course, there are always objections. What about scalability? What about future requirements? My answer is usually the same: build for what you know, not what you guess. You can’t predict where the bottlenecks will be at 100x scale—but you can build something clean and understandable today that’ll be easier to adapt tomorrow.
 
-- **Keyboard-Only Workflow**: Switch between code and diagrams without touching the mouse. (Yes, I’m one of *those* people.)  
-- **Git-Friendly**: Version-controlled art that doesn’t bloat your repo.  
-- **Nerdy Bonding**: Show a 10-year-old how to make a smiley face with `:)` and suddenly you’re their favorite adult.  
+The simplest thing isn’t always the easiest to find. It takes patience, curiosity, and a willingness to look past the first three ideas that come to mind. But when you find it? There’s nothing quite like that feeling. It’s the satisfaction of a problem neatly solved, without any extra moving parts.
 
-### Why It Matters  
-
-In a world drowning in SaaS tools and过度设计的 UI, there’s still magic in simplicity. ASCII art is the duct tape of communication—humble, adaptable, and weirdly charming. And if it makes documenting code or planning projects *slightly* more fun? Well, that’s just a bonus.  
-
-Now if you’ll excuse me, I have a sudoku solver to diagram—in Courier New, of course.  
-
-**Tool of the day**: [redacted]. Not sponsored, just obsessed. (But if they want to pay me in license keys, I accept BTC *and* BBQ rub recipes.)
+So next time you’re staring at a blank whiteboard or a new codebase, take a breath. Ask yourself: what’s the simplest thing that could possibly work here? You might be surprised how far it takes you.
