@@ -11,26 +11,24 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Monday 01 September 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Thursday 04 September 2025_
 
-🧠 Cognitive load is what matters. It’s one of those things that, once you see it, you can’t unsee—like realizing your favorite song has been stuck in your head all day, but in this case, it’s about how much thinking you have to do just to understand a piece of code.
+Well, here we are again—another year, another leap forward in the tools we use to build the future. It’s funny how things come full circle sometimes. I remember years ago, sitting at my desk, wrestling with clunky integrations and dreaming of something smoother, something that felt more… human. Something that didn’t just bolt on, but belonged.
 
-I’ve been in tech for over two decades now, leading teams and driving transformations across industries, and if there’s one thing I’ve learned, it’s this: confusion is expensive. It costs time, energy, and frankly, it’s just not fun. We’ve all been there—staring at a screen, trying to untangle someone else’s “brilliant” architecture, wondering why it feels like solving a puzzle with half the pieces missing.
+And now, here we are.
 
-That feeling? That’s cognitive load. It’s not some abstract academic concept; it’s the real mental weight we carry when we’re trying to make sense of things. And in software, where we spend way more time reading and understanding code than writing it, this stuff matters. A lot.
+Claude Code is finally in Zed. Not as some afterthought or a terminal tab you flip to when you’re desperate, but right there, woven into the fabric of the editor itself. It’s running natively through something called the Agent Client Protocol—ACP for short. And honestly? It feels like magic.
 
-Let me break it down simply: your brain can only hold so much at once. Think of it like trying to carry groceries into the house—you can only hold a few bags at a time before you start dropping things. Same with code. Once you hit that threshold, everything gets harder. You lose focus, make mistakes, and honestly, it just drains the joy out of the work.
+You know how it goes. You’re deep in flow, refactoring some gnarly piece of logic, and you want an agent not just to suggest something, but to show you—to let you follow along, approve changes one hunk at a time, see the bigger picture without losing context. That’s what this integration delivers. Real-time edits across files, full syntax highlighting, a persistent task list anchored right there in your sidebar. It’s the kind of tight feedback loop that turns good work into great work.
 
-So what do we do about it? We reduce the load. We make things simpler, clearer, more intuitive. Not by dumbing things down, but by designing with empathy—for the next person who has to read this, who might be you in six months, scratching your head and wondering what past-you was thinking.
+What I love most is that this wasn’t built as a one-off. The team behind it went the extra mile and made ACP an open standard. That means any agent—not just Claude—can plug into Zed, or Neovim, or any editor that adopts the protocol. They even open-sourced the adapter. It’s that kind of thinking that moves the whole ecosystem forward. No walled gardens. Just better tools, for everyone.
 
-Take conditionals, for example. We’ve all seen those nested `if` statements that stretch on like a bad joke. Instead of forcing someone to juggle five conditions in their head, why not break it down? Use intermediate variables with names that actually mean something. Turn a cognitive overload into something manageable. It’s like giving someone a map instead of asking them to navigate by the stars.
+There’s something deeply satisfying about watching smart people build things the right way. Not the fast way, or the flashy way, but the way that lasts. The way that gives you control, clarity, and a little bit of joy while you’re at it.
 
-And don’t get me started on inheritance hierarchies that look like family trees from a fantasy novel. Composition over inheritance isn’t just a catchy phrase—it’s a sanity saver. Deep, well-designed modules with simple interfaces? That’s the good stuff. Think of the UNIX I/O interface—five simple calls, hiding immense complexity underneath. Elegant, powerful, and easy to use. That’s the goal.
+I’ve been tinkering with it for a few days now, and I can already feel the difference. It’s not about replacing how you think—it’s about amplifying it. Letting the agent handle the boilerplate, the repetitive tasks, the “what if we tried this” experiments, while you stay in the driver's seat. That’s the kind of partnership that actually makes sense.
 
-We’ve been sold this idea that more—more classes, more methods, more microservices—is better. But sometimes, more just means more to remember, more to untangle, more cognitive load. It’s not about size; it’s about depth. It’s about creating systems that are easy to understand and easy to change.
+There’s still more coming, of course. Plan mode is on the way, more advanced features are rolling out as the SDK matures. But even now, in beta, it feels complete. Thoughtful. Built by people who actually code.
 
-At the end of the day, it comes down to this: we’re building things for people. For our teammates, for our users, for ourselves. Reducing cognitive load isn’t just a technical choice—it’s a human one. It’s about respecting each other’s time and mental energy.
+So if you’re like me—someone who cares about the tools they use, who believes better workflows lead to better outcomes—give it a look. Fire up Zed, grab the latest version, and see what happens when an agent isn’t just alongside you, but truly with you.
 
-So next time you’re writing code, take a breath. Ask yourself: am I making this clearer or more complicated? Is this going to help someone understand, or are they going to need a whiskey just to get through it?
-
-We’re in this together, after all. Let’s make it a little easier on each other. 🌮
+Here’s to building smarter, together.
