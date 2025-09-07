@@ -11,24 +11,20 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Thursday 04 September 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Sunday 07 September 2025_
 
-Well, here we are again—another year, another leap forward in the tools we use to build the future. It’s funny how things come full circle sometimes. I remember years ago, sitting at my desk, wrestling with clunky integrations and dreaming of something smoother, something that felt more… human. Something that didn’t just bolt on, but belonged.
+Well, here we are again—another day, another headline that makes you pause and think about the world we’re building. It’s funny how these moments sneak up on you, isn’t it? I was sitting with my morning coffee, scrolling through the usual feeds, when this one caught my eye. Not because it’s shocking, but because it feels… inevitable.
 
-And now, here we are.
+You see, I’ve always been fascinated by the intersection of innovation and responsibility. Whether it’s in tech, business, or even something as simple as a family recipe, how we handle the groundwork matters. And this—well, this feels like one of those moments where the groundwork is being questioned in a big way.
 
-Claude Code is finally in Zed. Not as some afterthought or a terminal tab you flip to when you’re desperate, but right there, woven into the fabric of the editor itself. It’s running natively through something called the Agent Client Protocol—ACP for short. And honestly? It feels like magic.
+$1.5 billion. That’s not just a number; it’s a statement. It’s the kind of figure that makes you lean back and wonder about the cost of progress. Not just in dollars, but in trust, in creativity, in the very fabric of how ideas are born and shared.
 
-You know how it goes. You’re deep in flow, refactoring some gnarly piece of logic, and you want an agent not just to suggest something, but to show you—to let you follow along, approve changes one hunk at a time, see the bigger picture without losing context. That’s what this integration delivers. Real-time edits across files, full syntax highlighting, a persistent task list anchored right there in your sidebar. It’s the kind of tight feedback loop that turns good work into great work.
+I can’t help but draw parallels to some of the challenges I’ve faced in my own work—those moments where a high-level vision crashes into operational reality. You can have the smartest strategy in the world, but if it doesn’t respect the people and the processes that brought us here, what’s it really worth?
 
-What I love most is that this wasn’t built as a one-off. The team behind it went the extra mile and made ACP an open standard. That means any agent—not just Claude—can plug into Zed, or Neovim, or any editor that adopts the protocol. They even open-sourced the adapter. It’s that kind of thinking that moves the whole ecosystem forward. No walled gardens. Just better tools, for everyone.
+There’s something deeply human about creating, about putting a piece of yourself into something—a book, a project, a meal. And when that humanity gets overlooked in the race to innovate, it’s not just a legal misstep. It’s a missed opportunity to do better, to be better.
 
-There’s something deeply satisfying about watching smart people build things the right way. Not the fast way, or the flashy way, but the way that lasts. The way that gives you control, clarity, and a little bit of joy while you’re at it.
+Maybe it’s the dad in me, or the part that still believes in building things the right way, but this settlement feels like a reminder. A reminder that growth shouldn’t come at the expense of integrity. That the most exciting technologies—the ones that truly change the world—are the ones built on a foundation of respect.
 
-I’ve been tinkering with it for a few days now, and I can already feel the difference. It’s not about replacing how you think—it’s about amplifying it. Letting the agent handle the boilerplate, the repetitive tasks, the “what if we tried this” experiments, while you stay in the driver's seat. That’s the kind of partnership that actually makes sense.
+So here’s to hoping this isn’t just an end, but a beginning. A chance to reflect, to learn, and maybe to build something that doesn’t just move fast, but moves forward—thoughtfully, responsibly, and with a little heart.
 
-There’s still more coming, of course. Plan mode is on the way, more advanced features are rolling out as the SDK matures. But even now, in beta, it feels complete. Thoughtful. Built by people who actually code.
-
-So if you’re like me—someone who cares about the tools they use, who believes better workflows lead to better outcomes—give it a look. Fire up Zed, grab the latest version, and see what happens when an agent isn’t just alongside you, but truly with you.
-
-Here’s to building smarter, together.
+After all, the best solutions usually do.
