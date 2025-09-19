@@ -11,26 +11,22 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Tuesday 16 September 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Friday 19 September 2025_
 
-# A Weekend Tinkering with Old Routers
+Well, here we are again—another unexpected twist in the digital landscape that’s got me thinking deeply about the tools we rely on and the trust we place in them. It’s funny how something as routine as a software bill can suddenly turn into a moment of reckoning.
 
-Last weekend, I found myself knee-deep in a box of old networking gear I’d been hoarding for “someday.” You know the type—the kind of stuff you swear you’ll repurpose one day, but life gets in the way. Well, someday finally arrived, and what started as a simple cleanup turned into one of those projects that just grabs you and doesn’t let go.
+A couple of days ago, I got a notice from a well-known SaaS provider informing me that our annual costs were set to jump by nearly $200k. Just like that. No gradual phase-in, no real conversation—just a stark ultimatum: pay up, or lose access to years of data and communication. It felt less like a business negotiation and more like a shakedown.
 
-I’ve always had a soft spot for older hardware. There’s something deeply satisfying about breathing new life into devices that others have written off. Maybe it’s the lean mindset in me—maximizing value, minimizing waste—or maybe it’s just the thrill of the challenge. Either way, this particular Saturday, I found myself staring at a stack of retired routers and an idea began to form.
+For context, we’ve been loyal users for over a decade. We’ve happily paid our way, appreciated the value, and built entire workflows around this platform. It’s been the digital heartbeat of our team—the place where ideas are shared, decisions are made, and culture is nurtured. To have that threatened with such short notice… well, it’s a gut punch.
 
-What if I could turn one of these into a dedicated network monitor? Something lightweight, low-power, but capable enough to give me real-time insights into what’s happening on my home network. Not exactly groundbreaking, I know, but sometimes the most satisfying projects are the ones that solve a small, personal itch.
+What really gets me isn’t just the number—though, let’s be honest, $195k is no small thing—it’s the principle. When you entrust your data, your history, your daily operations to a third party, you’re placing a bet on their integrity as much as their infrastructure. This kind of move doesn’t just feel greedy; it feels shortsighted. It breaks the implicit contract of partnership.
 
-The router I settled on was an old model from the early 2010s—nothing fancy, but it had just enough under the hood to make things interesting. A 400MHz MIPS processor, 32MB of RAM, and 8MB of flash storage. By today’s standards, it’s practically prehistoric, but sometimes constraints are exactly what you need to get creative.
+So, where does that leave us? Scrambling, frankly. My team’s now deep in the weeds migrating systems, rebuilding integrations, and trying to salvage over a decade of institutional knowledge before the clock runs out. The opportunity cost is staggering—time we should be spending on moving forward is now being spent on damage control.
 
-I flashed OpenWRT onto it—a process that’s equal parts familiar and nerve-wracking every time. There’s that moment when you’re waiting for the device to reboot, hoping you didn’t just turn it into a very expensive paperweight. But it came back alive, and suddenly I had a blank slate to work with.
+But here’s the silver lining: sometimes you need a jolt like this to reassess what really matters. For us, it’s underscored the importance of owning our data. We’re making the shift to a self-hosted alternative, something we control, something that can’t be held hostage by a pricing page. It’s not the easiest path, but it’s the right one.
 
-The real fun began when I started writing a simple monitoring script in Lua. Nothing too complex—just something to track device connections, bandwidth usage, and maybe flag unusual activity. It’s amazing how much you can do with so little when you really lean into the limitations. Every byte of memory matters, every CPU cycle counts. It forces you to think differently, to optimize in ways you’d never bother with on more powerful hardware.
+If there’s a takeaway here, it’s this: no matter the size of your team or organization, think critically about where you place your trust. The convenience of SaaS is undeniable, but the risks are real. Maybe it’s time to ask yourself—how much is your data really worth to you? And what would you do if someone decided to change the price overnight?
 
-I spent the better part of Sunday tweaking and testing, my son occasionally popping in to see what I was up to. He’s at that age where everything tech is fascinating, and it’s pretty cool to see his curiosity spark. At one point, he asked if we could make it “show something on a screen,” so we hooked up a small LCD display to the router’s GPIO pins—because why not?
+Anyway, this was a bit of a rushed post—sometimes you just have to get these things off your chest. If any of this resonates, or if you’ve been through something similar, I’d love to hear about it. Drop me a line. Let’s learn from each other.
 
-By Sunday evening, I had a functional, if rudimentary, network monitor running. It’s not going to replace any enterprise tools, but it does exactly what I wanted it to do. It’s mine, built from spare parts and a bit of stubbornness, and sometimes that’s more satisfying than any off-the-shelf solution.
-
-These little projects remind me why I love technology—not for the sake of it, but for what it enables. It’s not about the specs or the bragging rights; it’s about solving a problem, learning something new, and maybe having a bit of fun along the way. And if you can do it with hardware that was destined for the recycle bin? Even better.
-
-Now, if you’ll excuse me, I think I’ve earned a quiet beer and some reflection time. Maybe I’ll even let the router monitor itself—just for the irony.
+Until next time.
