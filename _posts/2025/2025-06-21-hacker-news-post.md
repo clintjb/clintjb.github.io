@@ -11,22 +11,20 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Friday 19 September 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Monday 22 September 2025_
 
-Well, here we are again—another unexpected twist in the digital landscape that’s got me thinking deeply about the tools we rely on and the trust we place in them. It’s funny how something as routine as a software bill can suddenly turn into a moment of reckoning.
+There’s something undeniably satisfying about a tool that feels like it was made just for you—something that fits your hand, your rhythm, your way of doing things. For me, that’s always been a chef’s knife. But lately, I’ve been thinking about how even the most trusted tools can evolve.
 
-A couple of days ago, I got a notice from a well-known SaaS provider informing me that our annual costs were set to jump by nearly $200k. Just like that. No gradual phase-in, no real conversation—just a stark ultimatum: pay up, or lose access to years of data and communication. It felt less like a business negotiation and more like a shakedown.
+I’ve spent years in the kitchen, experimenting, tweaking, failing, and occasionally nailing it. Whether I’m trimming brisket for a low-and-slow smoke or finely mincing garlic for a quick pasta aglio e olio, the knife is an extension of my intention. But intention only gets you so far if the tool isn’t keeping up.
 
-For context, we’ve been loyal users for over a decade. We’ve happily paid our way, appreciated the value, and built entire workflows around this platform. It’s been the digital heartbeat of our team—the place where ideas are shared, decisions are made, and culture is nurtured. To have that threatened with such short notice… well, it’s a gut punch.
+Enter the idea of an ultrasonic blade. Yeah, you read that right. Ultrasonic. It sounds like something out of a sci-fi kitchen, but the more I looked into it, the more it made sense. High-frequency vibrations that reduce friction, improve precision, and honestly—just make everything feel smoother. Less sticking, cleaner cuts, more control. It’s like someone finally decided cooking shouldn’t be a wrestling match with your ingredients.
 
-What really gets me isn’t just the number—though, let’s be honest, $195k is no small thing—it’s the principle. When you entrust your data, your history, your daily operations to a third party, you’re placing a bet on their integrity as much as their infrastructure. This kind of move doesn’t just feel greedy; it feels shortsighted. It breaks the implicit contract of partnership.
+I’ve always been drawn to clever, pragmatic solutions—whether in tech, business, or my own backyard BBQ. There’s a kind of beauty in something that just works better. And this? This feels like one of those ideas.
 
-So, where does that leave us? Scrambling, frankly. My team’s now deep in the weeds migrating systems, rebuilding integrations, and trying to salvage over a decade of institutional knowledge before the clock runs out. The opportunity cost is staggering—time we should be spending on moving forward is now being spent on damage control.
+Imagine gliding through a tomato without squashing it. Slicing soft cheese without it clinging to the blade. Carving a roast and every piece falls away clean, no ragged edges. It’s not just about efficiency—it’s about grace. And I’m all for a little more grace in the daily grind.
 
-But here’s the silver lining: sometimes you need a jolt like this to reassess what really matters. For us, it’s underscored the importance of owning our data. We’re making the shift to a self-hosted alternative, something we control, something that can’t be held hostage by a pricing page. It’s not the easiest path, but it’s the right one.
+Of course, a tool is only as good as the hand that holds it. But give a good cook a great tool, and suddenly everything feels possible. I’ve pre-ordered one—because how could I not?—and I’m already imagining the possibilities. Slicing smoked brisket paper-thin. Prepping herbs without bruising them. Even my son’s getting curious. “Does it make a sound?” he asked. I don’t know yet. But I’m excited to find out.
 
-If there’s a takeaway here, it’s this: no matter the size of your team or organization, think critically about where you place your trust. The convenience of SaaS is undeniable, but the risks are real. Maybe it’s time to ask yourself—how much is your data really worth to you? And what would you do if someone decided to change the price overnight?
+Some might say it’s just a knife. But sometimes, the smallest innovations change everything. Here’s to cooking with a little more ease, a little more joy, and a lot less struggle.
 
-Anyway, this was a bit of a rushed post—sometimes you just have to get these things off your chest. If any of this resonates, or if you’ve been through something similar, I’d love to hear about it. Drop me a line. Let’s learn from each other.
-
-Until next time.
+Can’t wait to put it to the test.
