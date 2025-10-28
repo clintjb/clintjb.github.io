@@ -11,30 +11,31 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Saturday 25 October 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Tuesday 28 October 2025_
 
 
 
-Ah, another quiet Hamburg evening—coffee in hand, football murmuring in the background, and that familiar itch to poke at something absurdly technical just for the laugh of it. You ever have one of those thoughts that sticks in your brain like a splinter? Today’s splinter: *what if we treated /dev/null like a proper database?*  
+**When Businesses Double Down On Bad Bets**  
 
-Turns out, the joke writes itself *and* passes the ACID test. Let’s break it down the way I’d explain it over BBQ smoke—casual, pragmatic, with a side of mischief.
+You know that feeling when you’re watching someone stubbornly refuse to pivot despite all evidence screaming *“this isn’t working”*? I’ve seen it in boardrooms, factory floors, and even my own backyard BBQ experiments (ask me about the Great Brisket Incident of ’23). But lately, I stumbled upon a corporate facepalm moment so perfectly avoidable, it’s become my new cautionary tale for ego-driven leadership.  
 
----
+Here’s the gist: A lock company decided to sue a YouTuber for *daring* to demonstrate how their premium lock could be popped open with a shim cut from a soda can. Ten million views later, the internet did what the internet does best—turned the drama into a spectacle.  
 
-**Atomicity?** Absolutely nailed. When you write to `/dev/null`, either the operation completes (and your data vanishes *completely*), or it doesn’t. No half-written fragments lurking in the void. It’s the digital equivalent of tossing a lit match into a black hole—*poof*, gone. Perfect all-or-nothing behavior. ✅  
+Now, I’m no lawyer, but even my MBA-hobbyist brain knows this: **When your product’s weakness gets exposed, litigation isn’t innovation.** It’s admitting defeat.  
 
-**Consistency?** Rock-solid. The state of `/dev/null` is gloriously invariant: **empty**, always. Write petabytes of junk, scream JSON into the abyss—doesn’t matter. It’ll never betray you by suddenly remembering what you dumped there last Tuesday. Consistency through oblivion. ✅  
+This whole fiasco reminds me of early agile coaching days, where execs would cling to flawed strategies like toddlers to security blankets. They’d throw resources at defending the indefensible instead of iterating, testing, and *listening*. Sound familiar?  
 
-**Isolation?** Flawless. Ten thousand concurrent transactions? No locks, no waits, no drama. Every process gets its own private funnel straight into nothingness. No conflicts, no corrupted writes—just elegant, silent erasure. ✅  
+The irony? The company’s own marketing was built on trashing competitors’ locks. Yet when the spotlight flipped onto them, they panicked. Sent legal threats. Filed takedowns. Leaned into *defamation by juice box* arguments (yes, really—apparently sipping apple juice while picking a lock is legally “childish”).  
 
-**Durability?** Legendary. Reboot the server? Kernel panic? Alien invasion? `/dev/null` will still be there, faithfully containing exactly what it always has: **nothing**. Your data isn’t just gone—it’s *durably* gone. ✅  
+Here’s what I’d have done differently over a team whisky:  
+1. **Lean into the feedback loop**. If a creator exposes a flaw, invite them for coffee. Mine their insights. Iterate the damn product.  
+2. **Turn critics into collaborators**. Imagine the PR win celebrating *“We make locks so secure, even experts need creativity to crack them!”*  
+3. **Never, ever sue your customers**. Unless you enjoy becoming a meme.  
 
----
+Watching this unfold felt like seeing a chef blame the diner for noticing undercooked chicken. Growth—whether in tech, lean processes, or chili recipes—demands humility. You *need* those uncomfortable truths. They’re the whetstone that sharpens your edge.  
 
-Now, the catch—if you can even call it that—is scalability. Out of the box, you get a generous 0 bits of storage. But hey, lean principles apply here too: minimal waste, maximal efficiency. Need more? You’ll have to chat with “enterprise sales” (👋 hi, it’s just me sweating over a GitHub Actions config).  
+So here’s to the lockpickers, the devil’s advocates, and the folks shaking juice boxes at complacency. Keep poking holes in the status quo. And to businesses? Next time your ego whispers *“sue them,”* ask: *“Would a pirate ship build a moat… or just steal a better ship?”*  
 
-Jokes aside, there’s a weirdly beautiful lesson here: sometimes the most reliable systems thrive on simplicity. No schemas, no migrations, no “why is this query O(n²)?” panic at 2 a.m.—just pure, uncomplicated *void*.  
+Now, if you’ll excuse me, I’m off to test if Liquid Death cans really make superior shims. 🥤🔓  
 
-Anyway, next time you’re debugging at 3 a.m., pour yourself a whisky and salute `/dev/null`. It’s the unsung hero of our toolkit—a black hole with better compliance paperwork than most SaaS vendors.  
-
-🌮 *Prost!* (as we say in Hamburg, apropos of nothing).
+*—J*
