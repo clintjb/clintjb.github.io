@@ -11,30 +11,33 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Friday 31 October 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Saturday 01 November 2025_
 
 
 
-**Affinity Suite Just Went Free. What a Time To Be Creative!**  
+**That Foggy Feeling When Your Brain Waves Bye-Bye**  
+*// Reflections on attention, fluid dynamics, and why we shouldn’t fight our biology*
 
-Let me tell you—this is one of those moments that makes you want to high-five the universe. Remember back when professional-grade design software meant shelling out *obscene* monthly fees or pirating tools that’d crash mid-project? (*Shudder.*)  
+I’ve always been the type to burn the midnight oil—whether it’s tweaking a Python script late into the evening or perfecting a brisket rub at 1 a.m. (much to the dismay of my German neighbors, who likely assume Australians are just constitutionally nocturnal). There’s a certain pride in pushing through, right? A badge of honor in that gritty, caffeine-fueled focus. Or so I thought—until one Tuesday afternoon when I stared blankly at my screen for 20 minutes, utterly failing to comprehend a spreadsheet that—*honestly*—wasn’t rocket science.  
 
-Well, strap in—[Affinity just dropped their entire suite for free](https://www.affinity.studio/get-affinity). No catch. No subscription trap. Just *boom*, creative power unleashed.  
+Turns out, my brain wasn’t just tired. It was literally flushing itself out.  
 
-I’ve been tinkering with Affinity apps since Version 1, back when my son was still doodling stick figures and I was convincing my team that no, *Photoshop isn’t the only way to live*. What hooked me wasn’t just the price (though the one-time fee felt like daylight robbery in the Adobe era). It was how *fluid* it all felt—like the developers actually understood the chaos of a designer’s workflow. Need to tweak a vector while your laptop’s wheezing through 50 browser tabs? Affinity Designer laughs and asks, “Is that all you got?”  
+Now, let me backtrack. I’ve spent years preaching lean principles in tech and ops—optimize systems, eliminate waste, respect the rhythm of work. But I never connected the dots to *my own cranky brain chemistry*. Here’s the thing: when we’re sleep-deprived, our bodies don’t just drag. They pull off a covert nighttime cleanup operation *while we’re still awake*. Picture this: you’re grinding through emails, and suddenly your attention craters like a deflated soufflé. In that exact moment, your brain’s janitorial staff kicks in, flushing cerebrospinal fluid to clear the day’s metabolic junk.  
 
-And Photo? Mate. The nondestructive editing alone is worth throwing confetti for.  
+**The irony?** Your conscious mind checks out so your biology can play catch-up.  
 
-But *free*? That changes everything. Suddenly, the kid learning graphic design in her dorm room, the startup founder DIY-ing their branding, the retired engineer picking up digital art—they all get a seat at the table. No more gatekeeping. No more “creative tools only for those who can bleed monthly fees.”  
+I see this now in how my team operates. We’ve all had those weeks—launches looming, deadlines tight—where “sleep is for the weak” becomes an unspoken mantra. But watching my son struggle to focus on his Fortnite stats project after a sleepover (*“Dad, the API endpoints look like hieroglyphics”*) mirrored my own foggy lapses. It’s not laziness. It’s biology staging an intervention.  
 
-I’ve always believed that the best tools disappear into your process—they don’t *become* the process. Affinity gets that. No bloat, no endless upsells, just clean, stupidly fast software that gets out of your way.  
+So I’ve started treating attention like lean inventory:  
 
-So here’s my hot take: this move isn’t just generous. It’s *revolutionary*. It’s the creative equivalent of handing out rocket boosters.  
+- **Pulsed focus beats marathon slogging.** Those micro-lapses? They’re not failures—they’re your brain’s equivalent of a pit stop. Lean teaches us to *plan* maintenance, not ignore it until the machine breaks.  
+- **Respect the rinse cycle.** If your gray matter’s doing daytime fluid dynamics, lean into it. I’ve swapped late-night coding sprints for morning deep work—*after* 7 hours of actual sleep.  
+- **Teams thrive on rhythm, not heroics.** That “all-nighter hustle” culture? Antiquated as fax machines. I’d rather empower my team to rest, reboot, and solve problems with clarity than applaud zombie-mode productivity.  
 
-*(Quick sidenote: if your browser’s older than my BBQ smoker, [update it](https://www.affinity.studio/get-affinity). Trust me, you’ll wanna see this beauty in full glory.)*  
+---
 
-What I love most though? The *audacity* of it. In a world obsessed with subscriptions and data harvesting, Affinity’s out here whispering, “Nah, just make cool stuff.”  
+The wildest part? This isn’t just about better spreadsheets or cleaner code. It’s about the *texture* of creativity. Those midnight BBQ experiments (*hello, chili-rubbed brisket over cherrywood*) only click when my neurons aren’t swimming in yesterday’s metabolic clutter. My son’s Fortnite project? We nailed the automation script after a full night’s sleep—and celebrated with absurdly overpriced stickers that reminded me of the Garbage Pail Kids wax packs of my youth.  
 
-So go grab it. Build that portfolio. Design that indie game logo. Mock up your dream coffee shop’s menu. And when you do, shoot me a note—I’ll raise a whisky to your chaos.  
+Life’s too short for perpetually foggy brains. Pour yourself a whisky (the good stuff—no skimping), acknowledge the weird, wondrous biology we’re stuck with, and *let the fluid do its damn job*.  
 
-*Here’s to fewer barriers, more creating.* 🥃
+🌮 *// Prost from Hamburg, where the nights are now strictly for two things: sleep and smoked meats.*  
