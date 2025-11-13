@@ -11,34 +11,23 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Monday 10 November 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Thursday 13 November 2025_
 
 
+**That Time I Tried to Build the Ultimate Living Room Gaming Rig (And What Actually Happened)**  
 
-**The Art of Being Mark Zuckerberg (Just Not *That* One)**  
+Let’s rewind to 2015. Valve announced the Steam Machine, and I—like so many tech-obsessed dads—immediately saw the potential. A slick, console-sized PC running Linux? Customizable hardware? *Finally*, a bridge between my couch-potato gaming fantasies and my tinkering habits. I practically threw my credit card at the screen.  
 
-Let’s get this out of the way: no, I didn’t invent Facebook. I don’t own a hoodie collection worth more than your house, and I’ve never once thought about rebranding humanity’s social interactions into "the Metaverse."  
+Fast forward to unboxing day. My kids gathered around like it was Christmas morning (okay, *I* was the kid). The machine itself? Beautiful. Sleek. Silent. It promised seamless Big Picture Mode, optimized for lazy Sundays with a controller. But here’s the thing about dreams vs. reality: they rarely sync up.  
 
-What *do* I do? Well, I help people in Indiana pick up the pieces when life decides to throw their finances into a blender. Bankruptcy law might not sound as sexy as algorithm-driven world domination—but hey, someone’s gotta do it. And honestly? There’s something deeply satisfying about giving folks a fresh start. No venture capital required.  
+For starters, Linux gaming in 2015 was… let’s call it “aspirational.” Half my Steam library just shrugged. Proton wasn’t a thing yet, and workarounds felt like performing open-heart surgery with a spatula. My son, ever the pragmatist, asked, *“Why don’t we just plug the TV into your PC?”* (Ouch.)  
 
-**A Day in the Life (of the *Other* Mark Zuckerberg)**  
-You haven’t lived until you’ve explained to a furious stranger that *no*, you can’t unlock their Facebook account, but *yes*, you *can* help them navigate Chapter 7. My voicemail is a museum of confusion:  
-- *“Hey Zuck, my cat video went viral but I can’t log in—FIX IT!”*  
-- *“Mr. Zuckerberg, I demand you remove that embarrassing photo of me from 2009!”*  
-- *“Are you the real Mark? Like, the billionaire guy? Can I borrow $20?”*  
+Still, we persisted. We tweaked. We installed third-party drivers. We bonded over error messages. In hindsight, that was the real win—not the machine itself, but the chaos of problem-solving together. We turned driver conflicts into inside jokes. (Pro tip: never let a 10-year-old name your kernel modules. “LarryThePenguin” still haunts my terminal.)  
 
-Pro tip: if you’re ever sued by the state of Washington because they think you’re a tech titan accused of endangering vulnerable adults… maybe just lean into the absurdity. (True story. The paperwork was *chef’s kiss* levels of ridiculous.)  
+The Steam Machine era quietly fizzled, of course. Valve pivoted. The industry moved on. But my dusty little box? It found a second life as a living room emulator hub. RetroArch + Steam Link + a pile of USB SNES controllers = family Mario Kart nights that taste faintly of victory (and microwave popcorn).  
 
-**Fun With Identity Theft (Minus the Fortune)**  
-My relationship with Facebook? It’s complicated. My personal account’s been disabled more times than I’ve celebrated birthdays. Apparently, *being yourself* counts as “celebrity impersonation” when your name trends on Wall Street. I’ve jump through flaming hoops just to prove I exist—birth certificates, driver’s licenses, blood samples (okay, not the last one… yet).  
+What’s the lean takeaway here? Sometimes the *journey* of optimizing—even if the destination shifts—is where the magic happens. And if a project ends with your kids laughing at your over-engineered setup? That’s a win.  
 
-Then there’s the fan mail. Letters demanding I “stop ruining democracy.” Packages containing unsolicited advice on how to “fix the News Feed.” And Venmo requests from strangers who think I’m secretly funding their screenplay about sentient avocados.  
+Now, if you’ll excuse me, I’ve got a date with LarryThePenguin and a 1997 emulation of *Castlevania: Symphony of the Night*. Priorities. 🎮  
 
-**Why Bankruptcy Law Beats Coding in a Hoodie**  
-Look, I don’t hold grudges. Meta-Mark seems busy building virtual universes while dodging congressional hearings. Me? I’m elbow-deep in Indiana’s bankruptcy code, helping real people untangle real problems. And there’s a weird pride in knowing that when someone Googles *“Mark Zuckerberg bankruptcy,”* they’ll find *me*—the guy who actually knows what a discharge order is.  
-
-So if you’re drowning in debt, getting hounded by creditors, or just want to laugh about sharing a name with Silicon Valley’s most famous recluse? Come say hi. No VR headset needed—just bring your sense of humor (and maybe some coffee).  
-
-P.S. If the *other* Zuckerberg ever needs financial advice in Indiana? First round’s on me. Wouldn’t that be poetic? 😎  
-
-*— Mark S. Zuckerberg (the one who actually returns your calls)*
+*P.S. Yes, I still have the machine. No, I won’t sell it. Some relics deserve their shrine next to the Wiimotes and Guitar Hero controllers.*
