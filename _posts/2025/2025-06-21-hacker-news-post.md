@@ -11,44 +11,34 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Sunday 16 November 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Wednesday 19 November 2025_
 
 
-**The Web’s Shadowy Corners: When Pressure Campaigns Hit Close to Home**  
 
-There’s something uniquely unsettling about watching an obscure clash unfold in real time — especially when it knocks on your door. A few weeks back, an email landed in our inbox from an organization I’d never heard of: the *Web Abuse Association Defense*. French. Official-sounding. Demanding we block **archive.today** across AdGuard DNS. Their reasoning? Alleged refusal to remove illegal content.  
+**The Unseen Waves in Our Digital Ocean**  
 
-My first reaction? A mix of skepticism and curiosity. We’re a DNS service — not content moderators or hosting police. It’s like asking a plumber to fix a traffic jam. But threats have a way of sharpening your focus.  
+There's something uniquely humbling about technology—especially when it remembers just how human it is.  
 
-Legal advice came next. Turns out, French law (Article 6-I-7 of the LCEN) *could* force our hand. The idea that a private company might have to act as judge and jury on content legality? **Flawed.** These decisions belong in courts, not inboxes.  
+I was halfway through debugging a Python script for a weekend project with my son (*yes, still riding that high from our Fortnite stats dashboard*) when the first alerts started pinging. Not my script—though God knows it’s thrown its fair share of errors—but something bigger. Broader. The kind of thing that makes you lean back in your chair and mutter, “Well, this’ll be interesting.”  
 
-But here’s where it got spicy: we reached out to Archive.today themselves. To their credit, they replied fast. The content in question? Gone within hours. And their side of the story? They’d **never** received prior notices about those URLs. Instead, they hinted at a pattern — a wave of “serial complaints” from French entities, all designed to pressure intermediaries like us into cutting off their service.  
+We’ve all been there. One minute, everything’s humming along like a well-oiled machine. The next? It’s like the digital rug gets yanked out from under you. Dashboard logins fail. APIs cough up errors instead of data. Even the trusty WARP connection—that sleek tunnel we rely on—starts flickering like a candle in the wind.  
 
-Curiosity turned into full-blown detective mode.  
+What fascinates me isn’t the outage itself (*though let’s be real, nobody enjoys those*)—it’s the *response*. The rhythm of recovery. Watching a global network stumble, then steady itself, step by step. Like watching a chef adjust a recipe in real-time: a pinch of remediation here, a dash of configuration tweaks there.  
 
-***Who*** *was this “Web Abuse Association Defense”?*  
+**London goes dark on WARP?** Temporary pain for long-term gain.  
+**Bot scores acting up?** Transparency first—tell users what’s brewing.  
+**Dashboard still wobbly after the fix?** Keep grinding.  
 
-Their website name-dropped Europol, OFAC, NCA — heavy hitters. But evidence of collaboration? Ghosts. The association itself was registered only months earlier, in early 2025. Their address? A generic mass-registration spot in France. Their Twitter? Four followers, a handful of reposts. *Thin.*  
+It’s lean thinking in action, really. Minimize the blast radius. Optimize the recovery. Iterate publicly. No corporate jargon, no sugarcoating—just a clear, chronological heartbeat of updates. *“We’re working on it.” “Getting closer.” “Almost there.”*  
 
-Then came the “evidence”: bailiff reports (or *constat d’huissier*). Most ordered in August 2025 — not 2023, as WAAD claimed. Only two were older, from 2023. And here’s the kicker: those weren’t ordered by WAAD at all. The name on them matched someone Archive.today’s admin had tangled with before — a lawyer whose domain was suspiciously registered *the same day* a prior complaint was sent. Redirects, dead links, ProtonMail addresses. The digital equivalent of smoke and mirrors.  
+And then... quiet. The storm passes. Services stabilize. You can almost hear the collective sigh of engineers worldwide switching from crisis mode back to their coffee breaks.  
 
-We’re now filing a complaint with French police. False reports under LCEN carry real penalties — up to €15,000 and a year in jail. Someone’s playing a dangerous game.  
+But here’s the thing I keep circling back to: **outages are mirrors**. They reflect how a company thinks. Do they hide? Blame? Or own it, fix it, and share the play-by-play like teammates huddled after a tough match?  
 
-But the bigger picture? It’s messy. Archive.today’s value is undeniable — preserving the web’s ephemeral moments — but its shadows attract trouble. And intermediaries like us? We’re caught in the crossfire.  
+I’ve spent two decades in the tech trenches—automotive, aerospace, you name it—and I’ll take this raw transparency over polished PR any day. It’s how trust gets built. How teams grow. Hell, it’s how *my* team operates: celebrate the wins, own the stumbles, and always, *always* keep the engine of improvement running.  
 
-For now, two truths stand out:  
-- Pressure campaigns thrive on opacity.  
-- The loudest accusations don’t always wear the whitest hats.  
+So tonight, as I finally wrap up that Python script (*and yes, my son’s Fortnite stats are now gloriously auto-updating*), I’ll pour a whisky. Not just for the small wins, but for the messy, human, beautifully imperfect dance of keeping the digital world turning.  
 
-As for WAAD? Still a ghost. Cloudflare shields their site. Name.com hides their domain history. ProtonMail seals their emails. A perfect faceless operation.  
+Here’s to the next wave—and the teams ready to ride it. 🌊  
 
-**So — what’s next?**  
-
-We keep pushing. Transparency matters. Accountability matters. And while the FBI’s rumored involvement adds another layer (CSAM investigations are no joke), our role stays clear: protect users, question motives, and resist arm-twisting from faceless entities.  
-
-This isn’t just about DNS blocks or French law. It’s about who gets to shape the web’s boundaries — and how easily those lines can be weaponized.  
-
-Grab a drink, folks. The internet’s getting *weird* again.  
-
----  
-*P.S. If you’ve encountered similar tactics or have insights into WAAD — drop me a line. Sometimes the best investigations start with a quiet conversation.* 🥃
+*— Got your own outage war stories or recovery philosophies? I’d love to hear ‘em. Drop me a line or share ’em over on [Twitter](#).*  
