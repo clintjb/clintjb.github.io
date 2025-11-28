@@ -98,6 +98,19 @@ class Grid {
 
   addEvents() {
     window.addEventListener("wheel", (e) => {
+      // Check if mouse is over details panel
+      const detailsRect = this.details.getBoundingClientRect()
+      const isOverDetails = this.SHOW_DETAILS && 
+                           e.clientX >= detailsRect.left && 
+                           e.clientX <= detailsRect.right &&
+                           e.clientY >= detailsRect.top && 
+                           e.clientY <= detailsRect.bottom
+
+      // If over details panel, let it scroll naturally
+      if (isOverDetails) {
+        return
+      }
+
       e.preventDefault()
 
       const deltaX = -e.deltaX * 7
