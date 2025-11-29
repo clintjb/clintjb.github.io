@@ -134,9 +134,7 @@ a {
   grid-template-columns: auto auto auto 1fr;
   grid-template-rows: auto auto 1fr;
   grid-template-areas:
-    'title title title title'
-    'back github archive ...'
-    'sponsor sponsor sponsor sponsor';
+    'title title title title';
 
   #cdawrap {
     max-width: 260px;
