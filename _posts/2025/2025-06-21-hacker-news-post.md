@@ -11,29 +11,27 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Friday 28 November 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Monday 01 December 2025_
 
 
-**That Silent Little Dot Just Keeps On Trucking**  
+**Advent of Code 2025: Puzzles, Whisky & That Sweet Satisfaction**  
 
-There’s something profoundly humbling about sitting back with a cold beer and contemplating just how *ridiculously* vast space really is. I mean, we’re talking about distances so incomprehensible that even light—the fastest thing we know—feels like it’s dragging its feet. And right now, somewhere out there in that infinite black, Voyager 1 is closing in on a milestone that’s equal parts poetic and mind-bending: one *light-day* from Earth.  
+Well, here we go again—another December, another excuse to dust off my coding skills and dive into those daily programming puzzles. If you’ve followed along here before, you know I’m a sucker for challenges that blend logic, creativity, and just enough frustration to make the victory feel earned. This year’s coding advent calendar didn’t disappoint.  
 
-Let that sink in for a second.  
+It all started, as most good things do, with a strong coffee and that quiet pre-dawn Hamburg chill. My son wandered into the kitchen halfway through Day 3, bleary-eyed and holding his laptop like a talisman. *“Dad, how’d you solve the sleigh routing optimization thing?”* he asked, already flipping open his IDE. I grinned. There’s nothing quite like watching your kid catch the problem-solving bug—even if it means sacrificing sleep before sunrise.  
 
-By late next year, that little probe—launched when Jimmy Carter was president and *Star Wars* was still a fresh-faced phenomenon—will be so far away that a signal from home will take a full 24 hours just to whisper, “Hey, you still alive out there?” And another day for it to whisper back, “Yep. Cold. Lonely. Send snacks.”  
+Let’s be honest—some of these puzzles felt like trying to assemble IKEA furniture without the instructions. Day 7? A recursive nightmare wrapped in a syntax error. But that’s the beauty of it. Each problem forces you to strip away assumptions, think lean, and iterate fast. I found myself scribbling flowcharts on napkins between BBQ experiments (more on that later), chasing that *aha* moment when the pieces click.  
 
-**But here’s what blows my mind:** we built this thing. Us. Humans. With 1970s tech. No AI, no quantum computing, just slide rules, elbow grease, and the sheer audacity to say, *“Let’s see how far this can go.”* And go it did. Past Jupiter’s swirling storms, Saturn’s rings, beyond the protective bubble of our sun’s influence, into the great interstellar unknown. All while dutifully phoning home like a responsible adult on a gap year.  
+What I love most about this yearly ritual isn’t just the coding—it’s the *culture* of it. No fancy frameworks needed, no pressure to perform for some leaderboard (though I’ll admit, my private group chat with a few former colleagues gets *competitive*). It’s about the satisfaction of building something functional, even if it’s ugly under the hood. Like my BBQ rubs, the best solutions are often messy prototypes refined through trial, error, and a stubborn refusal to quit.  
 
-I love this story for so many reasons. The engineering grit—those radioisotope generators still chugging along, powering science into the 2030s. The patience of NASA’s teams, sending commands knowing they won’t hear back for *two days*. Two days! Imagine debugging code with that kind of lag. But mostly, I love what it says about scale. A light-day sounds immense—16 billion miles!—until you realize Proxima Centauri, our nearest stellar neighbor, is over *four light-years* away. Suddenly, Voyager feels like a kid who’s just pedaled their bike to the end of the driveway.  
+One thing I’ve carried over from my lean days? **Automate the boring stuff.** This year, I set up a GitHub Actions pipeline to handle testing and deployment—nothing fancy, just enough to shave precious minutes off each session. Time better spent wrestling with the actual problem… or debating with my son whether brute-forcing Day 12 was “elegant” or “cheating” (jury’s still out).  
 
-**And then there’s the Pale Blue Dot.**  
+And yeah, there were moments when I questioned my life choices—like debugging Perl scripts at 1 AM while nursing a whisky. But then, isn’t that the point? Growth happens in the grind. Whether it’s leading a team through a gnarly transformation or reverse-engineering an elf’s encryption key, the thrill is the same: **solving something real**, even if “real” means saving virtual reindeer from a spreadsheet avalanche.  
 
-You know the one—that grainy, iconic snapshot Voyager took in 1990, looking back at Earth from 3.7 billion miles away. A speck. A mote. *“A very small stage in a vast cosmic arena,”* as Sagan put it. It’s the ultimate perspective check. Whatever drama we’re tangled in today—work deadlines, burnt BBQ experiments, the eternal struggle to assemble IKEA furniture without leftover screws—it’s all happening on that pixel.  
+Would I recommend it? Absolutely. Whether you’re a seasoned developer or just curious about loops and logic, there’s magic in stretching your brain this way. And if you’re ever stuck, remember: triple-clicking selects entire code blocks *for a reason*. Trust me.  
 
-Voyager’s journey isn’t just a triumph of engineering; it’s a mirror. A reminder that curiosity, when paired with persistence, can outlive generations. That even the smallest steps (or the slowest radio signals) add up to something monumental. And that sometimes, the most revolutionary acts aren’t about changing the world—but simply leaving it behind, one quiet mile at a time.  
+As for next year? I’ve already penciled it in—same time, same chaos. Maybe I’ll finally convince my daughter to join us. Or bribe her with promises of glazed ham and Python tutorials. Either way, I’ll be here: coffee in hand, IDE open, ready to dive into the fray.  
 
-So here’s to the little probe that could. Still cruising at 11 miles a second. Still teaching us humility. Still daring us to dream bigger, even as its signal fades into the interstellar static.  
+Because really—what’s life without a few puzzles to keep things spicy? 🌶️  
 
-Next time you’re staring up at the night sky, think about it: there’s a tiny piece of us, hurtling through the void, carrying a golden record full of Chuck Berry, Bach, and the sound of a kiss. Because if we’re going to whisper into the darkness, we might as well do it with style.  
-
-Now, if you’ll excuse me, I’ve got a whisky calling my name and a sudden urge to recalibrate my WiFi router. Perspective’s great, but reliable streaming speeds? That’s *true* civilization. 🚀
+*—A slightly sleep-deprived but thoroughly satisfied coding enthusiast, currently debating whether to refactor Day 17 or just admire its janky brilliance.*  
