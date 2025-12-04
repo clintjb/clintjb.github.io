@@ -11,27 +11,47 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Monday 01 December 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Thursday 04 December 2025_
 
 
-**Advent of Code 2025: Puzzles, Whisky & That Sweet Satisfaction**  
 
-Well, here we go again—another December, another excuse to dust off my coding skills and dive into those daily programming puzzles. If you’ve followed along here before, you know I’m a sucker for challenges that blend logic, creativity, and just enough frustration to make the victory feel earned. This year’s coding advent calendar didn’t disappoint.  
+**Bun’s Next Chapter: Joining Forces with Anthropic**  
 
-It all started, as most good things do, with a strong coffee and that quiet pre-dawn Hamburg chill. My son wandered into the kitchen halfway through Day 3, bleary-eyed and holding his laptop like a talisman. *“Dad, how’d you solve the sleigh routing optimization thing?”* he asked, already flipping open his IDE. I grinned. There’s nothing quite like watching your kid catch the problem-solving bug—even if it means sacrificing sleep before sunrise.  
+Well, here we are. After almost five years of late nights, endless debugging sessions, and more than a few “this should *not* be working” moments, Bun is taking a big leap forward. I’ll cut to the chase: **Bun is now part of Anthropic**.  
 
-Let’s be honest—some of these puzzles felt like trying to assemble IKEA furniture without the instructions. Day 7? A recursive nightmare wrapped in a syntax error. But that’s the beauty of it. Each problem forces you to strip away assumptions, think lean, and iterate fast. I found myself scribbling flowcharts on napkins between BBQ experiments (more on that later), chasing that *aha* moment when the pieces click.  
+This isn’t one of those “startup gets acquired, everything changes” stories. Let me be crystal clear: Bun stays Bun. It’s still open-source, MIT-licensed, and built in public by the same slightly sleep-deprived team (hi, it’s me). We’re not going anywhere. If anything, we’re doubling down on what makes Bun *Bun*: speed, simplicity, and that relentless itch to make JavaScript tooling *better*.  
 
-What I love most about this yearly ritual isn’t just the coding—it’s the *culture* of it. No fancy frameworks needed, no pressure to perform for some leaderboard (though I’ll admit, my private group chat with a few former colleagues gets *competitive*). It’s about the satisfaction of building something functional, even if it’s ugly under the hood. Like my BBQ rubs, the best solutions are often messy prototypes refined through trial, error, and a stubborn refusal to quit.  
+### How We Got Here  
+Rewind to 2021. I was knee-deep in a browser-based voxel game project, frustrated that every tiny code change meant waiting *45 seconds* for a Next.js dev server reload. Sound familiar? So, like any rational person, I got *distracted*. Three weeks later, I’d ported esbuild’s JSX/TypeScript transpiler to Zig. A tweet, some viral chaos, and suddenly we had a GitHub repo with 20k stars in a week.  
 
-One thing I’ve carried over from my lean days? **Automate the boring stuff.** This year, I set up a GitHub Actions pipeline to handle testing and deployment—nothing fancy, just enough to shave precious minutes off each session. Time better spent wrestling with the actual problem… or debating with my son whether brute-forcing Day 12 was “elegant” or “cheating” (jury’s still out).  
+Life got weird. We raised a seed round, rented an office the size of a closet (with desks!), and somehow convinced brilliant engineers to join this rollercoaster. Fast-forward through Bun v1.0, Windows support (yes, *finally*), Node.js compatibility wars, and a growing list of production users—from startups to even Midjourney and X.  
 
-And yeah, there were moments when I questioned my life choices—like debugging Perl scripts at 1 AM while nursing a whisky. But then, isn’t that the point? Growth happens in the grind. Whether it’s leading a team through a gnarly transformation or reverse-engineering an elf’s encryption key, the thrill is the same: **solving something real**, even if “real” means saving virtual reindeer from a spreadsheet avalanche.  
+But the real plot twist? **AI coding tools**. Late last year, something shifted. Tools like Claude Code stopped being neat demos and started *actually* helping developers. And guess what they were using under the hood? Bun’s single-file executables—self-contained, fast-starting binaries perfect for distributing AI-powered CLIs. The more I used Claude Code myself, the more obsessed I got.  
 
-Would I recommend it? Absolutely. Whether you’re a seasoned developer or just curious about loops and logic, there’s magic in stretching your brain this way. And if you’re ever stuck, remember: triple-clicking selects entire code blocks *for a reason*. Trust me.  
+### Why Anthropic?  
+Let’s address the elephant in the room: *But Jarred, Bun had runway! You didn’t* need *to do this!*  
 
-As for next year? I’ve already penciled it in—same time, same chaos. Maybe I’ll finally convince my daughter to join us. Or bribe her with promises of glazed ham and Python tutorials. Either way, I’ll be here: coffee in hand, IDE open, ready to dive into the fray.  
+True. We had years to figure out monetization. But here’s the thing: **the world changed**. AI isn’t just automating code—it’s reshaping *how* code gets written, tested, and deployed. If the future is AI agents cranking out code at lightspeed, the runtime they run on *matters*. It has to be fast. Predictable. Bulletproof.  
 
-Because really—what’s life without a few puzzles to keep things spicy? 🌶️  
+Anthropic gets this. They’re betting on Bun as the engine for Claude Code, Claude Agent SDK, and their future AI coding products. That means Bun isn’t just surviving—it’s *central* to a seismic shift in development. And for us? It means no more existential spreadsheet gymnastics about “how do we monetize a runtime?” Instead, we get to focus purely on building—with Anthropic’s resources, long-term stability, and a front-row seat to where AI coding is headed.  
 
-*—A slightly sleep-deprived but thoroughly satisfied coding enthusiast, currently debating whether to refactor Day 17 or just admire its janky brilliance.*  
+### What Changes (and What Doesn’t)  
+Let’s break it down:  
+
+- **Bun stays Bun**: Still MIT-licensed. Still built in public on GitHub. Still me, Oven, and the team pushing daily commits.  
+- **We’re shipping faster**: Anthropic’s backing means more firepower (yes, we’re hiring!), deeper integration with AI tooling, and fewer distractions.  
+- **Closer to the future**: Working alongside Claude Code’s team means Bun evolves *with* AI’s needs, not guessing from the sidelines.  
+
+And for you—developers, teams, companies betting on Bun—**nothing breaks**. Your stack, your workflows, your trust in Bun’s roadmap? All intact. If anything, this move *guarantees* Bun’s here for the long haul.  
+
+### Looking Ahead  
+This is wild to say, but Bun’s story is just getting started. We’ve got big plans:  
+- Making Bun *the* runtime for AI-generated code—fast, reliable, and lightweight enough for agents.  
+- Deeper Node.js compatibility (yes, we hear you).  
+- Expanding Bun’s toolkit for modern dev—think better frontend workflows, tighter database integrations, and yes, even more speed.  
+
+And to everyone who’s downloaded Bun, filed an issue, or tweeted a hot take: **thank you**. You turned a side project into something that powers millions of projects. I’m still that same developer, annoyed by slow tooling, obsessing over startup times. Only now, we’ve got a rocket strapped to that obsession.  
+
+So, pour a drink (whisky, coffee, whatever fuels you), keep building, and stay tuned. The best is yet to come.  
+
+*P.S. If you’re curious about how Bun’s single-file executables work under the hood, or want to help shape the future of JavaScript tooling—drop by our Discord. Let’s chat.* 🚀
