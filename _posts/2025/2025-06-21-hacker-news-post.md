@@ -11,22 +11,37 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Thursday 25 December 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Sunday 28 December 2025_
 
-You know that feeling when you stumble across something that just *clicks* with your inner nerd? Like finding an old cassette tape of your favorite band's demo recordings? That's exactly what happened when I came across Fabrice Bellard's latest project this morning.
+**Why uv Flies While Pip Walks**  
 
-Now, if you've been around the block in tech circles, Bellard is basically the MacGyver of coding. QuickJS? QEMU? FFmpeg? Yeah, that's all him. But his newest drop—**MicroQuickJS**—is something special. Imagine packing an entire JavaScript engine into something so lean it could run on a digital postage stamp. Classic Bellard move—taking complex things and making them delightfully small and stupidly fast.
+Let’s talk about speed. Not the “oh, it’s a bit quicker” kind, but the *leave-your-coffee-unfinished* kind. You know that feeling when you’re waiting for a package install, mentally drafting your will? Yeah, uv fixes that. But here’s the thing – everyone credits Rust. And sure, Rust is great. But Rust alone doesn’t make a tool fast. It’s like crediting the oven for a perfect brisket. The real magic? Knowing what *not* to do.  
 
-*Sidebar:* Remember when we thought JavaScript engines needed to be bloated beasts? MicroQuickJS feels like discovering someone rebuilt your favorite sports car to run on espresso shots instead of gasoline. It’s not just small—it’s *elegantly* small. The kind of project that makes you mutter "*why didn’t I think of that?*" while simultaneously wanting to high-five the author through the screen.  
+Back in the day, Python packaging was like a Rube Goldberg machine. To install a package, pip had to run its `setup.py` script. But to run `setup.py`, it needed dependencies… which it could only discover by running `setup.py`. Classic catch-22. The result? Pip downloading half the internet, spawning subprocesses like it’s paying them commission, and occasionally faceplanting into missing build tools. It wasn’t pip’s fault – the ecosystem demanded chaos.  
 
-What I love most about this isn’t just the technical wizardry (though let’s be real—it *is* wizardry). It’s the *philosophy* behind it. Lean principles applied to code: cutting the fat, zeroing in on what’s essential, and respecting the hell out of system resources. Reminds me of that summer I tried trimming my BBQ smoker’s workflow down to three steps—no wasted movement, just pure flavor. Same energy here.  
+Then came the PEPs. Not the minty kind – the *Python Enhancement Proposal* kind. Starting around 2016, they quietly rewrote the rules:  
 
-Now, why should you care if you’re not knee-deep in JS engines? Because this isn’t just about running scripts. It’s about **possibility**. Think embedded systems humming along without breaking sweat. Tiny devices doing clever things without needing a supercomputer. Or maybe just that side project of yours that’s been gathering dust because spinning up V8 felt like overkill. MicroQuickJS is that quiet friend who shows up with exactly the right tool for the job—no drama, no fuss.  
+- **PEP 518** gave us `pyproject.toml`, a place to declare build deps *without* code execution. (Thank you, Rust’s Cargo, for the TOML inspiration.)  
+- **PEP 517** split build frontends from backends, so pip didn’t need a PhD in setuptools.  
+- **PEP 621** standardized dependency declarations – no more parsing Python to read metadata.  
+- **PEP 658** (live in 2023) finally let resolvers fetch deps *without* downloading entire wheels.  
 
-Of course, no tech is perfect. But here’s the thing—Bellard’s work always feels like an invitation. An invitation to tinker, to optimize, to ask, "How can I make this *mine*?" I’ve already got half-baked ideas swirling about hooking this into a Raspberry Pi project my son and I abandoned last winter. Maybe a micro weather station that tweets coastal wind patterns? (Because Hamburg’s weather *definitely* needs more commentary.)  
+By February 2024, when uv launched, the runway was paved. Python packaging had grown up.  
 
-At the end of the day, projects like this are why I fell in love with tech in the first place. It’s not just the code—it’s the craft. The relentless push to do more with less. The joy of seeing something complex rendered beautifully simple.  
+**But speed isn’t just about adding – it’s about cutting.**  
 
-So, if you’ve got a lazy Sunday afternoon and a terminal window calling your name… well, you know what to do. Dive in. Break something. Learn. And if you end up building something wild with it, drop me a line—I’ll bring the metaphorical popcorn.  
+uv looks at pip’s baggage and says “nah.” No `.egg` support (obsolete for a decade). No `pip.conf` (goodbye, config file spaghetti). No compulsive bytecode compilation. No touching system Python without explicit permission. It enforces specs strictly, because bending backward for malformed packages means maintaining code paths nobody needs.  
 
-*Now, if you'll excuse me—I've got a dehydrator full of experimental biltong and a GitHub repo waiting for attention. Priorities, right?* 😉
+And here’s my favorite: uv **ignores upper bounds** in `requires-python`. Why? Because declaring `python<4.0` is usually just superstition. Teams haven’t *tested* on Python 4, not because it’ll actually break. Dropping this cuts resolver backtracking like a hot knife through butter.  
+
+**Some tricks aren’t even Rust-dependent.**  
+
+Parallel downloads? Global caching via hardlinks? HTTP range requests to fetch metadata without downloading full wheels? That’s just good engineering – Python could’ve done it years ago. uv’s secret sauce isn’t the language; it’s the *design*. Prioritize fast paths, cache aggressively, and resolve *before* downloading.  
+
+Rust *does* help at the margins: zero-copy deserialization, thread-level parallelism without GIL drama, and packing versions into tiny `u64` integers. But none of that matters if you’re still executing code to find dependencies.  
+
+**Here’s the takeaway:** Ecosystems move slow until they don’t. For years, Python packaging was held hostage by legacy choices – executing code to discover requirements, tolerating outdated formats, prioritizing compatibility over speed. uv works because it’s built for *today’s* standards, not yesterday’s compromises.  
+
+The lesson isn’t “rewrite everything in Rust.” It’s simpler: **fast tools need fast ecosystems.** Static metadata. No mandatory code execution. Resolve first, download later. Nail that, and speed follows – in any language.  
+
+Now, if you’ll excuse me, I’ve got packages to install. And thanks to uv, I might actually finish that coffee. ☕
