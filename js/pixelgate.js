@@ -23,7 +23,7 @@ solveBtn.onclick = async () => {
     return;
   }
 
-  const answer = document.getElementById("answer").value;
+  const answer = document.getElementById("answer").value.toLowerCase().trim();
 
   const res = await fetch("https://pixelgate-solver.clintjb.workers.dev", {
     method: "POST",
