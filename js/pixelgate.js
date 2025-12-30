@@ -35,5 +35,15 @@ solveBtn.onclick = async () => {
   });
 
   const data = await res.json();
-  document.getElementById("result").innerText = data.message;
-};
+  
+    if (data.success && data.txHash) {
+      document.getElementById("result").innerHTML = `
+        ${data.message}<br/>
+        <a href="https://basescan.org/tx/${data.txHash}" target="_blank">
+          View on BaseScan
+        </a>
+      `;
+    } else {
+      document.getElementById("result").innerText = data.message;
+    }
+  };
