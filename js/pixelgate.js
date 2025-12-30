@@ -5,7 +5,7 @@ const solveBtn = document.getElementById("solve");
 
 connectBtn.onclick = async () => {
   if (!window.ethereum) {
-    alert("MetaMask required");
+    alert("MetaMask Required");
     return;
   }
 
@@ -19,13 +19,13 @@ connectBtn.onclick = async () => {
 
 solveBtn.onclick = async () => {
   if (!userAddress) {
-    alert("Connect wallet first");
+    alert("Connect Wallet First");
     return;
   }
 
   const answer = document.getElementById("answer").value;
 
-  const res = await fetch("https://YOUR_BACKEND/solve", {
+  const res = await fetch("https://pixelgate-solver.clintjb.workers.dev", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
