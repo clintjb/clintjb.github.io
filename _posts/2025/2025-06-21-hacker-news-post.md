@@ -11,37 +11,29 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Sunday 28 December 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Wednesday 31 December 2025_
 
-**Why uv Flies While Pip Walks**  
 
-Let’s talk about speed. Not the “oh, it’s a bit quicker” kind, but the *leave-your-coffee-unfinished* kind. You know that feeling when you’re waiting for a package install, mentally drafting your will? Yeah, uv fixes that. But here’s the thing – everyone credits Rust. And sure, Rust is great. But Rust alone doesn’t make a tool fast. It’s like crediting the oven for a perfect brisket. The real magic? Knowing what *not* to do.  
+# Why GOG’s Homecoming Feels Like a Win for Gamers Like Us  
 
-Back in the day, Python packaging was like a Rube Goldberg machine. To install a package, pip had to run its `setup.py` script. But to run `setup.py`, it needed dependencies… which it could only discover by running `setup.py`. Classic catch-22. The result? Pip downloading half the internet, spawning subprocesses like it’s paying them commission, and occasionally faceplanting into missing build tools. It wasn’t pip’s fault – the ecosystem demanded chaos.  
+Let me tell you about the first time I dusted off my old *Gothic II* discs, fired up GOG, and realized I didn’t have to fiddle with compatibility patches or jump through DRM hoops just to relive those foggy, griffin-filled afternoons. That moment—pure gaming freedom—is exactly why today’s news feels personal.  
 
-Then came the PEPs. Not the minty kind – the *Python Enhancement Proposal* kind. Starting around 2016, they quietly rewrote the rules:  
+**Michał Kiciński, the original co-founder of GOG**, is stepping back in to take the reins. If you’ve ever wondered whether corporate suits understand why we cling to classics while eyeing new indies with retro souls, this move might just settle the debate.  
 
-- **PEP 518** gave us `pyproject.toml`, a place to declare build deps *without* code execution. (Thank you, Rust’s Cargo, for the TOML inspiration.)  
-- **PEP 517** split build frontends from backends, so pip didn’t need a PhD in setuptools.  
-- **PEP 621** standardized dependency declarations – no more parsing Python to read metadata.  
-- **PEP 658** (live in 2023) finally let resolvers fetch deps *without* downloading entire wheels.  
+GOG has always been that unapologetically principled friend who refuses to compromise—DRM-free or bust, offline installers lovingly preserved, no asterisks hidden in the fine print. In a world where launchers multiply like gremlins and subscriptions dangle games like carrots on sticks, that philosophy isn’t just refreshing—it’s radical.  
 
-By February 2024, when uv launched, the runway was paved. Python packaging had grown up.  
+### So what’s next?  
 
-**But speed isn’t just about adding – it’s about cutting.**  
+1. **DRM-free isn’t going anywhere.** If anything, it’s doubling down as GOG’s core DNA. Your library stays yours, untouched, untethered. No sudden license revocations, no “oops, we sunsetted this.”  
+2. **Preservation gets a shot in the arm.** Those Patron donations and tip-jar funds? Still fueling rescue missions for abandoned gems. I’ve lost count of how many times I’ve watched GOG resurrect a game I assumed was lost to licensing purgatory.  
+3. **Independence, but not isolation.** CD PROJEKT RED games aren’t ghosting us—*Cyberpunk 2077*’s neon glow and *The Witcher*’s grimy taverns will still find a home here. But crucially, GOG gets to keep its soul while CD PROJEKT focuses on doing what they do best: crafting RPGs that eat our weekends.  
 
-uv looks at pip’s baggage and says “nah.” No `.egg` support (obsolete for a decade). No `pip.conf` (goodbye, config file spaghetti). No compulsive bytecode compilation. No touching system Python without explicit permission. It enforces specs strictly, because bending backward for malformed packages means maintaining code paths nobody needs.  
+Here’s the thing: platforms come and go, but **games are stories**. They’re playgrounds, time capsules, conversation starters. When Michał talks about “freedom, independence, and genuine control,” it’s not corporate jargon—it’s a vow to keep those stories alive. Not as museum pieces, but as living, playable slices of culture.  
 
-And here’s my favorite: uv **ignores upper bounds** in `requires-python`. Why? Because declaring `python<4.0` is usually just superstition. Teams haven’t *tested* on Python 4, not because it’ll actually break. Dropping this cuts resolver backtracking like a hot knife through butter.  
+### The quiet rebellion continues  
 
-**Some tricks aren’t even Rust-dependent.**  
+GOG’s mission—*Make Games Live Forever*—isn’t glamorous. Restoring compatibility layers, untangling rights, rebuilding lost builds? It’s digital archaeology with none of the Indiana Jones fanfare. But every time I boot up a 20-year-old game without a 20-step troubleshooting guide, I’m reminded why it matters.  
 
-Parallel downloads? Global caching via hardlinks? HTTP range requests to fetch metadata without downloading full wheels? That’s just good engineering – Python could’ve done it years ago. uv’s secret sauce isn’t the language; it’s the *design*. Prioritize fast paths, cache aggressively, and resolve *before* downloading.  
+So here’s to Michał, the team, and everyone who’s ever clicked “install” on a GOG classic. This isn’t just a business move; it’s a homecoming for a vision that’s always felt *ours*. Now, if you’ll excuse me, I’ve got a date with *Arcanum*—no clients, no logins, just pure, unfiltered nostalgia.  
 
-Rust *does* help at the margins: zero-copy deserialization, thread-level parallelism without GIL drama, and packing versions into tiny `u64` integers. But none of that matters if you’re still executing code to find dependencies.  
-
-**Here’s the takeaway:** Ecosystems move slow until they don’t. For years, Python packaging was held hostage by legacy choices – executing code to discover requirements, tolerating outdated formats, prioritizing compatibility over speed. uv works because it’s built for *today’s* standards, not yesterday’s compromises.  
-
-The lesson isn’t “rewrite everything in Rust.” It’s simpler: **fast tools need fast ecosystems.** Static metadata. No mandatory code execution. Resolve first, download later. Nail that, and speed follows – in any language.  
-
-Now, if you’ll excuse me, I’ve got packages to install. And thanks to uv, I might actually finish that coffee. ☕
+**What’s the first classic you’d resurrect given the chance?** Drop me a line—let’s swap war stories. 🕹️
