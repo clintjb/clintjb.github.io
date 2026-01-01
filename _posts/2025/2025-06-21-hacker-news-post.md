@@ -11,29 +11,18 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Wednesday 31 December 2025_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Thursday 01 January 2026_
 
+**Warren, Wisdom, and What Comes Next**  
 
-# Why GOG’s Homecoming Feels Like a Win for Gamers Like Us  
+Sitting here with my morning coffee (black, no sugar—like my humor), I can't help but chuckle at the news. Six decades. *Six decades* running the same company. In today’s whirlwind of instant gratification and relentless pivoting, that kind of tenure feels almost mythical—like finding a fax machine still humming away in a startup’s storage closet.  
 
-Let me tell you about the first time I dusted off my old *Gothic II* discs, fired up GOG, and realized I didn’t have to fiddle with compatibility patches or jump through DRM hoops just to relive those foggy, griffin-filled afternoons. That moment—pure gaming freedom—is exactly why today’s news feels personal.  
+I’ve always admired Buffett’s brand of stubborn clarity. Not the flashy, disrupt-everything ethos that dominates headlines, but the quiet discipline of compounding value. It’s lean thinking at its core: trim the fat, focus on what *actually* works, and let time do the heavy lifting. Reminds me of tweaking my BBQ brisket method over the years—no shortcuts, just incremental tweaks until the result feels inevitable.  
 
-**Michał Kiciński, the original co-founder of GOG**, is stepping back in to take the reins. If you’ve ever wondered whether corporate suits understand why we cling to classics while eyeing new indies with retro souls, this move might just settle the debate.  
+There’s a lesson here for leaders, especially in tech (where I’ve spent most of my career chasing the next shiny object). Stability isn’t sexy, but it’s underrated. Building systems that outlast trends. Empowering teams to think in decades, not quarters. Warren didn’t just pick stocks; he curated a culture—one that could survive without him. That’s the real magic trick.  
 
-GOG has always been that unapologetically principled friend who refuses to compromise—DRM-free or bust, offline installers lovingly preserved, no asterisks hidden in the fine print. In a world where launchers multiply like gremlins and subscriptions dangle games like carrots on sticks, that philosophy isn’t just refreshing—it’s radical.  
+I’m struck by the humility in stepping back when the machine is still humming. So many of us cling to roles long after we’ve stopped adding unique value, mistaking motion for progress. Letting go isn’t failure; it’s the ultimate lean move—cutting the constraint to let the system breathe.  
 
-### So what’s next?  
+Anyway, I’ll raise a glass tonight—probably a cheap German pilsner, because irony—to the era ending. Not because I mourn it (change is oxygen), but because it’s rare to see someone stick the landing so gracefully. Here’s to the next chapter—both for Omaha’s oracle and the rest of us still fumbling toward our own versions of legacy.  
 
-1. **DRM-free isn’t going anywhere.** If anything, it’s doubling down as GOG’s core DNA. Your library stays yours, untouched, untethered. No sudden license revocations, no “oops, we sunsetted this.”  
-2. **Preservation gets a shot in the arm.** Those Patron donations and tip-jar funds? Still fueling rescue missions for abandoned gems. I’ve lost count of how many times I’ve watched GOG resurrect a game I assumed was lost to licensing purgatory.  
-3. **Independence, but not isolation.** CD PROJEKT RED games aren’t ghosting us—*Cyberpunk 2077*’s neon glow and *The Witcher*’s grimy taverns will still find a home here. But crucially, GOG gets to keep its soul while CD PROJEKT focuses on doing what they do best: crafting RPGs that eat our weekends.  
-
-Here’s the thing: platforms come and go, but **games are stories**. They’re playgrounds, time capsules, conversation starters. When Michał talks about “freedom, independence, and genuine control,” it’s not corporate jargon—it’s a vow to keep those stories alive. Not as museum pieces, but as living, playable slices of culture.  
-
-### The quiet rebellion continues  
-
-GOG’s mission—*Make Games Live Forever*—isn’t glamorous. Restoring compatibility layers, untangling rights, rebuilding lost builds? It’s digital archaeology with none of the Indiana Jones fanfare. But every time I boot up a 20-year-old game without a 20-step troubleshooting guide, I’m reminded why it matters.  
-
-So here’s to Michał, the team, and everyone who’s ever clicked “install” on a GOG classic. This isn’t just a business move; it’s a homecoming for a vision that’s always felt *ours*. Now, if you’ll excuse me, I’ve got a date with *Arcanum*—no clients, no logins, just pure, unfiltered nostalgia.  
-
-**What’s the first classic you’d resurrect given the chance?** Drop me a line—let’s swap war stories. 🕹️
+*Fun side note: My kid asked if Buffett retiring means Berkshire stock will dip. “Only if people panic,” I told him. “And panicking’s usually a bad bet.” He shrugged and went back to Fortnite. Priorities, right?*  
