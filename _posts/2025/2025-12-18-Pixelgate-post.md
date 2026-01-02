@@ -324,7 +324,9 @@ headers: {
 };
 ```
 
-Once deployed, OpenSea refreshed and everything updated accordingly, I could see each character's traits coming through in place. Now it was time to start weaving in some AI "magic". I wanted to be really mindful here and ensure that the AI wouldn't introduce any "source of truth" - the OG 16 bit characters were the source and they should never change, the AI portion should simply bring a different view to the character but never modify the character / identity itself. The first part was rather simple - I utilized an LLM via OpenRouter, provided it with the traits from the metadata payload and prompted it to give a background story on the origin of this character. I gave it some additional context on this fictitious world based on my combined interest of BBQ, whisky, comics and whatnot and let it go crazy. This backstory / character lore gets stored as well into a KV and gets added into the metadata payload for OpenSea. From a text standpoint we're basically done now - time to move onto the image / vinyl toy regeneration.
+Once deployed, OpenSea refreshed and everything updated accordingly, I could see each character's traits coming through in place. Now it was time to start weaving in some AI "magic". I wanted to be really mindful here and ensure that the AI wouldn't introduce any "source of truth" - the OG 16 bit characters were the source and they should never change, the AI portion should simply bring a different view to the character but never modify the character / identity itself.
+
+The first part was rather simple - I utilized an LLM via OpenRouter, provided it with the traits from the metadata payload and prompted it to give a background story on the origin of this character. I gave it some additional context on this fictitious world based on my combined interest of BBQ, whisky, comics and whatnot and let it go crazy. This backstory / character lore gets stored as well into a KV and gets added into the metadata payload for OpenSea. From a text standpoint we're basically done now - time to move onto the image / vinyl toy regeneration.
 
 ### Vinyl Toy Image Generation
 
@@ -349,7 +351,10 @@ returnnewResponse(cached, headers);
 }
 ```
 
-I headed back to my original image worker and added a query parameter to allow for a PNG call (?tokenId=0 → SVG / ?tokenId=0&format=png → PNG) this meant that if someone called that PNG token it would first check if it existed in the cache and return the image or call the API and store it accordingly. I now had my OG characters publicly available in both SVG and PNG.
+I headed back to my original image worker and added a query parameter to allow for multiple image calls:
+- ?tokenId=0 → SVG
+- ?tokenId=0&format=png → PNG
+This meant that if someone called that PNG token it would first check if it existed in the cache and return the image or call the API and store it accordingly. I now had my OG characters publicly available in both SVG and PNG.
 
 So with PNG in hand I now started updating my worker to deliver the image to the AI model via OpenRoute and the corresponding prompt to be returned into (yet another) KV cache. This seems simple but this was surprisingly difficult - getting Cloudflare workers to fetch another worker’s image feels like it should be easy - _403 forbidden / proxy blocking / worker to worker fetch failures / missing headers_ - it unfortunately wasn't...
 
@@ -406,7 +411,7 @@ This kept the my website / UX as simple as possible (even for non crypto folks!)
 
 **OpenSea** - It genuinely takes a lot of the heavy lifting out of creating these kinds of things. It picked up the contract, resolved the tokenURI correctly, metadata loaded and images stored. You can see the [collection here](https://opensea.io/collection/pixelgate-nft)
 
-![](/images/posts/2025/pixelgate-opensea.jpg)](https://opensea.io/collection/pixelgate-nft){:target="_blank"}
+![](/images/posts/2025/pixelgate-opensea.jpg)]
 
 **Surprises** - These are the bits that probably don't need too much of a write up but at least caught me a bit of guard throughout the process:
 
