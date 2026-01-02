@@ -78,7 +78,7 @@ So before going deep into the details let's start here with the riddle to mint y
   #result.show { display: block; }
   #result.success { background: #d4edda; color: #155724; }
   #result.error { background: #f8d7da; color: #721c24; }
-  #result a { color: #667eea; }
+  #result a { color: #000000; }
 </style>
 <div id="wallet">
   <button id="connect">Connect Wallet</button>
@@ -429,3 +429,4 @@ If I did it again there would be endless amounts of things I'd do differently bu
 Cheers
 <script src="https://cdn.jsdelivr.net/npm/ethers@6.10.0/dist/ethers.umd.min.js"></script>
 <script src="/js/pixelgate.js"></script>
+
