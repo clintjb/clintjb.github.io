@@ -261,7 +261,7 @@ So now the minting wasn't happening in the browser (ensured no one could inspect
 
 So finally, we had characters being rendered in 16 bit glory correctly, minting had worked and the tokens existed on Base. Those tokens though didn't say much - on chain the tokenURI(tokenId) returns a URL, that’s it - everything else the backstory, names, traits, images, rarity - it all depends on what that URL payload returns, and how the OpenSea marketplaces interpret it. In my case the PixelGate contract returns: https://pixelgate-metadata.clintjb.workers.dev/{tokenId}
 
-So the flow for the contract / OpenSea basically means _contract → tokenURI() → metadata worker → JSON response_... yep, this meant I needed another worker
+So the flow for the contract / OpenSea basically means _contract → tokenURI() → metadata worker → JSON response_ - yep, this meant I needed another worker
 
 ### Metadata & Traits
 So my very first version kind of sucked (current one does as well a bit if I'm honest) but the first version was really a little bare. It parsed the _tokenId_, regenerated the character and returned some really minimal metadata:
@@ -352,8 +352,9 @@ returnnewResponse(cached, headers);
 ```
 
 I headed back to my original image worker and added a query parameter to allow for multiple image calls:
-- ?tokenId=0 → SVG
-- ?tokenId=0&format=png → PNG
+- [?tokenId=0 → SVG](https://pixelgate-image.clintjb.workers.dev/?tokenId=0)
+- [?tokenId=0&format=png → PNG](https://pixelgate-image.clintjb.workers.dev/?tokenId=0&format=png)
+
 This meant that if someone called that PNG token it would first check if it existed in the cache and return the image or call the API and store it accordingly. I now had my OG characters publicly available in both SVG and PNG.
 
 So with PNG in hand I now started updating my worker to deliver the image to the AI model via OpenRoute and the corresponding prompt to be returned into (yet another) KV cache. This seems simple but this was surprisingly difficult - getting Cloudflare workers to fetch another worker’s image feels like it should be easy - _403 forbidden / proxy blocking / worker to worker fetch failures / missing headers_ - it unfortunately wasn't...
@@ -411,7 +412,7 @@ This kept the my website / UX as simple as possible (even for non crypto folks!)
 
 **OpenSea** - It genuinely takes a lot of the heavy lifting out of creating these kinds of things. It picked up the contract, resolved the tokenURI correctly, metadata loaded and images stored. You can see the [collection here](https://opensea.io/collection/pixelgate-nft)
 
-![](/images/posts/2025/pixelgate-opensea.jpg)]
+![](/images/posts/2025/pixelgate-opensea.jpg)
 
 **Surprises** - These are the bits that probably don't need too much of a write up but at least caught me a bit of guard throughout the process:
 
