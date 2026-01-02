@@ -17,9 +17,9 @@ So before going deep into the details let's start here with the riddle to mint y
 
 ![](/images/posts/2025/pixelgate-riddle.jpg)
 
-> I speak without a mouth
-> And hear without ears
-> I have no body, but I come alive with wind
+> I speak without a mouth,
+> And hear without ears,
+> I have no body, but I come alive with wind -
 > What am I?
 
 <style>
@@ -96,6 +96,7 @@ So before going deep into the details let's start here with the riddle to mint y
 I wanted to build a small NFT project - I wanted some kind of system that felt kind of felt like unlocking a secret character in a video game - it shouldn't cost the user anything (but it shouldn't break my wallet either!) The base of the system should be deterministic, so no randomness and no bots. I wanted the aesthetic to originate from 16 bit characters than have them "evolve" via AI when minted. This evolution would be heavily influenced by FunkoPops! (thinking it was a way to wow my son as I watch him currently build a small army of them in his room) The user could only mint a character by "unlocking the gate" via a riddle (also inspired by the awesome [Absolute Batman](https://en.wikipedia.org/wiki/Absolute_Batman) comics Ive been recently reading)
 
 The project was built mainly as a series of independent Cloudflare workers - as I was using a few different APIs and whatnot, I thought would ensure bring in some resilience and that if a failure occurred in one component (e.g. the AI step) it doesn't break the core functionality. The rough architecture was as follows:
+
 ![](/images/posts/2025/pixelgate-architecture.png)
 
 - Jekyll: The fronted, it handles the wallet connection and the user input
@@ -121,14 +122,16 @@ To start with, my original plan was to stack the PNGs, render them server side a
 
 What I actually wanted was pixel perfect layering, code driven color changes / variations as well as deterministic outputs - having already done all the characters and components I decided to convert each layer into SVG paths - once these were converted, everything became code again!
 
-```<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+```
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
   <path d="M31 16h35v4h4v12h-8v3h-7v2H15v-5h10v-6h2v-6h4Z"/>
   <path fill="#FFF" d="M36 20h8v9h-3v-5h-5Z"/>
 </svg>
 ```
 This approach now allowed me to basically reduce the colors to parameters and each character layer was now a function with a specific rendering order. Later The generator would take the tokenID (from the NFT / block) and use it as a seed for decisions / probability rules e.g.
 
-```functionrandomChance(seed, probability) {
+```
+functionrandomChance(seed, probability) {
 returnseededRandom(seed) < probability;
 }
 
@@ -144,7 +147,8 @@ This then meant that if tokenID = 123 it would always be the same character. I w
 ### Cloudflare & Workers
 So, recapping a bit - up until now PixelGate was just a character generator running locally. It worked, it was deterministic, it produced clean SVGs - it still wasn't very useful though - as a minimum it needed to render to a public URL. SVGs are basically just simple code wrapped up, meaning unlike other images it doesn't need to be a file - if a HTTP call returns "Content-Type: image/svg+xml" than your browser simply treats it like an image even if its not in the traditional sense. This is simplified but basically an example of the worker:
 
-```exportdefault {
+```
+exportdefault {
 asyncfetch(request) {
 const { searchParams } =newURL(request.url);
 const tokenId =Number(searchParams.get("tokenId"));
@@ -186,7 +190,8 @@ So first up was to choose on what blockchain I would run this on - there were a 
 
 I developed all this in [Remix](https://remix.ethereum.org) along with OpenZeppelin as a base, compiled and deployed the contract. Its slightly more complex than this (but honestly not much) below is a simplified example of the contract - its job is to be basically do two things - point to the metadata and mint tokens - everything else lives and functions elsewhere...
 
-```pragma solidity ^0.8.20;
+```
+pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -233,7 +238,8 @@ So with the smart contract deployed we had to integrate the solver worker to tri
 
 Problem here was that once people knew the answer (and it's never designed to be very difficult) people could constantly mint themselves and NFT on my costs - here I wanted to limit it to one token per wallet. So after researching a bit on best practices and fiddling around I came to the conclusion of using a KV store to lock access:
 
-```const key = address.toLowerCase();
+```
+const key = address.toLowerCase();
 const alreadySolved = await env.SOLVERS.get(key);
 
 if (alreadySolved) {
@@ -245,7 +251,8 @@ await env.SOLVERS.put(key,"true");
 
 So now the minting wasn't happening in the browser (ensured no one could inspect the code / bypass the riddle or spam the contract) but keeping everything server side meant the gate remained enforced, contract stays clean and importantly the front end / Jekyll remained simple. Looking back the biggest issue with this approach was that Cloudflare workers cant install npm packages or easily import Ethers.js. This led to a hell of a lot of rewrites / CORS issues and debugging / modified headers etc - with all that said though, my heart lit up the moment I finally saw this response from my console:
 
-```{
+```
+{
 "success":true,
 "message":"🌮 PixelGate NFT Minted!",
 "txHash":"0x2b622879..."
@@ -259,7 +266,8 @@ So the flow for the contract / OpenSea basically means _contract → tokenURI() 
 ### Metadata & Traits
 So my very first version kind of sucked (current one does as well a bit if I'm honest) but the first version was really a little bare. It parsed the _tokenId_, regenerated the character and returned some really minimal metadata:
 
-```const metadata = {
+```
+const metadata = {
 name:`PixelGate #${tokenId}`,
 description:"A 16-bit hero unlocked on clintbird.com",
 image:`https://pixelgate-image.clintjb.workers.dev/?tokenId=${tokenId}`,
@@ -275,7 +283,8 @@ headers: {"Content-Type":"application/json" }
 
 This next part now is by far the hackiest / shittiest part of the project (but in my defense it was late and I just wanted it working at this point) I already had the SVGs of the characters so started deriving the traits - problem was a shirt was a shirt (at least in the payload) even if they were wearing a hoodie - some of the traits weren't coming through as explicit variables, so in the end I inferred them from snippets in the SVG code:
 
-```const shirtType = (() => {
+```
+const shirtType = (() => {
 if (c.shirt.includes('M34 78h32v4'))return'Striped';
 if (c.shirt.includes('M43 68h14v5'))return'Hoodie';
 if (c.shirt.includes('M47 68h6v23'))return'Jacket';
@@ -285,7 +294,8 @@ return'Plain';
 
 Honestly, it's not elegant but it does work deterministically - and as said it was getting late and I had to move on. So in the end the meta data worker ended up looking something like this:
 
-```exportdefault {
+```
+exportdefault {
 fetch(request) {
 const tokenId =Number(request.url.split('/').pop());
 const c =generateCharacter(tokenId);
@@ -330,7 +340,8 @@ What I came to realize is I was after a reinterpretation - the model should see 
 
 SVG is great for all the reasons I already mentioned, but OpenSea prefers PNG - and, as I now learnt, most AI models don't accept SVG via API calls. I came to the conclusion that PNG output was unfortunately unavoidable. After googling for some time I came to another unfortunate realization that Cloudflare workers don't have native image libraries or canvas so there was no easy way to “just render” an SVG within my stack. CloudFlare did offer an image pipeline as well as a browser rendering API, but after spending way too long (to not get it to work) I reverted to simply using a free conversion API. I would deliver it the SVG and it would return a PNG. So now having the API working and PNGs being generated I really wanted to cache these (knowing I'm limited to the free calls I can make) and the fact that OpenSea is notorious for hammering the hell out of your endpoints / metadata refresh. Here I added a Cloudflare KV namespace with the following caching logic:
 
-```const cacheKey =`image:${tokenId}:${format}`;
+```
+const cacheKey =`image:${tokenId}:${format}`;
 const cached =await env.PIXELGATE_IMAGES.get(cacheKey);
 
 if (cached) {
@@ -383,7 +394,8 @@ This logic lived server side inside a Cloudflare worker as GitHub pages would ex
 
 **The Wallet Connection** - here we couldn't make it any simpler, no off chain authorizations, no signing - here we connect a wallet, submit an answer, receive a result:
 
-```const provider = new ethers.BrowserProvider(window.ethereum);
+```
+const provider = new ethers.BrowserProvider(window.ethereum);
 const accounts = await provider.send("eth_requestAccounts", []);
 userAddress = accounts[0];
 ```
