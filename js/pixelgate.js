@@ -35,15 +35,18 @@ solveBtn.onclick = async () => {
   });
 
   const data = await res.json();
+  const resultEl = document.getElementById("result");
   
-    if (data.success && data.txHash) {
-      document.getElementById("result").innerHTML = `
-        ${data.message}<br/>
-        <a href="https://basescan.org/tx/${data.txHash}" target="_blank">
-          View on BaseScan
-        </a>
-      `;
-    } else {
-      document.getElementById("result").innerText = data.message;
-    }
-  };
+  if (data.success && data.txHash) {
+    resultEl.className = "show success";
+    resultEl.innerHTML = `
+      ${data.message}<br/>
+      <a href="https://basescan.org/tx/${data.txHash}" target="_blank">
+        View on BaseScan
+      </a>
+    `;
+  } else {
+    resultEl.className = "show error";
+    resultEl.innerText = data.message;
+  }
+};
