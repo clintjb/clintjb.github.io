@@ -412,6 +412,16 @@ This kept the my website / UX as simple as possible (even for non crypto folks!)
 
 ![](/images/posts/2025/pixelgate-opensea.jpg)
 
+**Costs** - One thing I was genuinely curious about going into PixelGate was the real cost of running something like this, not theoretical pricing, but actual money leaving my account. The good news - surprisingly little, mostly because almost everything is deterministic, aggressively cached, or both. Below is a rough breakdown of where money could / did go:
+
+- Cloudflare Workers: Entirely within the free tier **(~€0.00)**
+- Cloudflare KV: Reads are high but writes are low - still well within the free tier **(~€0.00)**
+- Blockchain (Base): One mint per wallet, gas paid by me **(~€0.01 per mint)**
+- AI Lore (OpenRouter): Utilizing free LLMs and caching **(~€0.00)**
+- SVG To PNG (CloudConvert): Utilizing free API call (10 per day) and caching **(~€0.00)**
+- AI Image (OpenRouter): Most expensive part, using Flux2 Pro **(~€0.04 per image)**
+- Marketplace (OpenSea): Free, but extremely chatty, caching is essential **(~€0.00)**
+
 **Surprises** - These are the bits that probably don't need too much of a write up but at least caught me a bit of guard throughout the process:
 
 - How well serverless fits NFTs
@@ -427,3 +437,4 @@ If I did it again there would be endless amounts of things I'd do differently bu
 Cheers
 <script src="https://cdn.jsdelivr.net/npm/ethers@6.10.0/dist/ethers.umd.min.js"></script>
 <script src="/js/pixelgate.js"></script>
+
