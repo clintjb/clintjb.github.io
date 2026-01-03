@@ -93,13 +93,13 @@ So before going deep into the details let's start here with the riddle to mint y
 ---
 
 ### The Core Concept
-I wanted to build a small NFT project - I wanted some kind of system that felt kind of felt like unlocking a secret character in a video game - it shouldn't cost the user anything (but it shouldn't break my wallet either!) The base of the system should be deterministic, so no randomness and no bots. I wanted the aesthetic to originate from 16 bit characters than have them "evolve" via AI when minted. This evolution would be heavily influenced by FunkoPops! (thinking it was a way to wow my son as I watch him currently build a small army of them in his room) The user could only mint a character by "unlocking the gate" via a riddle (also inspired by the awesome [Absolute Batman](https://en.wikipedia.org/wiki/Absolute_Batman) comics Ive been recently reading)
+I wanted to build a small NFT project - I wanted some kind of system that felt kind of like unlocking a secret character in a video game - it shouldn't cost the user anything (but it shouldn't break my wallet either!) The base of the system should be deterministic, so no randomness and no bots. I wanted the aesthetic to originate from 16 bit characters than have them "evolve" via AI when minted. This evolution would be heavily influenced by FunkoPops! (thinking it was a way to wow my son as I watch him currently build a small army of them in his room) The user could only mint a character by "unlocking the gate" via a riddle (also inspired by the awesome [Absolute Batman](https://en.wikipedia.org/wiki/Absolute_Batman) comics Ive been recently reading)
 
 The project was built mainly as a series of independent Cloudflare workers - as I was using a few different APIs and whatnot, I thought would ensure bring in some resilience and that if a failure occurred in one component (e.g. the AI step) it doesn't break the core functionality. The rough architecture was as follows:
 
 ![](/images/posts/2025/pixelgate-architecture.png)
 
-- Jekyll: The fronted, it handles the wallet connection and the user input
+- Jekyll: The frontend, it handles the wallet connection and the user input
 - Solver Worker: Validates riddle answers server side and triggers the minting on chain
 - Metadata Worker: Dynamically builds an ERC-721 JSON, extracts traits and creates an AI backstory
 - Image Worker: Generates an "OG" SVG on the fly, renders as PNG and a FunkoPop reinterpretation via OpenRouter
@@ -131,39 +131,39 @@ What I actually wanted was pixel perfect layering, code driven color changes / v
 This approach now allowed me to basically reduce the colors to parameters and each character layer was now a function with a specific rendering order. Later The generator would take the tokenID (from the NFT / block) and use it as a seed for decisions / probability rules e.g.
 
 ```
-functionrandomChance(seed, probability) {
-returnseededRandom(seed) < probability;
+function randomChance(seed, probability) {
+  return seededRandom(seed) < probability;
 }
 
-if (randomChance(tokenId +42,0.05)) {
-  character.glow =random(glowColors);
+if (randomChance(tokenId + 42, 0.05)) {
+  character.glow = random(glowColors);
 }
 ```
 
-This then meant that if tokenID = 123 it would always be the same character. I wouldn't have to screw around with IPFS uploads (which my previous experiment relied heavily on) and no need for preminting - basically at this point PixelGate was already working as an image generator. You can see the OG output here:
+This then meant that if tokenID = 123 it would always be the same character. I wouldn't have to screw around with IPFS uploads (which my previous experiment relied heavily on) and no need for preminting - basically at this point PixelGate was already working as an image generator. Why no IPFS this time? Simple, this time round I wanted deterministic generation + dynamic workers - it would remove the need for preminted assets or permanent storage - the chain should only point to logic, not files. You can see the OG output here:
 
 ![](/images/posts/2025/pixelgate-og.png)
 
 ### Cloudflare & Workers
-So, recapping a bit - up until now PixelGate was just a character generator running locally. It worked, it was deterministic, it produced clean SVGs - it still wasn't very useful though - as a minimum it needed to render to a public URL. SVGs are basically just simple code wrapped up, meaning unlike other images it doesn't need to be a file - if a HTTP call returns "Content-Type: image/svg+xml" than your browser simply treats it like an image even if its not in the traditional sense. This is simplified but basically an example of the worker:
+So, recapping a bit - up until now PixelGate was just a character generator running locally. It worked, it was deterministic, it produced clean SVGs - it still wasn't very useful though - as a minimum it needed to render to a public URL. SVGs are basically just simple code wrapped up, meaning unlike other images it doesn't need to be a file - if a HTTP call returns "Content-Type: image/svg+xml" then your browser simply treats it like an image even if its not in the traditional sense. This is simplified but basically an example of the worker:
 
 ```
-exportdefault {
-asyncfetch(request) {
-const { searchParams } =newURL(request.url);
-const tokenId =Number(searchParams.get("tokenId"));
+export default {
+  async fetch(request) {
+    const { searchParams } = new URL(request.url);
+    const tokenId = Number(searchParams.get("tokenId"));
 
-if (Number.isNaN(tokenId)) {
-returnnewResponse("Invalid tokenId", {status:400 });
+    if (Number.isNaN(tokenId)) {
+      return new Response("Invalid tokenId", { status: 400 });
     }
 
-const character =generateCharacter(tokenId);
-const svg =renderSVG(character);
+    const character = generateCharacter(tokenId);
+    const svg = renderSVG(character);
 
-returnnewResponse(svg, {
-headers: {
-"Content-Type":"image/svg+xml",
-"Cache-Control":"public, max-age=31536000"
+    return new Response(svg, {
+      headers: {
+        "Content-Type": "image/svg+xml",
+        "Cache-Control": "public, max-age=31536000"
       }
     });
   }
@@ -175,13 +175,13 @@ This was now basically the backbone for the rest of the project - the worker ran
 [https://pixelgate-image.clintjb.workers.dev/?tokenId=0](https://pixelgate-image.clintjb.workers.dev/?tokenId=0)
 
 ### Gated Minting & Smart Contracts
-Now that the OG characters were created it was time to make them ownable - that meant getting them onto a blockchain. As I mentioned earlier the riddle would act as the gateway, main point here was to have a bit of a play with making it "feel" like unlocking content from a game but probably more importantly to make minting intentional / block bots. The process was basically the following:
+Now that the OG characters were created it was time to make them ownable - that meant getting them onto a blockchain. As I mentioned earlier the riddle would act as the gateway, main point here was to have a bit of a play with making it "feel" like unlocking content from a game but probably more importantly to make minting intentional / block bots (it wouldn’t survive a hostile public mint, but it didn’t need to) The process was basically the following:
 
 - Jekyll: User attaches the wallet and enters their answer
 - Solver Worker: Validates hashed answer, ensures the wallet hasn't already solved and than calls the contract
 - PixelGate (ERC-721) Smart Contract: Mints the token & assigns the tokenID
 
-So first up was to choose on what blockchain I would run this on - there were a lot of things I considered but the two most important points (by far!) were support for OpenSea and LOW fees. As mentioned I wanted it to have low friction / no cost for the user, but to keep his affordable I couldn't be paying crazy minting / gas fees (on the Ethereum blockchain it costs anywhere between 50c - 70€ depending on network congestion!) so after a bit of research I landed on [Base](https://www.base.org/build). So with that decided I started to work on the smart contract. The last time I did this I had all kinds of complexities integrated (royalty logic, decay, hooks etc) this time I decided to keep it ridiculously boring and simple:
+So first up was to choose on what blockchain I would run this on - there were a lot of things I considered but the two most important points (by far!) were support for OpenSea and LOW fees. As mentioned I wanted it to have low friction / no cost for the user, but to keep his affordable I couldn't be paying crazy minting / gas fees (on Ethereum this can range from a few cents to tens of euros depending on congestion - this unpredictability I definitely didn't want to get hit with!) so after a bit of research I landed on [Base](https://www.base.org/build). So with that decided I started to work on the smart contract. The last time I did this I had all kinds of complexities integrated (royalty logic, decay, hooks etc) this time I decided to keep it ridiculously boring and simple:
 
 - ERC-721
 - onlyOwner mint
@@ -243,19 +243,19 @@ const key = address.toLowerCase();
 const alreadySolved = await env.SOLVERS.get(key);
 
 if (alreadySolved) {
-returnjson({message:"Already Solved" },400);
+  return json({ message: "Already Solved" }, 400);
 }
 
-await env.SOLVERS.put(key,"true");
+await env.SOLVERS.put(key, "true");
 ```
 
 So now the minting wasn't happening in the browser (ensured no one could inspect the code / bypass the riddle or spam the contract) but keeping everything server side meant the gate remained enforced, contract stays clean and importantly the front end / Jekyll remained simple. Looking back the biggest issue with this approach was that Cloudflare workers cant install npm packages or easily import Ethers.js. This led to a hell of a lot of rewrites / CORS issues and debugging / modified headers etc - with all that said though, my heart lit up the moment I finally saw this response from my console:
 
 ```
 {
-"success":true,
-"message":"🌮 PixelGate NFT Minted!",
-"txHash":"0x2b622879..."
+  "success": true,
+  "message": "🌮 PixelGate NFT Minted!",
+  "txHash": "0x2b622879..."
 }
 ```
 
@@ -268,56 +268,54 @@ So my very first version kind of sucked (current one does as well a bit if I'm h
 
 ```
 const metadata = {
-name:`PixelGate #${tokenId}`,
-description:"A 16-bit hero unlocked on clintbird.com",
-image:`https://pixelgate-image.clintjb.workers.dev/?tokenId=${tokenId}`,
-attributes: []
-    };
-
-returnnewResponse(JSON.stringify(metadata), {
-headers: {"Content-Type":"application/json" }
-    });
-  }
+  name: `PixelGate #${tokenId}`,
+  description: "A 16-bit hero unlocked on clintbird.com",
+  image: `https://pixelgate-image.clintjb.workers.dev/?tokenId=${tokenId}`,
+  attributes: []
 };
+
+return new Response(JSON.stringify(metadata), {
+  headers: { "Content-Type": "application/json" }
+});
 ```
 
-This next part now is by far the hackiest / shittiest part of the project (but in my defense it was late and I just wanted it working at this point) I already had the SVGs of the characters so started deriving the traits - problem was a shirt was a shirt (at least in the payload) even if they were wearing a hoodie - some of the traits weren't coming through as explicit variables, so in the end I inferred them from snippets in the SVG code:
+This next part now is by far the hackiest / dirtiest part of the project (but in my defense it was late and I just wanted it working at this point) I already had the SVGs of the characters so started deriving the traits - problem was a shirt was a shirt (at least in the payload) even if they were wearing a hoodie - some of the traits weren't coming through as explicit variables, so in the end I inferred them from snippets in the SVG code:
 
 ```
 const shirtType = (() => {
-if (c.shirt.includes('M34 78h32v4'))return'Striped';
-if (c.shirt.includes('M43 68h14v5'))return'Hoodie';
-if (c.shirt.includes('M47 68h6v23'))return'Jacket';
-return'Plain';
+  if (c.shirt.includes('M34 78h32v4')) return 'Striped';
+  if (c.shirt.includes('M43 68h14v5')) return 'Hoodie';
+  if (c.shirt.includes('M47 68h6v23')) return 'Jacket';
+  return 'Plain';
 })();
 ```
 
 Honestly, it's not elegant but it does work deterministically - and as said it was getting late and I had to move on. So in the end the meta data worker ended up looking something like this:
 
 ```
-exportdefault {
-fetch(request) {
-const tokenId =Number(request.url.split('/').pop());
-const c =generateCharacter(tokenId);
+export default {
+  fetch(request) {
+    const tokenId = Number(request.url.split('/').pop());
+    const c = generateCharacter(tokenId);
 
-const metadata = {
-name:`PixelGate #${tokenId}`,
-description:"A 16-bit hero unlocked on clintbird.com",
-image:`https://pixelgate-image.clintjb.workers.dev/?tokenId=${tokenId}`,
-attributes: [
-        {trait_type:"Background",value: c.background.name },
-        {trait_type:"Glow",value: c.glow ? c.glow.name :"None" },
-        {trait_type:"Shirt Type",value:inferShirt(c) },
-        {trait_type:"Headwear",value:inferHead(c) },
-        {trait_type:"Face Accessory",value:inferFace(c) },
-        {trait_type:"Logo",value:inferLogo(c) }
+    const metadata = {
+      name: `PixelGate #${tokenId}`,
+      description: "A 16-bit hero unlocked on clintbird.com",
+      image: `https://pixelgate-image.clintjb.workers.dev/?tokenId=${tokenId}`,
+      attributes: [
+        { trait_type: "Background", value: c.background.name },
+        { trait_type: "Glow", value: c.glow ? c.glow.name : "None" },
+        { trait_type: "Shirt Type", value: inferShirt(c) },
+        { trait_type: "Headwear", value: inferHead(c) },
+        { trait_type: "Face Accessory", value: inferFace(c) },
+        { trait_type: "Logo", value: inferLogo(c) }
       ]
     };
 
-returnnewResponse(JSON.stringify(metadata), {
-headers: {
-"Content-Type":"application/json",
-"Cache-Control":"public, max-age=31536000"
+    return new Response(JSON.stringify(metadata), {
+      headers: {
+        "Content-Type": "application/json",
+        "Cache-Control": "public, max-age=31536000"
       }
     });
   }
@@ -343,11 +341,11 @@ What I came to realize is I was after a reinterpretation - the model should see 
 SVG is great for all the reasons I already mentioned, but OpenSea prefers PNG - and, as I now learnt, most AI models don't accept SVG via API calls. I came to the conclusion that PNG output was unfortunately unavoidable. After googling for some time I came to another unfortunate realization that Cloudflare workers don't have native image libraries or canvas so there was no easy way to “just render” an SVG within my stack. CloudFlare did offer an image pipeline as well as a browser rendering API, but after spending way too long (to not get it to work) I reverted to simply using a free conversion API. I would deliver it the SVG and it would return a PNG. So now having the API working and PNGs being generated I really wanted to cache these (knowing I'm limited to the free calls I can make) and the fact that OpenSea is notorious for hammering the hell out of your endpoints / metadata refresh. Here I added a Cloudflare KV namespace with the following caching logic:
 
 ```
-const cacheKey =`image:${tokenId}:${format}`;
-const cached =await env.PIXELGATE_IMAGES.get(cacheKey);
+const cacheKey = `image:${tokenId}:${format}`;
+const cached = await env.PIXELGATE_IMAGES.get(cacheKey);
 
 if (cached) {
-returnnewResponse(cached, headers);
+  return new Response(cached, headers);
 }
 ```
 
@@ -390,7 +388,7 @@ So, now we've gone through every individual piece in the PixelGate workflow:
 - NFTs being minted on Base
 - AI reinterpretations cached and stable
 
-Ill also run through now with some of the lessons and surprises I had:
+I'll also run through now with some of the lessons and surprises I had:
 
 **The Solver Worker / The Gate** - The riddle part of PixelGate was intentionally simple “_I speak without a mouth, and hear without ears, I have no body, but I come alive with wind - What am I?_”
 
@@ -424,9 +422,8 @@ This kept the my website / UX as simple as possible (even for non crypto folks!)
 
 So this was the 2025 Christmas experiment - it hit my objective of all the tech bits I wanted to play with - it also let me finally publish an experiment with something on blockchain - it held true to the FunkoPop influence (although my son was less impressed than I had hoped)
 
-If I did it again there would be endless amounts of things I'd do differently but lets be honest PixelGate isn’t a startup, it isn’t a product, it's not mission critical (or even remotely useful) it's an experiment that I can mark down as finished! If anyone has any questions or interest please give me a shout but will hopefully look forward to seeing a few PixelGate characters out there in the wild!
+If I did it again there would be endless amounts of things I'd do differently but let's be honest - PixelGate isn't a startup, it isn't a product, it's not mission critical (or even remotely useful). PixelGate did exactly what a Christmas experiment should - taught me things, broke in interesting ways, and shipped anyway. If anyone has questions or wants to chat about serverless NFTs, AI pipelines, or deterministic generation, give me a shout - I'd love to see a few PixelGate characters out there in the wild!
 
 Cheers
 <script src="https://cdn.jsdelivr.net/npm/ethers@6.10.0/dist/ethers.umd.min.js"></script>
 <script src="/js/pixelgate.js"></script>
-
