@@ -11,18 +11,24 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Thursday 01 January 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Sunday 04 January 2026_
 
-**Warren, Wisdom, and What Comes Next**  
+**Another Day, Another Geopolitical Earthquake**  
 
-Sitting here with my morning coffee (black, no sugar—like my humor), I can't help but chuckle at the news. Six decades. *Six decades* running the same company. In today’s whirlwind of instant gratification and relentless pivoting, that kind of tenure feels almost mythical—like finding a fax machine still humming away in a startup’s storage closet.  
+Well, another morning scrolling through the feeds with my coffee—dark roast, splash of oat milk, same as always—and *there it is*. News that stops your thumb mid-swipe.  
 
-I’ve always admired Buffett’s brand of stubborn clarity. Not the flashy, disrupt-everything ethos that dominates headlines, but the quiet discipline of compounding value. It’s lean thinking at its core: trim the fat, focus on what *actually* works, and let time do the heavy lifting. Reminds me of tweaking my BBQ brisket method over the years—no shortcuts, just incremental tweaks until the result feels inevitable.  
+Let’s be honest: if you’ve followed geopolitics over the past decade, Venezuela’s been one of those slow-burn crises you half expect to fade into background noise. But today? Loud booms in Caracas, sudden blackouts, and claims flying faster than a WhatsApp group chat after a family drama.  
 
-There’s a lesson here for leaders, especially in tech (where I’ve spent most of my career chasing the next shiny object). Stability isn’t sexy, but it’s underrated. Building systems that outlast trends. Empowering teams to think in decades, not quarters. Warren didn’t just pick stocks; he curated a culture—one that could survive without him. That’s the real magic trick.  
+I’ve spent enough time in transformation roles to know that *every* system—whether it’s a supply chain, a business, or yes, a country—reaches a tipping point. The cracks widen, the pressure builds, and then something gives. Usually in the middle of the night, when everyone’s least prepared.  
 
-I’m struck by the humility in stepping back when the machine is still humming. So many of us cling to roles long after we’ve stopped adding unique value, mistaking motion for progress. Letting go isn’t failure; it’s the ultimate lean move—cutting the constraint to let the system breathe.  
+What strikes me here (no pun intended) isn’t just the *what*, but the *how*. When things unravel, they do it in ways nobody’s whiteboarded in a war room. One minute you’re debating policy over spreadsheets; the next, reality throws a Molotov cocktail of chaos into your carefully modeled scenarios. I’ve seen it in plant closures, digital shakeups, even that time I tried to sous-vide a brisket for 48 hours only to blow a fuse in the garage.  
 
-Anyway, I’ll raise a glass tonight—probably a cheap German pilsner, because irony—to the era ending. Not because I mourn it (change is oxygen), but because it’s rare to see someone stick the landing so gracefully. Here’s to the next chapter—both for Omaha’s oracle and the rest of us still fumbling toward our own versions of legacy.  
+And leadership? Doesn’t matter if it’s a Fortune 500 board or a presidential palace—when the lights go out, people show you who they really are. Some double down on control. Others vanish. A rare few actually *lead*.  
 
-*Fun side note: My kid asked if Buffett retiring means Berkshire stock will dip. “Only if people panic,” I told him. “And panicking’s usually a bad bet.” He shrugged and went back to Fortnite. Priorities, right?*  
+I’ll admit: I’m obsessed with these inflection points. Not the politics, but the human machinery underneath—the grit, the miscalculations, the desperate pivots. It’s the same fascination I get watching a scrappy startup team hack their way through a product launch, or my son trying to beat a Fortnite boss with a pistol and sheer audacity.  
+
+So here we are. Another chapter in the “unexpected adventures” file. Makes you wonder what’s next—not just for Venezuela, but for all of us trying to build something stable in a world that loves a good plot twist.  
+
+Might pour a whisky later and dig into the satellite imagery. 🇻🇪🚀  
+
+*—Hamburg, 2026. Still grateful for reliable electricity.*
