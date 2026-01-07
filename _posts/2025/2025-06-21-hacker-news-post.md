@@ -11,24 +11,23 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Sunday 04 January 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Wednesday 07 January 2026_
 
-**Another Day, Another Geopolitical Earthquake**  
 
-Well, another morning scrolling through the feeds with my coffee—dark roast, splash of oat milk, same as always—and *there it is*. News that stops your thumb mid-swipe.  
+The other morning, I was showing my son how I set up my morning playlist when an unskippable ad interrupted us mid-pump-up. Thirty seconds of some shampoo jingle later (complete with disturbingly bouncy hair physics), he turned to me deadpan: "Is this what you do all day at work? Watch singing shampoo?"  
 
-Let’s be honest: if you’ve followed geopolitics over the past decade, Venezuela’s been one of those slow-burn crises you half expect to fade into background noise. But today? Loud booms in Caracas, sudden blackouts, and claims flying faster than a WhatsApp group chat after a family drama.  
+Thank goodness Vietnam just dropped some common sense legislation that might save future father-son moments from similar cringe. Starting February, **all video ads in the country must become skippable after five seconds**. No more hostage situations where you’re forced to watch insurance mascots dance or toothpaste tubes explode in slow motion. Static ads? Cancelable immediately. And platforms have to make the close button *actually* visible—no more pixel-hunting for that deceptive microscopic "X" that secretly expands the ad instead.  
 
-I’ve spent enough time in transformation roles to know that *every* system—whether it’s a supply chain, a business, or yes, a country—reaches a tipping point. The cracks widen, the pressure builds, and then something gives. Usually in the middle of the night, when everyone’s least prepared.  
+*Brilliant.*  
 
-What strikes me here (no pun intended) isn’t just the *what*, but the *how*. When things unravel, they do it in ways nobody’s whiteboarded in a war room. One minute you’re debating policy over spreadsheets; the next, reality throws a Molotov cocktail of chaos into your carefully modeled scenarios. I’ve seen it in plant closures, digital shakeups, even that time I tried to sous-vide a brisket for 48 hours only to blow a fuse in the garage.  
+This feels like one of those rare moments where digital regulations get the user experience right. We’ve all been stuck in that limbo—elbow-deep in BBQ sauce, phone propped against the spice rack, only to have a 60-second ad for banking apps derail your brisket timeline. Five seconds? Enough time to register *"ah, they’re selling something"* before reclaiming your screen.  
 
-And leadership? Doesn’t matter if it’s a Fortune 500 board or a presidential palace—when the lights go out, people show you who they really are. Some double down on control. Others vanish. A rare few actually *lead*.  
+What’s just as refreshing: the law targets clarity over compliance theater. It acknowledges that dark patterns—those sneaky UX tricks—erode trust. Forcing platforms to add clear reporting tools for bad ads? *Yes.* Banning vague symbols designed to trick clicks? *Double yes.* It’s lean thinking in action: eliminate waste (of our patience) and respect the customer (that’s us, the viewers).  
 
-I’ll admit: I’m obsessed with these inflection points. Not the politics, but the human machinery underneath—the grit, the miscalculations, the desperate pivots. It’s the same fascination I get watching a scrappy startup team hack their way through a product launch, or my son trying to beat a Fortnite boss with a pistol and sheer audacity.  
+The ripple effects here could be delicious. Imagine ad teams forced to hook us in five seconds flat—no more relying on captive audiences. Creativity thrives under constraints, right? Maybe we’ll get more “Skip in 3…2…1” wit instead of cheap jump cuts.  
 
-So here we are. Another chapter in the “unexpected adventures” file. Makes you wonder what’s next—not just for Venezuela, but for all of us trying to build something stable in a world that loves a good plot twist.  
+Of course, there’s nuance. The decree also tightens rules around ads for sensitive categories (health products, alcohol, kids' formula)—a nod to consumer protection. But honestly, it’s the skip button mandate that’s got me grinning. It’s a small but meaningful nudge toward digital experiences that don’t treat attention as an infinite resource.  
 
-Might pour a whisky later and dig into the satellite imagery. 🇻🇪🚀  
+So here’s to Vietnam leading the charge—and to future mornings where my kid judges my music taste, not my tolerance for singing shampoo. 🌏✌️  
 
-*—Hamburg, 2026. Still grateful for reliable electricity.*
+*Now, who’s up for brainstorming how to apply this “five-second rule” to corporate slide decks?*
