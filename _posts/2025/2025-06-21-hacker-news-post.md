@@ -11,23 +11,93 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Wednesday 07 January 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Saturday 10 January 2026_
 
 
-The other morning, I was showing my son how I set up my morning playlist when an unskippable ad interrupted us mid-pump-up. Thirty seconds of some shampoo jingle later (complete with disturbingly bouncy hair physics), he turned to me deadpan: "Is this what you do all day at work? Watch singing shampoo?"  
 
-Thank goodness Vietnam just dropped some common sense legislation that might save future father-son moments from similar cringe. Starting February, **all video ads in the country must become skippable after five seconds**. No more hostage situations where you’re forced to watch insurance mascots dance or toothpaste tubes explode in slow motion. Static ads? Cancelable immediately. And platforms have to make the close button *actually* visible—no more pixel-hunting for that deceptive microscopic "X" that secretly expands the ad instead.  
+**The Magic Trick Behind AI Coding Assistants (That Anyone Can Build)**  
 
-*Brilliant.*  
+You know that feeling when you use one of those AI coding tools? Like you’re whispering a half-baked idea into the void and *poof*—it materializes into working code? Feels like sorcery, right?  
 
-This feels like one of those rare moments where digital regulations get the user experience right. We’ve all been stuck in that limbo—elbow-deep in BBQ sauce, phone propped against the spice rack, only to have a 60-second ad for banking apps derail your brisket timeline. Five seconds? Enough time to register *"ah, they’re selling something"* before reclaiming your screen.  
+Well, I’ve got news for you: the emperor isn’t naked, but his robes are simpler than you’d think.  
 
-What’s just as refreshing: the law targets clarity over compliance theater. It acknowledges that dark patterns—those sneaky UX tricks—erode trust. Forcing platforms to add clear reporting tools for bad ads? *Yes.* Banning vague symbols designed to trick clicks? *Double yes.* It’s lean thinking in action: eliminate waste (of our patience) and respect the customer (that’s us, the viewers).  
+---
 
-The ripple effects here could be delicious. Imagine ad teams forced to hook us in five seconds flat—no more relying on captive audiences. Creativity thrives under constraints, right? Maybe we’ll get more “Skip in 3…2…1” wit instead of cheap jump cuts.  
+### The Big Secret  
 
-Of course, there’s nuance. The decree also tightens rules around ads for sensitive categories (health products, alcohol, kids' formula)—a nod to consumer protection. But honestly, it’s the skip button mandate that’s got me grinning. It’s a small but meaningful nudge toward digital experiences that don’t treat attention as an infinite resource.  
+Here’s the thing: at its core, a coding agent isn’t some unfathomable black box. It’s just a clever conversation between you and a large language model (LLM) that happens to have a Swiss Army knife of tools in its back pocket.  
 
-So here’s to Vietnam leading the charge—and to future mornings where my kid judges my music taste, not my tolerance for singing shampoo. 🌏✌️  
+Think of it like teaching a kid to bake:  
+1. You say *“Make chocolate chip cookies”*  
+2. They check the recipe book (reads files)  
+3. They grab ingredients from the pantry (lists files)  
+4. They mix, bake, and adjust (edits files)  
 
-*Now, who’s up for brainstorming how to apply this “five-second rule” to corporate slide decks?*
+The magic isn’t in the steps—it’s in the *orchestration*.  
+
+---
+
+### My Weekend Project  
+
+Last Saturday, I decided to strip away all the polish and build one myself. Turns out, you only need **three tools** to make something surprisingly capable:  
+
+```python
+def read_file(filename: str) -> str:  
+    """Peek inside the cookie jar"""  
+
+def list_files(path: str) -> list:  
+    """See what's in the pantry"""  
+
+def edit_file(path: str, old_str: str, new_str: str) -> bool:  
+    """Remix the recipe"""
+```
+
+That’s it. No quantum computing. No secret sauce. Just a conversational loop where:  
+- You ask for something  
+- The LLM decides which tool(s) to use  
+- Your code executes the actual file operations  
+
+The real genius? Teaching the LLM to *speak tool*. We do this with brutally simple formatting:  
+
+```plaintext
+tool: edit_file({"path": "hello.py", "old_str": "", "new_str": "print('Hello world')"})
+```
+
+When Claude responds with this line, our Python script swings into action. No genies required.  
+
+---
+
+### Why This Changes My Perspective  
+
+Building this reminded me of the first time I reverse-engineered my grandma’s Bolognese recipe. The revelation wasn’t about ingredients—it was understanding *why* each step mattered.  
+
+Production tools like Claude Code obviously add bells and whistles:  
+- Error handling (because files *will* disappear)  
+- User approvals (for “are you *sure*?” moments)  
+- Smarter context management (LLMs get distracted too)  
+
+But the soul? That’s just 200 lines of Python talking to an API. It’s the digital equivalent of realizing sourdough bread is just flour, water, and patience.  
+
+---
+
+### Try It Yourself  
+
+I’ve left my prototype running overnight three times this week. Each morning felt like Christmas:  
+- Waking up to refactored code  
+- Finding new test files generated  
+- Watching it navigate projects like a raccoon in a meme stock warehouse  
+
+The best part? *You could build this today.* All you need is:  
+- Basic Python chops  
+- An LLM API key  
+- The stubbornness to believe simple things can be powerful  
+
+[Here’s the full code](https://www.mihaileric.com/The-Emperor-Has-No-Clothes/) if you want to poke around. No warranties—this isn’t Claude Code, it’s more like Claude Post-It Note. But it *works*.  
+
+---
+
+### The Real Takeaway  
+
+We’re living in an era where the line between “magic” and “clever engineering” keeps blurring. Tools like this aren’t replacing developers—they’re revealing how much untapped potential sits in the marriage of human intuition and machine execution.  
+
+Now if you’ll excuse me, I’m off to teach my agent how to write BBQ recipe generators. Priorities. 🌶️
