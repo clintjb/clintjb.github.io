@@ -11,93 +11,26 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Saturday 10 January 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Tuesday 13 January 2026_
 
+**On the Delicate Art of Window Wrestling in macOS Tahoe**  
 
+Let me tell you about my latest dance with technology—one that’s left me equal parts amused and exasperated. Picture this: it’s a peaceful Sunday morning. Coffee’s steaming, sunlight’s filtering through the blinds, and I’m trying to tweak the size of a browser window to line up neatly beside my notes app. Simple, right? Apparently not in macOS Tahoe.  
 
-**The Magic Trick Behind AI Coding Assistants (That Anyone Can Build)**  
+Now, I’ve been using computers since the days of floppy disks and CRT monitors. Resizing windows has always been second nature—a muscle memory honed over decades. But Tahoe? Oh, Tahoe decided to rewrite the rules.  
 
-You know that feeling when you use one of those AI coding tools? Like you’re whispering a half-baked idea into the void and *poof*—it materializes into working code? Feels like sorcery, right?  
+First off, let’s address the elephant in the room: those rounded corners. Look, I get it. Aesthetics matter. But when a design choice sacrifices usability on the altar of “looking playful,” we’ve got a problem. Those pillowy edges might charm you at first glance, but try grabbing one to resize a window, and suddenly you’re playing a game of “find the invisible pixel.”  
 
-Well, I’ve got news for you: the emperor isn’t naked, but his robes are simpler than you’d think.  
+Here’s where it gets comical. The target area for resizing—that sweet spot where your cursor magically turns into a diagonal arrow—has all but vanished into the void of those bloated curves. You click where the corner *should* be, visually speaking, only to realize your mouse is hovering over nothingness. It’s like trying to pick up a pen that’s glued to the table—you know it’s there, but it refuses to cooperate.  
 
----
+To add insult to injury, the actual responsive zone now exists in a bizarre no-man’s-land *outside* the window’s visible edge. Seriously. To resize a window, you must click *beyond* its physical boundary, like you’re grabbing thin air. It feels unnatural, like trying to open a door by pushing the wall next to it.  
 
-### The Big Secret  
+I’ve started to wonder if this is Apple’s way of training us for a future of gesture-based VR interfaces. Or maybe it’s just a cheeky reminder that perfection is still out of reach, even in Cupertino. Either way, my workflow’s taken a hit. I catch myself wrestling with windows like a novice, muttering *“bloody hell”* under my breath far more often than I’d care to admit.  
 
-Here’s the thing: at its core, a coding agent isn’t some unfathomable black box. It’s just a clever conversation between you and a large language model (LLM) that happens to have a Swiss Army knife of tools in its back pocket.  
+But hey—here’s the thing. Frustrations aside, I can’t deny there’s something charming about the absurdity of it all. Technology should challenge us occasionally, shouldn’t it? Keep us on our toes? Still, I’ll be keeping a close eye on those point releases. A little less corner radius and a little more functional precision wouldn’t go amiss.  
 
-Think of it like teaching a kid to bake:  
-1. You say *“Make chocolate chip cookies”*  
-2. They check the recipe book (reads files)  
-3. They grab ingredients from the pantry (lists files)  
-4. They mix, bake, and adjust (edits files)  
+Until then, I’ll be over here—clicking the void, sipping my now-lukewarm coffee, and laughing at the sheer audacity of progress. 🖱️☕  
 
-The magic isn’t in the steps—it’s in the *orchestration*.  
+*—happosai*  
 
----
-
-### My Weekend Project  
-
-Last Saturday, I decided to strip away all the polish and build one myself. Turns out, you only need **three tools** to make something surprisingly capable:  
-
-```python
-def read_file(filename: str) -> str:  
-    """Peek inside the cookie jar"""  
-
-def list_files(path: str) -> list:  
-    """See what's in the pantry"""  
-
-def edit_file(path: str, old_str: str, new_str: str) -> bool:  
-    """Remix the recipe"""
-```
-
-That’s it. No quantum computing. No secret sauce. Just a conversational loop where:  
-- You ask for something  
-- The LLM decides which tool(s) to use  
-- Your code executes the actual file operations  
-
-The real genius? Teaching the LLM to *speak tool*. We do this with brutally simple formatting:  
-
-```plaintext
-tool: edit_file({"path": "hello.py", "old_str": "", "new_str": "print('Hello world')"})
-```
-
-When Claude responds with this line, our Python script swings into action. No genies required.  
-
----
-
-### Why This Changes My Perspective  
-
-Building this reminded me of the first time I reverse-engineered my grandma’s Bolognese recipe. The revelation wasn’t about ingredients—it was understanding *why* each step mattered.  
-
-Production tools like Claude Code obviously add bells and whistles:  
-- Error handling (because files *will* disappear)  
-- User approvals (for “are you *sure*?” moments)  
-- Smarter context management (LLMs get distracted too)  
-
-But the soul? That’s just 200 lines of Python talking to an API. It’s the digital equivalent of realizing sourdough bread is just flour, water, and patience.  
-
----
-
-### Try It Yourself  
-
-I’ve left my prototype running overnight three times this week. Each morning felt like Christmas:  
-- Waking up to refactored code  
-- Finding new test files generated  
-- Watching it navigate projects like a raccoon in a meme stock warehouse  
-
-The best part? *You could build this today.* All you need is:  
-- Basic Python chops  
-- An LLM API key  
-- The stubbornness to believe simple things can be powerful  
-
-[Here’s the full code](https://www.mihaileric.com/The-Emperor-Has-No-Clothes/) if you want to poke around. No warranties—this isn’t Claude Code, it’s more like Claude Post-It Note. But it *works*.  
-
----
-
-### The Real Takeaway  
-
-We’re living in an era where the line between “magic” and “clever engineering” keeps blurring. Tools like this aren’t replacing developers—they’re revealing how much untapped potential sits in the marriage of human intuition and machine execution.  
-
-Now if you’ll excuse me, I’m off to teach my agent how to write BBQ recipe generators. Priorities. 🌶️
+P.S. If anyone’s cracked the code for a Terminal command to shrink those corners, slide into my DMs. My sanity thanks you.
