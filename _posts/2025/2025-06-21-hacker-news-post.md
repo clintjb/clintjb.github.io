@@ -11,26 +11,61 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Tuesday 13 January 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Monday 19 January 2026_
 
-**On the Delicate Art of Window Wrestling in macOS Tahoe**  
 
-Let me tell you about my latest dance with technology—one that’s left me equal parts amused and exasperated. Picture this: it’s a peaceful Sunday morning. Coffee’s steaming, sunlight’s filtering through the blinds, and I’m trying to tweak the size of a browser window to line up neatly beside my notes app. Simple, right? Apparently not in macOS Tahoe.  
+**Why Your ASCII Art Looks Blurry (And How to Fix It)**  
 
-Now, I’ve been using computers since the days of floppy disks and CRT monitors. Resizing windows has always been second nature—a muscle memory honed over decades. But Tahoe? Oh, Tahoe decided to rewrite the rules.  
+Ever since I built that Fortnite stats tracker with my son last year, I’ve been itching to dive deeper into the intersection of *code* and *creativity*. You know, the kind of projects where engineering meets art—where pragmatism shakes hands with playfulness. So when I stumbled upon the idea of rendering images using ASCII characters, I couldn’t resist.  
 
-First off, let’s address the elephant in the room: those rounded corners. Look, I get it. Aesthetics matter. But when a design choice sacrifices usability on the altar of “looking playful,” we’ve got a problem. Those pillowy edges might charm you at first glance, but try grabbing one to resize a window, and suddenly you’re playing a game of “find the invisible pixel.”  
+But here’s the thing: most ASCII art you see online? It’s *blurry*.  
 
-Here’s where it gets comical. The target area for resizing—that sweet spot where your cursor magically turns into a diagonal arrow—has all but vanished into the void of those bloated curves. You click where the corner *should* be, visually speaking, only to realize your mouse is hovering over nothingness. It’s like trying to pick up a pen that’s glued to the table—you know it’s there, but it refuses to cooperate.  
+Take that spinning cube on Cognition’s homepage—cool effect, right? But squint at those edges. Jagged. Fuzzy. Like someone smeared Vaseline on a monitor. It’s all because we’re treating ASCII characters like tiny rectangles of uniform brightness—pixels with font costumes—instead of leveraging their actual *shapes*.  
 
-To add insult to injury, the actual responsive zone now exists in a bizarre no-man’s-land *outside* the window’s visible edge. Seriously. To resize a window, you must click *beyond* its physical boundary, like you’re grabbing thin air. It feels unnatural, like trying to open a door by pushing the wall next to it.  
+### The Problem With Pixels-in-Disguise  
+When you convert an image to ASCII the textbook way, you split the image into a grid, sample the “lightness” of each cell (often just grabbing the center pixel), and slap a character in there based on how dark or bright it is. The result? A low-res, pixelated mess.  
 
-I’ve started to wonder if this is Apple’s way of training us for a future of gesture-based VR interfaces. Or maybe it’s just a cheeky reminder that perfection is still out of reach, even in Cupertino. Either way, my workflow’s taken a hit. I catch myself wrestling with windows like a novice, muttering *“bloody hell”* under my breath far more often than I’d care to admit.  
+Here’s why:  
 
-But hey—here’s the thing. Frustrations aside, I can’t deny there’s something charming about the absurdity of it all. Technology should challenge us occasionally, shouldn’t it? Keep us on our toes? Still, I’ll be keeping a close eye on those point releases. A little less corner radius and a little more functional precision wouldn’t go amiss.  
+```javascript  
+const CHARS = [" ", ".", ":", "-", "=", "+", "*", "#", "%", "@"];  
+function getCharacterFromLightness(lightness) {  
+  return CHARS[Math.floor(lightness * (CHARS.length - 1))];  
+}  
+```  
 
-Until then, I’ll be over here—clicking the void, sipping my now-lukewarm coffee, and laughing at the sheer audacity of progress. 🖱️☕  
+This approach is like downsampling a high-res photo into Minecraft blocks. You lose *texture*, *contour*, *personality*. A `@` isn’t just a “bright” block—it’s top-heavy, dense in the middle. A `-` is a horizontal dash, perfect for edges. But if you ignore shape, you get jagged soup.  
 
-*—happosai*  
+### Shape Matters (Yes, Even in ASCII)  
+Think about the letter `T` versus `L`. The `T` is top-heavy; the `L` anchors to the bottom-left. An `O` is a doughnut—hollow but structured. These aren’t pixels; they’re *shapes* with weight, density, and orientation.  
 
-P.S. If anyone’s cracked the code for a Terminal command to shrink those corners, slide into my DMs. My sanity thanks you.
+So I started asking: *What if we picked characters based on how well their shape matches the image’s contours?*  
+
+Here’s how I approached it:  
+
+1. **Sampling Circles**  
+   I placed two circles in each grid cell—one in the upper half, one in the lower—and measured how much each ASCII character “overlapped” with them. For example, a `^` would dominate the upper circle; a `_` would own the lower.  
+
+2. **Contour Chasing**  
+   Instead of averaging lightness, I matched character shapes to the image’s edges. A steep vertical edge? Maybe a `|` or `]`. A gentle curve? `(` or `~`.  
+
+3. **Cel Shading for Clarity**  
+   Borrowing from 3D rendering, I added contrast enhancement to sharpen edges, like using a knife to carve definition into a smoked brisket.  
+
+### The Result?  
+Sharp edges. *Finally*.  
+
+Here’s the kicker: it’s not just about technical precision. It’s about *respecting the medium*. ASCII isn’t a grid of lights—it’s a palette of 95 unique brushes. Treat it like paint, not LEGO bricks.  
+
+### Why This Feels Like BBQ  
+Funny enough, this mirrors my BBQ experiments. You don’t just throw meat on a grill and call it done. You adjust airflow, rotate for even heat, rest it just right. Similarly, ASCII rendering isn’t a one-algorithm job. It’s iterative. Playful.  
+
+Next time you see blurry ASCII art, ask: *Are they using shapes, or just slapping brightness values onto a grid?*  
+
+If you’re coding your own renderer—try sampling character shapes. It’s like switching from store-bought sauce to homemade rub. Messier, slower, but *oh* the flavor.  
+
+*(Want to see the interactive demos? [Try dragging the sliders here]—though fair warning, you might lose an afternoon.)*  
+
+---  
+
+**P.S.** In true lean fashion, I’m already optimizing this. Next up: animated ASCII sequences using temporal coherence. Because why *wouldn’t* you want a rotating steak rendered in `#` and `%`? 🌶️
