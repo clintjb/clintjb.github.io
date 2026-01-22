@@ -11,61 +11,29 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Monday 19 January 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Thursday 22 January 2026_
 
 
-**Why Your ASCII Art Looks Blurry (And How to Fix It)**  
+**A European Dream That’s Finally Taking Shape**  
 
-Ever since I built that Fortnite stats tracker with my son last year, I’ve been itching to dive deeper into the intersection of *code* and *creativity*. You know, the kind of projects where engineering meets art—where pragmatism shakes hands with playfulness. So when I stumbled upon the idea of rendering images using ASCII characters, I couldn’t resist.  
+Let me start by saying this: I love Europe. The cobblestone streets, the midnight sun in Scandinavia, the espresso in Rome – but let’s be honest, trying to build a startup here can feel like wrestling a hydra. Every country has its own rules, its own paperwork, its own *quirks*. And don’t get me started on stock options.  
 
-But here’s the thing: most ASCII art you see online? It’s *blurry*.  
+Recently, though, I stumbled across something that gave me genuine hope: a push for a pan-European legal entity called **EU–INC**. Imagine that – one standard, one registry, one set of rules across the entire EU. No more juggling 27 different bureaucracies just to hire someone in Portugal or raise capital in Berlin. It sounds almost too good to be true, right?  
 
-Take that spinning cube on Cognition’s homepage—cool effect, right? But squint at those edges. Jagged. Fuzzy. Like someone smeared Vaseline on a monitor. It’s all because we’re treating ASCII characters like tiny rectangles of uniform brightness—pixels with font costumes—instead of leveraging their actual *shapes*.  
+But here’s the thing: this isn’t just another Brussels pipe dream. The momentum behind EU–INC feels different. Von der Leyen herself has acknowledged the absurdity of European startups facing more hurdles than their Silicon Valley counterparts. There’s a working group. There’s draft legislation in the works for 2026. And – crucially – they’re inviting founders, investors, and even folks like us to weigh in.  
 
-### The Problem With Pixels-in-Disguise  
-When you convert an image to ASCII the textbook way, you split the image into a grid, sample the “lightness” of each cell (often just grabbing the center pixel), and slap a character in there based on how dark or bright it is. The result? A low-res, pixelated mess.  
+I’ll admit, my first reaction was skepticism. I’ve seen enough “harmonization” initiatives fizzle out over *Kaffee und Kuchen*. But the more I dug in, the more I realized: this isn’t about harmonizing – it’s about *simplifying*. Think of it as Europe’s answer to the Delaware C-corp. One legal framework. One set of standardized docs. Local taxes and employment laws respected, sure, but without the jurisdictional nightmare.  
 
-Here’s why:  
+What excites me most? The human element. I’ve lost count of how many brilliant founders I’ve watched burn energy on legal arbitrage instead of building products. Or teams stuck customizing stock option plans country by country like it’s 1999. EU–INC could change all that. It’s not just about efficiency; it’s about unlocking ambition.  
 
-```javascript  
-const CHARS = [" ", ".", ":", "-", "=", "+", "*", "#", "%", "@"];  
-function getCharacterFromLightness(lightness) {  
-  return CHARS[Math.floor(lightness * (CHARS.length - 1))];  
-}  
-```  
+Of course, the road ahead is steep. Getting all 27 member states on board? Convincing national politicians that sovereignty isn’t threatened by a *28th virtual regime*? It’ll take hustle. But here’s where it gets personal: I’ve already drafted emails to a few contacts in Berlin and Brussels. Ordered coffee with a local MEP. Because if there’s one thing I’ve learned from lean principles, it’s this – small, consistent pressure moves mountains.  
 
-This approach is like downsampling a high-res photo into Minecraft blocks. You lose *texture*, *contour*, *personality*. A `@` isn’t just a “bright” block—it’s top-heavy, dense in the middle. A `-` is a horizontal dash, perfect for edges. But if you ignore shape, you get jagged soup.  
+So, here’s my pitch to you: if you’ve ever cursed Europe’s fragmentation over a late-night coding session or a funding round gone sideways, now’s the time to lean in. Share the idea. Talk to your network. Poke your national reps. This isn’t just policy – it’s a chance to reshape how we build things here.  
 
-### Shape Matters (Yes, Even in ASCII)  
-Think about the letter `T` versus `L`. The `T` is top-heavy; the `L` anchors to the bottom-left. An `O` is a doughnut—hollow but structured. These aren’t pixels; they’re *shapes* with weight, density, and orientation.  
+As for me? I’ll be following this closely, whisky in hand, oscillating between cautious optimism and sheer impatience. Europe’s always been a continent of dreamers and doers. Maybe, just maybe, we’re finally building the toolbox to match our ambitions.  
 
-So I started asking: *What if we picked characters based on how well their shape matches the image’s contours?*  
+*Prost to that.* 🍻  
 
-Here’s how I approached it:  
+— tilt (writing from Hamburg, where the bureaucracy is *efficient* but still very, very German)  
 
-1. **Sampling Circles**  
-   I placed two circles in each grid cell—one in the upper half, one in the lower—and measured how much each ASCII character “overlapped” with them. For example, a `^` would dominate the upper circle; a `_` would own the lower.  
-
-2. **Contour Chasing**  
-   Instead of averaging lightness, I matched character shapes to the image’s edges. A steep vertical edge? Maybe a `|` or `]`. A gentle curve? `(` or `~`.  
-
-3. **Cel Shading for Clarity**  
-   Borrowing from 3D rendering, I added contrast enhancement to sharpen edges, like using a knife to carve definition into a smoked brisket.  
-
-### The Result?  
-Sharp edges. *Finally*.  
-
-Here’s the kicker: it’s not just about technical precision. It’s about *respecting the medium*. ASCII isn’t a grid of lights—it’s a palette of 95 unique brushes. Treat it like paint, not LEGO bricks.  
-
-### Why This Feels Like BBQ  
-Funny enough, this mirrors my BBQ experiments. You don’t just throw meat on a grill and call it done. You adjust airflow, rotate for even heat, rest it just right. Similarly, ASCII rendering isn’t a one-algorithm job. It’s iterative. Playful.  
-
-Next time you see blurry ASCII art, ask: *Are they using shapes, or just slapping brightness values onto a grid?*  
-
-If you’re coding your own renderer—try sampling character shapes. It’s like switching from store-bought sauce to homemade rub. Messier, slower, but *oh* the flavor.  
-
-*(Want to see the interactive demos? [Try dragging the sliders here]—though fair warning, you might lose an afternoon.)*  
-
----  
-
-**P.S.** In true lean fashion, I’m already optimizing this. Next up: animated ASCII sequences using temporal coherence. Because why *wouldn’t* you want a rotating steak rendered in `#` and `%`? 🌶️
+P.S. If you’re as nerdy as I am about this stuff, drop a comment below. Let’s swap war stories – or better yet, ideas on how to push this forward. First round’s on me if we ever cross paths at a Brussels policy meetup.
