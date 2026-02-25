@@ -11,39 +11,22 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Thursday 19 February 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Wednesday 25 February 2026_
 
-## That Moment When You Realise a New Tool Just Changed the Game  
+## When the Algorithm Starts Charging You for the Air You Breathe  
 
-You know that feeling when you pick up a kitchen gadget that suddenly makes everything *easier*? The kind where you think, "*Why didn't I try this sooner?*" That's exactly what clicking into Claude Sonnet 4.6 felt like this week. Seriously.  
+Well, here we are again—sitting in my kitchen in Hamburg, rain streaking the windows like someone finger-painted with regret, coffee gone cold. I’d just finished prepping a batch of biltong (using that *slightly* fussy dehydrator method my wife rolls her eyes at) when my phone buzzed. Another one of those “price just popped up 15% overnight” alerts from my shopping list app. *Amazon*, of course. Same thing happened last Tuesday with baby wipes. And again yesterday with the specialty coffee beans my wife swears are “non-negotiable.”  
 
-For years, I’ve been knee-deep in digital transformation, automation, and pushing teams toward smarter workflows—all while chasing that elusive sweet spot of high-value output with less friction. And let me tell you, Sonnet 4.6 isn't just an upgrade; it feels like a proper step-change.  
+Funny, isn’t it? Twenty years ago, I’d have called this “sharp business.” Back when I was knee-deep in automotive ops, squeezing pennies out of supply chains felt like sport. But lean thinking—the *real* kind, not that buzzword sludge—taught me something: **sustainable value never comes from sandbagging the customer.** It comes from respecting their reality. So when I see reports of systemic price hikes baked into algorithms like extra salt in cheap soup… well, it doesn’t feel like capitalism. It feels like forgetting why the damn store exists in the first place.  
 
-I’ve tinkered with predecessors, admired Opus-class models (truly impressive, but pricey), but this… this hits different. It’s responsive. Reliable. *Clever*. Like having a colleague who genuinely gets it—the one who doesn’t just execute tasks but anticipates the gaps and quietly fills them **before** you stumble.  
+I remember taking my son to his first *real* supermarket trip here in Germany. He pointed at bananas and said, “Dad, why’s the sticker *on the banana*?” We laughed. But later, walking past the produce section, I realized: **transparency is a muscle.** If you stretch it slowly—hiding fees here, “dynamic pricing” there—it atrophies. Suddenly, nobody knows what anything *actually* costs. Not even Amazon’s own engineers, probably. (Ever debug a spaghetti-code pricing model? I have. It’s like trying to smoke ribs in a wind tunnel.)  
 
-### Here’s What’s Cooking  
-Coding? Night and day. Sonnet 4.6 grabs intent better than its predecessors. Less "I’ll try it again and hope," more "Ah, *that’s* what you meant." It weaves through messy codebases like a pro—consolidating logic instead of copying it everywhere. Developers on my team noticed it instantly: fewer headaches, smoother sessions, actual *joy* in collaboration.  
+This isn’t about villainizing tech. Hell, I’ve spent my career wiring systems to *cut* waste, not manufacture it. But when platforms treat pricing like a slot machine—spinning variables until you “win” a frustrated customer—**you’re not optimizing. You’re gambling with trust.** And trust? That’s the one metric your KPIs never capture.  
 
-And the computer-use magic? Gone are the days of begging vendors for APIs. Watching Sonnet interact with legacy systems—clicking through UIs, parsing spreadsheets, handling forms across tabs—feels surreal. Not flawless yet, mind you. Still more "competent intern" than "seasoned veteran." But the progress? Jaw-dropping. We’re automating workflows I’d written off as "too manual until hell freezes over."  
+Last weekend, my son and I rebuilt his Fortnite stat tracker using GitHub Actions (because *of course* we did). Took three hours. He asked why we didn’t just pay for some slick app. I said, “Because understanding how things *really* work? That’s the fun part.” Same goes for markets. If I can’t look at my cart and know the price isn’t a dartboard spin… what’s the point?  
 
-### But Wait, There’s Flavour  
-Here’s the kicker: Sonnet 4.6 doesn’t just brute-force problems. It strategises. Ran simulations pitting it against competitors? It invested hard upfront, building capacity early while others chased quick wins… then Quinzed them down the stretch with a pivot perfectly timed for max impact. That’s not coding; that’s *business*.  
+So here’s my tiny rebellion: I’m redirecting my coffee order to that little shop near Alster Lake. The one where the barista remembers my son’s name. Where the price on the chalkboard hasn’t changed since we moved here. Is it less “efficient”? Sure. But efficiency without humanity is just… noise.  
 
-Design sensibilities? Sharper. Frontend layouts feel polished, animations smoother. Clients noticed fewer revision rounds—always a win. And enterprise docs? Contracts, charts, PDFs… it pulls insights like a seasoned analyst digging into quarterly reports.  
+Funny how the things we build—whether BBQ smokers or e-commerce empires—only matter when they serve people, not the other way around.  
 
-### The Secret Sauce  
-Honestly基数 what excites me most (besides sheer cost-effectiveness at $15/million tokens!) is how it elevates teams. It handles the tedious bits—bug chasing, agentic tasks, code fixes—freeing up brains for real creativity. Watching junior devs lean into challenges they’d previously feared? Chef’s kiss. That’s lean thinking in motion: empowering people where they shine brightest.  
-
-Oh, and safety? Crucial, right? Feels sturdy. Tested against prompt injections and came out robust. Warm personality intact—quirky humour included—just… smarter. Safer. More trustworthy.  
-
-### Final Taste Test  
-Is there room to grow? Always. But right now, Sonnet 4.6 feels like grabbing high-end Opus firepower without the Opus price tag. It’s quickly becoming my go-to for heavy-lifting. Not a replacement for specialized models everywhere… yet. But close. *Very* close.  
-
-So yeah, colour me impressed. Five years into blogging, you’d think novelty fades. Not this time. Tools like this remind me why I fell for tech in the first place: clever solutions closing gaps between grand visions and real-world chaos.  
-
-Now if you’ll excuse me—I’ve got some weekend projects queued, Fortnite stats to parse for my kid (‘cause PCs *aren’t* just for games… 🤯), and maybe a FortniteAPI script to nudge into life before dinner kicks off.  
-
-Here’s to pragmatic progress. 🥃  
-
-**adocomplete**  
-Hamburg | Lean Enthusiast | Whisky + BBQ Optional
+Now if you’ll excuse me, I’ve got chili simmering. And yes, the meat’s cooking *over* the pot first. Some principles are non-negotiable. 🌶️
