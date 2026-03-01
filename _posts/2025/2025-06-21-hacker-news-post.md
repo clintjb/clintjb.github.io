@@ -11,28 +11,31 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Saturday 28 February 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Sunday 01 March 2026_
 
-## When the API Runs Dry  
+## Not the Code We Signed Up For  
 
-This landed in my inbox right as I was prepping chili for Sunday dinner—my “over the top” method, meat resting *just* above the simmering pot, that crisp sear already whispering promises. You know the moment: knife in hand, onions stinging your eyes, when some headline flickers on your phone and you mutter *“bloody hell, really?”*  
+Another Sunday morning here in Hamburg. The *Alster*’s doing its thing outside—grey, drizzly, the kind of weather that makes you glad you’ve got a warm kitchen and a decent coffee stash. My son’s been tinkering with his new Raspberry Pi all week, trying to build a little weather station for his school project. Watching him wrestle with Python libraries? Reminds me of the first time I coded *Hello, World* on a clunky desktop in Sydney. Back then, tech felt like pure magic—no strings attached. Just curiosity, community, and the thrill of making something *work*.  
 
-Turns out, someone’s pointing fingers at Anthropic. Calling it a supply-chain risk. Not the usual chatter either—official channels, capital-*D* Department of War vibes. I nearly dropped my knife.  
+Lately though, I’ve been staring at my monitor a bit longer than usual after the kids go to bed. Not debugging spaghetti code or optimizing some CI/CD pipeline. Just… thinking. About how the air’s changed. You feel it, right? That low hum of tension everywhere—from Slack threads to LinkedIn hot takes. Like we’re all squinting through the same fogged-up window but pointing at different cracks in the glass.  
 
-Now, I’ve spent two decades untangling supply chains in aerospace and military projects. Seen factories halt because one Slovenian widget supplier took a holiday, watched teams scramble when a cloud provider hiccuped during monsoon season. But *this*? Framing an AI company like a missing bolt in a fighter jet? It’s… reductive. Like judging a BBQ solely by the charcoal.  
+I’ve spent two decades in this industry—automotive, aerospace, even a stint with the military folks—and I’ve seen brilliant ideas die not because they were *bad*, but because someone, somewhere, drew a line in the sand. *"Your vision or mine."* *"My stack or yours."* Hell, last year we had a client nearly scrap a whole digital transformation because engineering and operations started treating each other like rival football clubs. As if building something meaningful was a zero-sum game.  
 
-My son’s Fortnite stats project last weekend springs to mind. We built it off a tiny API—FortniteAPI.io—plugged it into GitHub Actions, and boom: real-time leaderboards for his crew. Simple. Until the API docs vanished for 12 hours last Tuesday. Panic? Nah. We pivoted. Scavenged backup data, patched the script, and by Friday? Back in business. Because *real* resilience isn’t about the tool—it’s about the humans behind the keyboard, sweating the small stuff.  
+Which brings me to this quiet ache I’ve got lately: the bigger the tech gets, the smaller *we* feel. Like we’re all just cogs spinning faster and faster while the machine starts humming a tune we didn’t write. I’m not naïve—I know trade-offs exist, know margins matter, know shareholders keep lights on. But since when did "efficiency" mean siloing humanity out of the equation? Since when did "scale" mean trading our moral compass for speed?  
 
-That’s where this feels… off. Calling Anthropic a “risk” ignores the *why*. Do we distrust their governance? Worry about black-box dependencies? Or are we just scared of what we don’t control? (Truth be told, I’ve met engineers at places like that—they’re the same folks debugging scripts at 2 a.m., not plotting world domination over espresso.)  
+Funny thing—this isn’t about politics or parties. It’s about *craft*. Remember why you got into this? For me, it was watching my old man solder circuit boards in our garage, muttering about "building things that *last*." Not *just* last, but *matter*. Now I look at my team—some of the sharpest, most passionate folks I’ve ever worked with—and I see that same fire. But fire needs oxygen. And right now, oxygen feels… rationed.  
 
-Lean taught me this: **blame the system, not the component.** If the DoD’s nervous, dig deeper. Is the *integration* flimsy? Are contracts brittle? Or did we just bolt AI onto legacy processes like duct-taping a jet engine to a bicycle? *That’s* the real risk. Not the API—but the imagination (or lack thereof) wiring it into the machine.  
+I had a chat with Lena last week (our lead data scientist—formerly with OpenAI, now building ethical guardrails for our logistics AI). Over a *Currywurst* and a Kölsch, she said something that stuck: *"We’re not asking for permission to do good. We’re refusing to stay silent while good gets coded out of existence."* Damn. That’s the heart of it, isn’t it? It’s not about halting progress. It’s about refusing to let progress *divide us*. To let it turn colleagues into combatants. To let it make "user" and "human" synonyms that only live inside an A/B test.  
 
-I remember my brother and I huddled over Garbage Pail Kids stickers as kids, dreaming up wild trades. We never worried the gum would vanish—we just knew *next week*, there’d be new packs, new laughs. Maybe that’s the lens we need here. Not fear of the unknown, but the confidence to adapt. To build systems where swapping out Anthropic for… well, whatever comes next… feels less like a crisis and more like swapping brisket for ribs. Same fire, new flavor.  
+You know what’s wild? The simplest solutions are often the ones staring us in the face. Like lean thinking taught me years ago: go to the *gemba*. The real place. Talk to the people actually *doing the work*. Not the execs in the war room, but the engineers losing sleep over edge cases nobody asked for. The support staff hearing the quiet panic in customers’ voices. The *humans* in the machine. Because if we’ve forgotten how to listen there, we’ve already lost the plot.  
 
-So here’s my take, stirred into tonight’s chili:  
-Let’s stop treating AI like a fragile import. Start treating it like *local*. Bake accountability into the culture, not just the contract. Train teams to pivot when APIs blink. Because the minute we see tech as “risk” instead of *raw material*… we’ve already lost the plot.  
+Anyway. I’m not writing this to rant. Or to pretend I’ve got some silver-bullet fix. But maybe—*just maybe*—we can start small. Like that BBQ project my son and I did last month (yes, it involved GitHub Actions and a temperature sensor duct-taped to the grill—don’t ask). Point is: we built something *together*. Messy. Imperfect. But *unified*. No tribal flags. No "my framework, your framework." Just two humans solving a problem with smoke, patience, and a decent bottle of Shiraz.  
 
-And if the DoD’s listening? Maybe pour a whisky. Reflect on what *actually* burns down supply chains. (Hint: it’s rarely the code.)  
+So here’s my ask: next time you’re tempted to dig your heels in over some ideological trench… pause. Breathe. Remember the kid who first fell in love with making things *work*. Then ask: *Is this the code we signed up for?*  
 
-—  
-*P.S. If you’re tinkering with APIs this week: keep a backup stash of data. And maybe a bottle of bourbon. You’ll thank me later.* 🥃
+Because if it isn’t? Let’s rewrite it. Together.  
+
+*[Sips lukewarm coffee, stares at the rain for a beat, then grins]*  
+...Right. Better go rescue that weather station before my son tries to "optimize" the humidity sensor with Lego. Some fires you *want* to put out.  
+
+*P.S. Still hunting for that perfect chili recipe where the meat sings, not screams. If you’ve got a tip—especially how to stop my dehydrator from smelling like a campfire for days—drop a line. I’ll owe you a beer (or three).* 🌶️
