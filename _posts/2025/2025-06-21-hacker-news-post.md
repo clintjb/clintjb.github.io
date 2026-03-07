@@ -11,30 +11,27 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Wednesday 04 March 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Saturday 07 March 2026_
 
-## When Your Glasses See Too Much  
+## Hamburg’s Mild Winters & That Sinking Feeling  
 
-*Well, here we are again*—sitting at the kitchen counter with a lukewarm coffee, staring at my phone while my youngest debates whether BBQ sauce counts as a vegetable. (It does, in our house. Don’t @ me.) Lately, I’ve been thinking about those new Meta smart glasses everyone’s buzzing over. You know the ones: sleek, voice-controlled, *totally* hands-free for snapping sunsets or translating German menus mid-pretzel. They’re selling them at Synsam now, right next to the reading glasses and the polarized sunglasses.  
+Well, here we are again—mid-January, and I’m *still* not digging the winter coat out of storage. It’s practically t-shirt weather in Hamburg right now, and let’s be honest: that’s not how a proper German winter *should* feel. My son’s already itching to ride his bike without five layers, and my wife keeps side-eyeing me like I’ve jinxed the snowplows with one too many MOOCs.  
 
-I’ll admit it—I was curious. Ordered a pair months ago, fully expecting to geek out over the real-time translations while wandering Hamburg’s Christmas markets. But here’s the thing: **the gap between the *promise* and the *reality* of "privacy" in these gadgets keeps gnawing at me like burnt brisket stuck to the smoker.**  
+I’ve lived here long enough to remember proper winters—the kind that froze the Elbe solid enough for ice skaters. Now? Feels like the planet’s hit the fast-forward button while we weren’t looking. For years, I’d shrug off the odd warm spell as "just weather," the same way I’d dismiss a wonky spreadsheet outlier—you know, *until it wasn’t*.  
 
-See, I’ve spent 20+ years untangling messy operational realities from shiny C-suite visions. Lean teaches you to dig into the *actual work*—not just the brochure. So I set up my Meta glasses like a dad experiment: recording my son’s Lego builds (for "posterity," obviously), testing the voice commands while flipping burgers, even trying that "smart travel guide" feature on a train to Berlin. Fun? Absolutely. But then I caught myself wondering: *Who’s actually* seeing *this footage?*  
+Turns out, the numbers don’t lie—but they *do* hide behind a lot of noise. All those El Niño tantrums, volcanic tantrums, and the sun’s moody phases? They’ve been masking something sharper, like trying to hear a whisper at a rock concert. Peel those layers back—like trimming fat off a brisket before the slow smoke—and what’s left is… alarming. Since 2015, the planet’s been heating up faster than my dehydrator cranks out jerky on "emergency snack" mode. Not gradually. *Sharply*. Like the moment you realize your BBQ’s gone from "low and slow" to "oh god, everything’s on fire."  
 
-Turns out, it’s not just Meta’s algorithms. It’s *people*. Real humans, thousands of miles away, labeling pixels in bedrooms and bathrooms for pennies an hour. One rainy Tuesday, I watched my son stumble into the kitchen half-dressed after a shower, still chattering about his Fortnite stats. I tapped the glasses to pause recording—*instinctively*. But what if I hadn’t? What if I’d just… forgotten? That footage would’ve floated off into some Nairobi server farm, dissected by a data annotator who didn’t want to see my kid’s dinosaur pajamas any more than I wanted *them* to.  
+Funny how life mirrors work, isn’t it? Back when I was untangling operational nightmares in aerospace, I’d see teams dismiss early warning signs—"It’s just a blip!"—only to get steamrolled by the avalanche later. That’s where we are now. The data’s been shouting since ’15, but the natural noise drowned it out. Now? It’s impossible to ignore.  
 
-> "We see everything—bank cards, naked bodies, people walking out of bathrooms."  
+I’ll admit—I used to think "accelerated warming" was just activist hyperbole. But as someone who’s spent 20 years bridging the gap between big-picture strategy and ground-level reality? This feels different. It’s not some far-off projection anymore. It’s the weird March heatwave that melts my kid’s snowman before he finishes the carrot nose. It’s the "once-in-a-century" flood that shows up *twice* in a decade. The disconnect between "vision" and "reality" isn’t just an ops problem anymore—it’s parked in our backyard.  
 
-That line haunted me. Not as a CEO. As a *dad* who once forgot his own glasses were recording during a diaper change. (RIP to the 3-second clip of me wrestling with a onesie. That’s *not* going viral.) Tech giants love framing privacy as *"your settings, your control."* But let’s be real: most of us aren’t auditing our data streams over breakfast. We’re distracted, tired, trusting the marketing. We assume if we *don’t* hit record, it’s *off*. But what if the system glitches? What if the "assistant" mishears "turn off" as "turn *on*"?  
+Which means the old playbook won’t cut it. We’ve got to stop treating climate like a distant KPI and start fixing it like a leaky pipe *in* the server room—pragmatic, immediate, no fancy jargon. Because here’s the thing about lean principles: they thrive on *real-time* signals. And right now? The planet’s flashing red.  
 
-I’ve built teams around the mantra: *"Operational reality *is* the strategy."* If the humans behind the AI are flagging porn sessions and undressing partners as "training data," that’s not a bug—it’s the blueprint. And it’s not sustainable. Lean’s core is *respect for people*. Not just the *users*—but the invisible workforce stitching this thing together in low-lit offices with "no personal phones allowed" signs on the wall.  
+So yeah. I’m swapping my December whisky ritual for something sharper this year. Not just reflecting on wins or missed targets—but *waking up*. My son asked why beach trips keep getting rained out lately. I didn’t have a tidy answer. Just promised to keep digging, keep sharing, keep building things that *matter*—like how we finally cracked that Fortnite stats pipeline after three rounds of bad coffee.  
 
-So yeah. I returned the glasses. Not because the tech’s bad (it’s *cool*), but because the *implementation* feels… flimsy. Like slapping a fancy label on cheap brisket and calling it "craft smoked." Real innovation respects the whole chain—the cook, the eater, and the poor guy scrubbing the grease trap.  
+This isn’t about doom-scrolling. It’s about *doing*. The acceleration’s real. The time for "maybe later" is cooked. Now’s the moment to fire up the grill—and I don’t mean the metaphorical kind.  
 
-Last night, I taught my son to code a simple Python script that blurs his face in home videos. We used GitHub Actions (naturally), and he named the project *"Dad Stop Recording Me Plz."* Over burnt burgers and laughter, he asked: *"But why would anyone *want* to see us change clothes, Dad?"*  
+Cheers,  
+—morsch  
 
-Exactly.  
-
-If I’m going to strap cameras to my face, I need to know the humans behind the curtain aren’t drowning in other people’s underwear drawers. Until then? I’ll stick to my phone. And maybe sneak a peek at that BBQ jerky recipe again. Some things *should* stay raw.  
-
-*taco emoji*
+*P.S. If you’ve got a kid learning to code? Distract ’em with weather APIs instead of Fortnite stats. Trust me—this beats arguing about screen time.* 🌍
