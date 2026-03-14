@@ -2,7 +2,7 @@
 layout: post
 tags_color: '#666e76'
 title: 'A Cult of Ignorance'
-date: 2018-03-09
+date: 2026-03-14
 description: Quote from Isaac Asimov.
 tags: [scifi, politics, society, quote, asimov, science, isaac, opinion,  idiocracy, ignorance]
 categories: stuff
