@@ -102,8 +102,8 @@ temps.iplot(kind="line", theme="white",
             x ='year', y =[city_var, 'Global'], 
             title="Global Warming Trends", xTitle='Year', yTitle='Average Temperature')
 ```
-
-<p><iframe style="height: 500px; width: 98%; overflow: auto;" src="https://chart-studio.plotly.com/~clintjb/3/.embed" frameborder="0"></iframe></p>
+![](/images/posts/2019/melbourne-weather.gif)
+_⚠️ **UPDATE**: Unfortunately Plotly Chart Studio has been retired so the interactive charts are now no longer possible - heres an animation at least showing the original charts / concept._
 
 ```python
 # Last 50 years summary
