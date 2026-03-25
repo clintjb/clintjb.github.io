@@ -11,39 +11,24 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Sunday 22 March 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Wednesday 25 March 2026_
 
-## The Leak Stops Here (Or, How I Finally Stopped Yelling at My Terminal)
+## When Fixes Feel Like Flowers After the Fight  
 
-You know that feeling? When you’re elbows-deep in debugging some arcane pipeline—coffee cold, the dog’s snoring *just* loud enough to fray your nerves, and your brain’s reciting yesterday’s grocery list instead of *actual useful thoughts*? Yeah. That was me Tuesday night. Trying to wrangle a local LLM into actually *helping* instead of just confidently hallucinating JSON schemas. Felt like trying to teach a parrot advanced calculus. Cute, but zero practical ROI.  
+Well, here we are again—sitting at the kitchen table with a lukewarm *Flat White* (Hamburg’s calling, but my Aussie palate still insists on ordering it that way), scrolling through another "big announcement" from Microsoft. My son’s Fortnite stats card is still pinned to the fridge from last weekend—proof that even at ten, he’s already navigating a world where tech *thinks* it knows what we want. And honestly? It’s making me sigh. Because Microsoft’s shiny new "fix" for Windows 11 reads like someone handing you roses after knocking you into the gutter.  
 
-Then I remembered something a mate from the Hamburg tech meetups mentioned over *Bier* last month: **OpenCode**. Open source, terminal-native, no-nonsense coding agent. “Give it a whirl,” he’d said, clinking glasses. “It won’t judge your spaghetti code like your cat does.” Fair point. My cat *does* side-eye my `for` loops.  
+Let me back up. Four years ago, I bought a sleek new laptop—*paid* for it, full retail price—and Windows 11 rolled out like a party crasher who won’t take "no" for an answer. Suddenly, Copilot’s lurking everywhere: in Settings, in Snipping Tool, *stuck* to the taskbar like gum under a desk. Couldn’t move it. Couldn’t hide it. Just… *there*. My wife, bless her, tried editing her photos and got ambushed by an AI sidebar asking if she wanted "creative suggestions." It felt less like progress and more like someone rifling through your drawers while you’re still wearing the clothes.  
 
-So Wednesday morning—*proper* coffee in hand, pre-kids-waking chaos—I fired it up. Just `curl -fsSL https://opencode.ai/install | bash` and boom. Like magic, but… *not* magic. More like someone finally handed me a proper wrench instead of a banana for tightening bolts.  
+Then came the ads. *Inside the Start menu*. "Promoted" apps shoved between your pinned programs like a pushy salesman at a bakery. On the lock screen. In File Explorer. For *$139*, they decided my OS needed a billboard. And let’s not even talk about OneDrive hijacking local files—my brother learned the hard way when his thesis vanished into the cloud after hitting his 5GB limit. Microsoft just… shrugged. Like, *oops, ghosted your data, sorry not sorry*.  
 
-What hooked me? **No context-switching circus.** I’m editing Python in VS Code, stuck on some async weirdness, and instead of copying snippets into a web UI (à la Copilot), I just typed `/agent start`:  
-```  
-> /agent start  
-[OpenCode]: LSP loaded for Python. Models ready: gpt-4o, claude-3-sonnet (or use your own).  
-What’s the problem?  
-```  
-*Sigh of relief audible from next room.* It *knew* I was in a Python context. Knew my project structure. Didn’t ask me to re-explain the stack for the 17th time that week. Felt less like babysitting an alien and more like pairing with that quiet, terrifyingly competent dev you secretly wish you were.  
+So now they trot out this "7-point plan" to "fix" what they broke. Removing Copilot buttons? *Finally*. Fewer ads? *Great*. But here’s the kicker: the real bruises aren’t on the list. Local accounts? Still dead. Forced Microsoft logins? Still mandatory. Telemetry silently overriding your settings? Still lying to you. They’re polishing the chrome while ignoring the engine’s held together with duct tape. It’s like fixing a leaky roof but leaving the foundation crumbling. And the tech press is all, "Look! They’re changing!" Meanwhile, I’m staring at my perfectly good 2019 laptop collecting dust because Windows 11 called it "obsolete." Three hundred million PCs trashed for arbitrary rules. That’s not innovation—it’s planned obsolescence with a smiley face.  
 
-My son wandered in around noon—one of those “Dad, can I build a *real* website?” moments. Bless him. Instead of the usual “Let’s Google ‘HTML for toddlers’ again,” I fired up OpenCode’s desktop beta (macOS, sleek as butter), shared a session link, and said: “Watch this.” We built him a tiny CLI tool to track his Minecraft seed statistics. Zero setup friction. Zero explaining *why* APIs need keys. Just… working. He gasped when it spat out valid JSON. *“You hacked Minecraft?!”* (Kid’s got drama. I’ll take it.)  
+I’ve spent two decades untangling this kind of mess in my own work. Lean isn’t just about cutting waste; it’s about *respect*. Respect for the user, for their time, for their *ownership*. When you force features down people’s throats, ignore feedback, then "apologize" with half-measures? That’s not lean. That’s lazy. And arrogant.  
 
----
+Funny thing: last night, my son asked why his new PC slowed down after updating Windows. I told him the truth—we’ve all been test subjects in someone else’s experiment. He just shrugged and said, "Can we build something cool instead?" So we fired up the dehydrator (experimenting with biltong for *real* this time—*way* better than jerky, and you’ll never believe what paprika does to the flavor). Hands-on. Tangible. No ads, no forced integrations. Just us and the machine, working *together*.  
 
-Here’s the thing I keep circling back to: **this isn’t just another chatbot in a trench coat.** It *gets* the *operational reality* of coding. No poetic fluff about “AI partners.” Just pragmatic glue:  
-- Woke up to it running a scheduled lint job I’d forgotten about (thanks, GitHub Actions config)  
-- Switched models mid-session to debug why GPT-4o choked on regex—but kept the *same* context  
-- Sent my mate the session link: *“See this mess? Fix line 37.”* He did. In 2 minutes.  
+That’s the tech we deserve. Tools that *serve* us—not ones that gaslight us into thinking we’re lucky to be used. Microsoft’s "fix" isn’t redemption. It’s rearranging deck chairs on the *Titanic* while charging for lifeboats. I’ll keep hoping for better. But after four years of broken promises? Yeah. I’ll believe it when I see it.  
 
-It’s lean. Ruthlessly so. Does *one job* (context-aware coding assistance) and refuses to bloat itself into a “digital ecosystem.” And the privacy angle? *Chef’s kiss.* My code never leaves my machine unless I say so—critical when you’ve spent years in aerospace where “oops” means regulatory nightmares.  
+Until then, I’ll be here—grilling chili (meat *over* the top, *not* in it—trust me, it changes everything), laughing with my kid about Fortnite stats, and quietly backing up my files *somewhere* Microsoft can’t "promote" them into oblivion.  
 
-Funny how the best tools feel less like tools and more like… quiet collaborators. No fanfare. Just *works*. Like my mum’s pressure cooker—unsexy, indestructible, solves the problem without demanding applause.  
-
-Anyway. 120k GitHub stars don’t lie. Neither does shipping a desktop app for macOS/Windows/Linux in *beta* while staying open source. (Try finding *that* combo without hidden paywalls.) But skip the marketing jargon—they’ve got enough docs if you crave specs.  
-
-Me? I’m pouring that well-earned whisky now. Football’s on. And for the first time in years, my terminal’s not yelling at me. It’s *helping*.  
-
-*P.S. That Minecraft tracker? We’re adding emoji support tomorrow. Priorities, right? 🤯*
+Because some battles aren’t worth fighting. But you damn well better remember who threw the first punch. 🤯
