@@ -17,15 +17,16 @@ I love nothing more than hooking into some fresh hot cross buns each Easter. Unf
 * 1/2 Cup Warm Milk
 * 1 Tablespoon Sugar
 * 1 1/2 Cups Flour
-* 2 Tablespoon Cocoa
+* 1 Tablespoon Cocoa
 * 1 Teaspoon Nutmeg
 * 1 Teaspoon Cinnamon
+* 1 Egg
 * 30gm Butter
-* 1/3 Cup Chocolate Chips
+* 1/2 Cup Chocolate Chunks
 
 Place yeast and milk in a bowl. Whisk to dissolve yeast. Cover. Set aside in a warm place for 10 minutes or until foamy.
 
-Sift flour, cocoa and mixed spice into a bowl. Rub in butter until mixture resembles fine breadcrumbs. Make a well in the centre. Add yeast mixture, egg and sugar. Stir to combine. Turn dough onto a lightly floured surface. Knead for 1 minute. Transfer to a lightly oiled bowl. Cover. Set aside in a warm place for 1 hour or until doubled in size. 
+Sift flour, cocoa and mixed spice into a bowl. Rub (or melt) in butter until mixture resembles fine breadcrumbs. Make a well in the centre. Add yeast mixture, egg and sugar. Stir to combine. Turn dough onto a lightly floured surface. Knead for 1 minute until the dough consistency is right. Transfer to a lightly oiled bowl. Cover. Set aside in a warm place for 1 hour or until doubled in size. 
 
 Punch dough down. Turn onto a floured surface. Knead for 5 minutes or until smooth. Add the choc chips. Knead to combine. Roll into 8 equal-sized balls. Place in greased pan. Cover. Set aside in a warm place until dough has almost doubled in size. 
 
