@@ -11,43 +11,39 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Friday 10 April 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Monday 13 April 2026_
 
-## Before I Touch a Single Line of Code  
+## How I Keep My Tech Stack Leaner Than My Morning Coffee Run  
 
-You ever get that moment? The one where you’re handed a new codebase—maybe it’s legacy spaghetti, maybe it’s a shiny new repo that’s already grown teeth—and your stomach does that little flip? Yeah. Me too. Especially after 20-odd years of seeing how *good intentions* turn into *technical debt*. These days, I don’t open an IDE first. I pour a flat white (Hamburg’s finally teaching me to appreciate proper coffee), fire up the terminal, and run five little git commands. They’re my X-ray glasses. And honestly? They’ve saved me more time than I’d care to admit.  
+Well, here we are again—sitting with my second flat white (Hamburg’s best revenge against Melbourne’s third-wave obsession), watching the Bundesliga highlights, and reflecting on how the heck I’m running three small SaaS projects without burning cash like it’s confetti. Funny enough, this all started over breakfast last week. My son slid his new PC across the table like it was a sacred scroll. “Dad,” he said, eyes wide, “can we *really* do stuff besides Fortnite?” I nearly choked on my Vegemite toast.  
 
-Take last month. I was brought into a client’s aerospace project—high stakes, silent investors, that *particular* tension you only get when "failure" involves something very expensive falling out of the sky. Before I even skimmed the README, I ran this:  
-`git log --format=format: --name-only --since="1 year ago" | sort | uniq -c | sort -nr | head -20`  
+Turns out, he’s right. We built a little tool for tracking his gaming stats—nothing fancy—using the same principles that keep my actual businesses humming on less than what I’d splurge on a single *Currywurst* in the city center. And honestly? It’s become a weirdly beautiful habit: applying lean thinking to code like I do to my chili rubs or my toddler’s Lego organization. (Yes, I alphabetize Duplo bricks. Fight me.)  
 
-Top file? `avionics_core.py`. Changed 147 times in a year. *No one* wanted to touch it. The lead dev literally sighed and said, "Ah. You found *the* file." Turns out, it was a Rube Goldberg machine of patches on top of patches. That single command told me where the landmines were buried. Microsoft figured this out back in ’05—churn *is* your friend when it comes to sniffing out trouble. High-change files that *also* show up in bug-fix logs? That’s your codebase screaming for help. I cross-reference it with:  
-`git log -i -E --grep="fix|bug|broken" --name-only --format='' | sort | uniq -c | sort -nr | head -20`  
+For 20+ years, I’ve chased efficiency—not because I’m cheap (though my wife jokes I’d haggle over free air), but because *slack* feels like failure. When I first dipped into SaaS land, I thought “serious tech” meant AWS clusters and Docker orchestration that could power a small moon colony. Paid $300 a month just to *stare* at a dashboard. Then I remembered my lean roots: *If it doesn’t move the needle, kill it*. Now? My entire empire—three micro-companies, each pulling $10K+ MRR—lives on a $20 DigitalOcean droplet. I even named the server “Bertie” after my uncle’s famously frugal Holden.  
 
-Funny thing—we found `avionics_core.py` on *both* lists. Red flag? More like a goddamn flare.  
+Here’s the secret nobody in Silicon Valley wants whispered: **Constraints breed creativity**. When you’ve only got 1GB of RAM, you stop tolerating Python’s memory buffet. I write backends in Go now—compiled to a single binary that’s lighter than my son’s school backpack. No dependency tantrums, no virtual environment nightmares. Just me, my laptop, and `scp` shenanigans that feel deliciously 2005. This tiny Go snippet? That’s literally my production homepage for one project:  
 
-But here’s what really matters to me: *who* built this thing. I’m talking about the human layer. Because I’ve learned the hard way: code is only as healthy as the team tending it. So I check:  
-`git shortlog -sn --no-merges`  
+```go
+package main
+import "net/http"
+func main() {
+    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+        w.Write([]byte("Your dreams run cheaper than my coffee habit."))
+    })
+    http.ListenAndServe(":8080", nil)
+}
+```  
 
-If one name eats 60% of the commits? Bus factor of "uh-oh." If that same name *isn’t* in the last six months of activity? Crisis brewing. I’ve sat across tables from CTOs pointing at this output going, "*That’s* when Sarah quit." They’d never connected the dots until the data stared them in the face.  
+See? No Kubernetes circus. No “async await” drama. Just… working. Like a Weber grill versus a molecular gastronomy lab.  
 
-And yeah—merge strategies mess with this. (Squash-merging? Yeah, it hides the real authors. Always ask.) But even a rough sketch of ownership tells you if knowledge is pooled or perched on one shoulder. Lean taught me: you can’t improve what you can’t see. This *is* seeing.  
+And yeah, I use AI—but not like the kids on TikTok paying $99/month for “agentic” nonsense. When my son and I built his stat tracker, we wired it to Ollama running on an old GPU gathering dust in the garage (bought off a bloke in Eimsbüttel for €200). Batch processes? Done locally. No API bills. When I need flashy user-facing smarts (like my tiny stock-analysis tool), I funnel everything through OpenRouter—it’s the *Aldi* of LLM routing. One key, infinite fallbacks. Claude’s down? No sweat, GPT picks up the slack. My users never know the difference.  
 
-Then comes my favorite pulse check:  
-`git log --format='%ad' --date=format:'%Y-%m' | sort | uniq -c`  
+Even my database’s simpler than my BBQ rub. SQLite. *Gasps*. I know—you’re picturing floppy disks and dial-up. But slap on `PRAGMA journal_mode=WAL`, and that little `.db` file handles more traffic than my local *Bäckerei* on Sunday morning. No PostgreSQL tar pits. Just pure, uncut efficiency. I even built a spare-time auth library for it because, like, why pay Auth0 $50/month when you can solve it in 200 lines? (Ask me about the Great Firebase Panic of ’22. Spoiler: I cried over billing alerts.)  
 
-Commit rhythm by month. Steady? Healthy. A cliff dive after March? Someone left. A stutter-step where releases cluster? They’re *afraid* to deploy continuously. I’ve watched teams rebuild trust just by spotting these patterns—realizing it wasn’t "lazy engineers," it was *broken systems*.  
+People think lean means “scrappy until funding.” Nah. It means *freedom*. While VCs scream about burn rates, I’m sipping shiraz on my balcony watching the Elbe fade to gold, knowing my runway’s longer than the Autobahn. No board meetings. No pivot theater. Just me, my laptop, and the quiet thrill of shipping something useful without the circus.  
 
-Finally, the firefighting tally:  
-`git log --oneline --since="1 year ago" | grep -iE 'revert|hotfix|emergency|rollback'`  
+Last Saturday, my son and I fired up the dehydrator for biltong (his twist: adding peri-peri because *“Dad, it’s just like rocket fuel for gamers”*). As we sliced the meat—*over the top* style, of course—I realized: tech’s the same. Trim the fat. Respect the craft. Let the heat do its thing.  
 
-A revert every few weeks? Oof. That’s a team walking on eggshells. Either their tests are asleep at the wheel, staging’s a ghost town, or deploying feels like defusing a bomb. Zero results? Could mean rock-solid stability… or commit messages so vague they might as well be haikus.  
+So here’s to stupid-simple stacks. To servers named after uncles. To teaching kids that PCs can build things *and* play games. And to remembering: if your stack costs more than a decent *Bratwurst*, you’re doing it wrong.  
 
-All of this takes six minutes. Tops.  
-
-It’s not magic. It won’t tell you *why* `avionics_core.py` is a dumpster fire. But it *will* stop you from wandering blind into the thicket. It tells you where to dig first—and what questions to ask the humans behind the commits. Because at the end of the day? Code isn’t the problem. *How we treat the code* is.  
-
-I ran these same commands last weekend while debugging my son’s Fortnite stats script (long story involving API keys and his *very* serious quest for "Victory Royale" bragging rights). Same principles. Same relief when we spotted the churn hotspot *before* the chaos.  
-
-Funny, isn’t it? After all these years in ops, digital, lean, BBQ smoke, whatever—sometimes the simplest tools cut the deepest. They turn fear into focus. And that? That’s how you stop putting out fires and start building something that *lasts*.  
-
-Now if you’ll excuse me—I’ve got a dehydrator full of jerky, a quiet glass of Laphroaig waiting, and a codebase that *finally* feels a little less scary. Cheers. 🥃
+Now if you’ll excuse me—my 5-year-old’s demanding a “server health check” in Lego form. Priorities, right? 🌭
