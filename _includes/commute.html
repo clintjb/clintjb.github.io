@@ -18,26 +18,3 @@
   border: none;
 }
 </style>
-
-<script>
-function scaleIframe() {
-  const container = document.querySelector('.iframe-container');
-  const iframe = container?.querySelector('iframe');
-
-  if (!iframe || !container) return;
-
-  const baseHeight = 1600;
-
-  const scale = container.offsetWidth / iframe.scrollWidth || 1;
-
-  iframe.style.transform = `scale(${scale})`;
-  container.style.height = `${baseHeight * scale}px`;
-}
-
-document.addEventListener('DOMContentLoaded', scaleIframe);
-window.addEventListener('resize', scaleIframe);
-</script>
-
-document.addEventListener('DOMContentLoaded', scaleIframe);
-window.addEventListener('resize', scaleIframe);
-</script>
