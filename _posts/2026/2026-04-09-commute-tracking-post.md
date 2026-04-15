@@ -7,16 +7,12 @@ description: An automated tracking of my daily public transport commute integrat
 tags: [digitalization, stuff, HVV, Hamburg, Train, bahn, public transport, automation, stats, verspätet]
 categories: [digitalization, stuff]
 comments: true
-image: '/images/posts/2024/fortnite.jpg'
+image: '/images/posts/2026/commute.jpg'
 ---
-![Fortnite](/images/posts/2024/fortnite.jpg)
+![HVV](/images/posts/2026/commute.jpg)
 
 {% include commute_kpi.html %}
 
-Testing topic
+![HVV App](/images/posts/2026/commute-app.jpg)
 
 {% include commute_dashboard.html %}
-
-Testing topic
-
-{% include commute_dashboard_trial.html %}
