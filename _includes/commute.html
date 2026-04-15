@@ -13,8 +13,29 @@
   position: absolute;
   top: 0;
   left: 0;
+  width: 780px;
   height: 1600px;
   transform-origin: top left;
   border: none;
 }
 </style>
+
+<script>
+function scaleIframe() {
+  const container = document.querySelector('.iframe-container');
+  const iframe = container?.querySelector('iframe');
+
+  if (!iframe || !container) return;
+
+  const baseWidth = 780;
+  const baseHeight = 1600;
+
+  const scale = container.offsetWidth / baseWidth;
+
+  iframe.style.transform = `scale(${scale})`;
+  container.style.height = `${baseHeight * scale}px`;
+}
+
+document.addEventListener('DOMContentLoaded', scaleIframe);
+window.addEventListener('resize', scaleIframe);
+</script>
