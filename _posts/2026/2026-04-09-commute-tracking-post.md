@@ -11,6 +11,10 @@ image: '/images/posts/2024/fortnite.jpg'
 ---
 ![Fortnite](/images/posts/2024/fortnite.jpg)
 
+<div class="iframe-container">
+  <iframe src="https://htmlpreview.github.io/?https://raw.githubusercontent.com/clintjb/Commute-Tracking/main/kpi.html"></iframe>
+</div>
+
 Testing topic
 
 {% include commute.html %}
