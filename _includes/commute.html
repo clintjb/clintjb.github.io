@@ -1,20 +1,19 @@
-<div class="iframe-container">
+<div class="iframe-container" id="dashboard-container">
   <iframe src="https://htmlpreview.github.io/?https://raw.githubusercontent.com/clintjb/Commute-Tracking/main/dashboard.html"></iframe>
 </div>
 
 <style>
-.iframe-container {
+#dashboard-container {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-
-.iframe-container iframe {
+#dashboard-container iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 780px;
-  height: 1600px;
+  height: 1400px;
   transform-origin: top left;
   display: block;
   border: none;
@@ -22,17 +21,15 @@
 </style>
 
 <script>
-function scaleIframe() {
-  const container = document.querySelector('.iframe-container');
+function scaleDashboard() {
+  const container = document.getElementById('dashboard-container');
   const iframe = container?.querySelector('iframe');
-
   if (!iframe || !container) return;
 
   const baseWidth = 780;
-  const baseHeight = 1600;
+  const baseHeight = 1400;
 
   let scale;
-
   if (window.innerWidth < 600) {
     scale = 1;
     container.style.overflowX = 'auto';
@@ -46,6 +43,6 @@ function scaleIframe() {
   container.style.height = `${Math.floor(baseHeight * scale)}px`;
 }
 
-document.addEventListener('DOMContentLoaded', scaleIframe);
-window.addEventListener('resize', scaleIframe);
+document.addEventListener('DOMContentLoaded', scaleDashboard);
+window.addEventListener('resize', scaleDashboard);
 </script>
