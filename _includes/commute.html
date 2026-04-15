@@ -1,8 +1,43 @@
 <div class="iframe-container">
-  <iframe 
-    src="https://htmlpreview.github.io/?https://raw.githubusercontent.com/clintjb/Commute-Tracking/main/commute.html"
-    loading="lazy"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
+  <iframe src="https://htmlpreview.github.io/?https://raw.githubusercontent.com/clintjb/Commute-Tracking/main/commute.html"></iframe>
 </div>
+
+<style>
+.iframe-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1600px;
+  transform-origin: top left;
+  border: none;
+}
+</style>
+
+<script>
+function scaleIframe() {
+  const container = document.querySelector('.iframe-container');
+  const iframe = container?.querySelector('iframe');
+
+  if (!iframe || !container) return;
+
+  const baseHeight = 1600;
+
+  const scale = container.offsetWidth / iframe.scrollWidth || 1;
+
+  iframe.style.transform = `scale(${scale})`;
+  container.style.height = `${baseHeight * scale}px`;
+}
+
+document.addEventListener('DOMContentLoaded', scaleIframe);
+window.addEventListener('resize', scaleIframe);
+</script>
+
+document.addEventListener('DOMContentLoaded', scaleIframe);
+window.addEventListener('resize', scaleIframe);
+</script>
