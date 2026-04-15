@@ -16,6 +16,7 @@
   width: 780px;
   height: 1600px;
   transform-origin: top left;
+  display: block;
   border: none;
 }
 </style>
@@ -30,10 +31,19 @@ function scaleIframe() {
   const baseWidth = 780;
   const baseHeight = 1600;
 
-  const scale = container.offsetWidth / baseWidth;
+  let scale;
+
+  if (window.innerWidth < 600) {
+    scale = 1;
+    container.style.overflowX = 'auto';
+  } else {
+    const rawScale = container.offsetWidth / baseWidth;
+    scale = Math.min(rawScale, 1);
+    container.style.overflowX = 'hidden';
+  }
 
   iframe.style.transform = `scale(${scale})`;
-  container.style.height = `${baseHeight * scale}px`;
+  container.style.height = `${Math.floor(baseHeight * scale)}px`;
 }
 
 document.addEventListener('DOMContentLoaded', scaleIframe);
