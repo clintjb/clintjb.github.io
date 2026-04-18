@@ -2,7 +2,7 @@
 layout: post
 title: 'Tunes'
 date: 2026-01-30
-description: Dynamic visualization of last weeks top 5 albums
+description: Dynamic visualization of last weeks top 5 albums.
 tags: [stuff, pop culture, music, albums, listenbrainz]
 categories: stuff
 comments: true
