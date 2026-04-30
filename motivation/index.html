@@ -110,7 +110,7 @@
             <div id="poster-quote">"Quote"</div>
         </div>
     </div>
-
+    
     <script src="https://cdn.jsdelivr.net/gh/clintjb/Motivation-Posters@main/config.js"></script>
     
     <script>
@@ -124,7 +124,6 @@
 
         function loadRandomPoster() {
             const { title, author, quote, regulatory, image } = posters[Math.floor(Math.random() * posters.length)];
-
             elements.title.textContent = title;
             elements.author.textContent = author;
             elements.quote.textContent = `"${quote}"`;
@@ -132,10 +131,8 @@
             elements.image.src = image;
         }
 
-        window.addEventListener('DOMContentLoaded', () => {
-            loadRandomPoster();
-            setInterval(loadRandomPoster, 600000);
-        });
+        loadRandomPoster();
+        setInterval(loadRandomPoster, 600000);
     </script>
 </body>
 </html>
