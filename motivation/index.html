@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration Posters</title>
+    <style>
+        :root {
+            --theme-gold: #FFCC00;
+            --text-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000; 
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; 
+            font-family: var(--text-font);
+        }
+
+        .poster-layout {
+            display: flex;
+            flex-direction: column;
+            width: 90vw; 
+            max-width: calc(80vh * (16 / 9)); 
+        }
+
+        #poster-title {
+            font-family: 'Impact', 'Arial Black', sans-serif; 
+            color: var(--theme-gold); 
+            font-size: 6vh;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: right;
+            margin-bottom: 1vh;
+            line-height: 1;
+        }
+
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        #poster-image {
+            width: 100%;
+            aspect-ratio: 16 / 9; 
+            border: 5px solid var(--theme-gold); 
+            background-color: #111; 
+            object-fit: cover; 
+            display: block;
+        }
+
+        #poster-regulatory {
+            position: absolute;
+            left: calc(100% + 1vw); 
+            top: 0;
+            bottom: 0;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg); 
+            font-size: 1.2vh;
+            color: #AAA; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: right; 
+        }
+
+        .footer-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 1.5vh;
+        }
+
+        #poster-author {
+            font-size: 3vh;
+            font-weight: bold;
+            color: #FFF; 
+            flex-shrink: 0; 
+            padding-right: 2vw; 
+        }
+
+        #poster-quote {
+            font-size: 3vh;
+            font-style: italic;
+            text-align: right;
+            color: var(--theme-gold);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="poster-layout">
+        <h1 id="poster-title">Title</h1>
+        
+        <div class="image-wrapper">
+            <img id="poster-image" src="" alt="Inspirational Image">
+            <div id="poster-regulatory">Regulatory Info</div>
+        </div>
+
+        <div class="footer-wrapper">
+            <div id="poster-author">Author</div>
+            <div id="poster-quote">"Quote"</div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    
+    <script>
+        const elements = {
+            title: document.getElementById('poster-title'),
+            author: document.getElementById('poster-author'),
+            quote: document.getElementById('poster-quote'),
+            regulatory: document.getElementById('poster-regulatory'),
+            image: document.getElementById('poster-image')
+        };
+
+        function loadRandomPoster() {
+            const { title, author, quote, regulatory, image } = posters[Math.floor(Math.random() * posters.length)];
+
+            elements.title.textContent = title;
+            elements.author.textContent = author;
+            elements.quote.textContent = `"${quote}"`;
+            elements.regulatory.textContent = regulatory;
+            elements.image.src = image;
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            loadRandomPoster();
+            setInterval(loadRandomPoster, 600000);
+        });
+    </script>
+</body>
+</html>
