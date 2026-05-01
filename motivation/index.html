@@ -111,7 +111,11 @@
         </div>
     </div>
     
-    <script src="https://cdn.jsdelivr.net/gh/clintjb/Motivation-Posters@main/config.js?v=${Date.now()}"></script>
+    <script>
+      var s = document.createElement('script');
+      s.src = 'https://cdn.jsdelivr.net/gh/clintjb/Motivation-Posters@main/config.js?v=' + Date.now();
+      document.head.appendChild(s);
+    </script>
     
     <script>
         const elements = {
