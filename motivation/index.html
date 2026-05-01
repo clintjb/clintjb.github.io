@@ -112,12 +112,6 @@
     </div>
     
     <script>
-      var s = document.createElement('script');
-      s.src = 'https://cdn.jsdelivr.net/gh/clintjb/Motivation-Posters@main/config.js?v=' + Date.now();
-      document.head.appendChild(s);
-    </script>
-    
-    <script>
         const elements = {
             title: document.getElementById('poster-title'),
             author: document.getElementById('poster-author'),
@@ -135,8 +129,13 @@
             elements.image.src = image;
         }
 
-        loadRandomPoster();
-        setInterval(loadRandomPoster, 600000);
+        var s = document.createElement('script');
+        s.src = 'https://cdn.jsdelivr.net/gh/clintjb/Motivation-Posters@main/config.js?v=' + Date.now();
+        s.onload = function() {
+            loadRandomPoster();
+            setInterval(loadRandomPoster, 600000);
+        };
+        document.head.appendChild(s);
     </script>
 </body>
 </html>
