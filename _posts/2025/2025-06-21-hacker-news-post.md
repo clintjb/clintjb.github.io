@@ -11,31 +11,38 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Wednesday 13 May 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Saturday 16 May 2026_
 
-## When Open Source Stops Feeling Like Home  
+## The Sizzle and the Steak  
 
-You know that moment when you realize the thing you loved—the community, the tool, the *spirit* of it all—has quietly become something else? Not overnight, but slowly, like your favorite local pub replacing the sticky wooden tables with glossy corporate booths. That’s where I’m at with Bambu Lab. And man, it stings more than I expected.  
+You know those moments when you’re standing in the kitchen at 1am, scraping burnt chili off the bottom of the pot, and suddenly it hits you? Not the chili fumes—though those *do* get you good—but the quiet, creeping suspicion that *everyone else* is sprinting full-tilt toward a cliff edge while you’re the only one squinting into the fog, whispering, *"Wait… is this even a path?"*  
 
-I’ll be upfront: I’ve got a P1S sitting in my garage. Still runs. Still prints cleaner than my espresso machine (most days). But last year, I pulled the plug—literally. Blocked it from the internet, froze the firmware, ditched Bambu Studio for OrcaSlicer. Why? Because I bought a printer, not a subscription to Bambu’s cloud circus. I’m one of those "weirdos," I guess—the kind who likes to own the things they pay for. Doesn’t want their printer phoning home every time they print a spare hinge for the BBQ smoker. Call me old-fashioned. I’ll take it.  
+Well. Lately, I’ve been feeling that way about AI.  
 
-Thing is, I thought that was the end of it. Just me, my firewall rules, and a quiet life off the grid. But Bambu Lab had other plans.  
+Not the tech itself—that’s brilliant, genuinely. My son just used it to whip up a Fortnite battle map that even *I* couldn’t break (and trust me, I tried). But the *hype*? The way entire companies are suddenly speaking in tongues like they’ve mainlined ChatGPT and called it strategy? Yeah. That’s the cliff edge.  
 
-Turns out, some clever soul in the open-source scene built a tiny fork of OrcaSlicer—*OrcaSlicer-bambulab*—that lets folks like me skip the cloud detour entirely. Uses the same open-source code Bambu *themselves* released under AGPLv3. The kind of "here’s the recipe, tweak it if you want" deal that made the maker movement explode in the first place. But instead of a quiet thank-you? Bambu hit that developer with legal threats. Called it "impersonation." Said it’d crash their servers. Made it sound like this lone coder was hacking the Death Star.  
+Quite often, we fall for the shiny new thing so hard we forget to ask: *What’s actually burning in the pan?* Back in the dot-com days, I watched teams pivot into vaporware like it was Olympic sport. Now? It’s AI psychosis. Whole departments rebranding themselves as "AI-first," chucking out 20 years of operational muscle memory because some vendor demo made their eyes glaze over. As if slapping "AI" on a spreadsheet suddenly makes the numbers *mean* something.  
 
-Let’s be real: if a public user-agent string is the only thing standing between Bambu’s cloud and chaos, maybe… *maybe* the problem isn’t the community tinkering? Maybe it’s the castle built on sand? And here’s the kicker: that fork used Bambu’s *own* Linux code—verbatim. Like serving someone their grandmother’s meatloaf recipe back to them and getting sued for "stealing flavor." It’s baffling.  
+I get it. The FOMO’s real. My brother called me last week, frantic: *"Mate, our logistics team just bought a $200K ‘AI optimization suite’ that does… well, they told me it does *everything*."* I asked what problem it solved. Pause. Crickets. *"Honestly?"* he said. *"They just really wanted to be seen as innovators."*  
 
-I’ve spent 20+ years untangling these kinds of knots—watching companies trip over their own vision while the people doing the real work scramble to keep things running. Back in automotive and aerospace, I saw it constantly: leadership dreaming in PowerPoints while the shop floor bled duct tape and prayers. Same energy here. Bambu’s so busy guarding the gates of their cloud fortress, they’ve forgotten why anyone climbed the wall in the first place. For *us*, it was never about spying on prints or tracking filament colors. It was about making cool stuff. Fixing things. Sharing fixes over a beer.  
+*(Sound familiar?)*  
 
-Remember when open source felt like that? Like a neighborhood block party where everyone brought a dish and nobody checked your invite? Now it’s starting to feel like a gated community with cameras on every mailbox. And honestly? It’s not even smart business. That fork probably had 50 users before Bambu made it famous. Now? Whole forums are buzzing. I’ve got friends whispering, *"Maybe skip Bambu next time?"* They’re shooting themselves in the foot with a printer nozzle.  
+Here’s the thing I keep muttering into my coffee (or, let’s be real, the *second* coffee): **Operational reality doesn’t give a damn about your buzzwords.** I’ve spent two decades bridging the gap between boardroom visions and the folks actually turning wrenches. And you don’t close that gap by chasing algorithms like they’re the last bus home. You close it by asking: *"What’s broken? Who’s fixing it? And why does *this* tool make their job *less* broken tomorrow?"*  
 
-My son and I built a Fortnite stats tracker last weekend using GitHub Actions and Python—*actual* fun, *actual* learning. We didn’t need permission. Didn’t need cloud keys. Just two geeks, a laptop, and the quiet thrill of making something work. That’s the magic Bambu’s smothering. They’re treating their users like tenants, not neighbors.  
+Otherwise? You’re just reheating last week’s chili and calling it "disruption."  
 
-I get it. Scaling’s hard. Security’s messy. But the open-source social contract? It’s not fine print. It’s the handshake that built this whole world. When you take GPL code, add your sauce, and then scream "THEFT!" when someone stirs the pot differently… you’re not protecting anything. You’re burning the kitchen down.  
+Funny enough, I saw the same fever dream play out with lean. Suddenly, everyone was "doing lean"—except they’d skip the part where you *actually talk to the people making the thing*. They’d hand-draw value stream maps on whiteboards while the assembly line choked on mismatched bolts. Sound familiar? Swap "lean" for "AI," and we’re back at square one: solutions in search of a problem.  
 
-So yeah. My P1S still clicks away in the garage. But next time I upgrade? I’ll look elsewhere. Not because Bambu’s printers suck (they don’t). But because I don’t want to buy into a club where the welcome mat says *"Keep off the grass—and don’t touch the code."*  
+So last weekend, while I was slow-smoking ribs (yes, *another* over-the-top method—gotta sear ’em first to lock in that mahogany crust), it clicked. We’re confusing the *sizzle* for the *steak*. AI’s the sizzle. The steak? That’s the messy, human work of understanding your process. Your people. Your *actual* customers.  
 
-Some things should feel like home. Not a hotel room where the minibar charges you for breathing.  
+My son asked me over burnt toast this morning: *"Dad, can AI… like… *taste* BBQ?"* I ruffled his hair. *"Nah, mate. But it might tell you to cook it at 173°C instead of 175°C—and miss the whole point."*  
 
-—  
-*P.S. If you’ve got thoughts—good, bad, or just wanna vent about your own printer saga—grab a coffee (or a whisky, no judgment) and hit reply. This is way more fun when we talk it out.* 🌮
+We’re so busy optimizing the thermometer we’ve forgotten why we’re standing at the grill in the first place.  
+
+So here’s my plea, whispered into the void (and probably over a dram of something smoky): **Stop chasing the shiny. Start feeding the fire.** Plug the leaks. Listen to the team lead who’s been here 15 years. Fix the thing that *still* breaks on Tuesdays. Then—and only then—ask if AI’s the right tool for *that*.  
+
+Otherwise, we’re just a bunch of dads standing in the rain, yelling "INNOVATE!" at a slow cooker.  
+
+P.S. If you’re still reading? Pour yourself a drink. Put on a game. And for the love of all that’s holy—**taste your chili before you serve it.** Some truths don’t need an algorithm. 🌮  
+
+*(P.P.S. Yeah, the ribs turned out fine. The burnt pot? That’s tomorrow’s problem.)*
