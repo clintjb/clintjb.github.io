@@ -11,30 +11,30 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Sunday 31 May 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Monday 01 June 2026_
 
-## When Your Tools Decide to Take an Early Retirement  
+## The Real Secret Weapon Wasn’t the Code  
 
-Ah, the irony. Just the other day, I was helping my ten-year-old troubleshoot why his *Minecraft* world wouldn’t load on his school-issued iPad. “Dad,” he sighed, the weight of digital frustration already etching itself into his forehead at *ten*, “why does stuff just… stop working when it’s still fine?” I ruffled his hair, trying to sound wise while mentally drafting an email to the school IT team. But honestly? I had no clean answer. Some days, it feels like the tech we rely on isn’t built to *endure*—it’s built to *expire*.  
+Another rainy Hamburg evening. Coffee’s gone cold beside me, the kind of drizzle that makes the Elbe feel like a soggy blanket over the city. My son’s upstairs wrestling with *another* Python script for his Fortnite tracker—same project we started last month over lukewarm pancakes. He asked me earlier, “Dad, why does the API keep lying to me?” I told him the truth: *It’s not lying. It just doesn’t know what ‘right’ means.*  
 
-Which brings me to Office 2019 for Mac.  
+Funny how life circles back. Twenty years ago, I was the hotshot developer who could bang out payroll systems in three weeks flat. Garnishments? Pre-tax deductions? *Pfft.* Just business rules—throw some logic at it, ship it. Then some payroll veteran would glance at my masterpiece and sigh: “Aaron, this thinks maternity leave counts as overtime.” Cue the all-nighter. Back then, the *real* work wasn’t typing `if/else` statements. It was crawling inside someone else’s world until their chaos felt like home.  
 
-Look, I get it. Tech evolves. Certificates expire. Security matters. But let’s be fair dinkum here: when you drop $150 on a “one-time purchase” package in 2018—marketing it as the *forever* alternative to subscriptions—and then quietly flip it to **view-only mode** six years later? That’s not just “end of support.” That’s a bait-and-switch wrapped in corporate fine print. Microsoft’s old end-of-support page flat-out promised these apps would “continue to function.” Now? Poof. Come July 2026, your Word docs become digital museum exhibits. You can stare at them all day. But *edit*? *Save*? Nah. Too bad.  
+And now? I’m watching something wild unfold. Tools that spin code faster than I can brew espresso. But here’s what nobody’s shouting from the rooftops: **The magic isn’t in *making* the thing. It’s in *knowing* when it’s broken.**  
 
-I’ve spent two decades untangling messy tech transitions—automotive, aerospace, you name it. And what *always* trips people up isn’t the tech itself. It’s the **broken trust**. You buy a tool thinking it’s yours to wield. Then one Tuesday, it unceremoniously demotes itself. No fanfare. Just a cold email offering a “free trial” that auto-bills you if you blink. (Asking my son about Minecraft hijinks, I get that.)  
+Picture this. Sarah—the logistics dispatcher who’s been shuffling trucks since before GPS—squints at an AI-generated schedule. “*Nah,*” she mutters, “no driver can legally do *that* run. Fatigue rules kick in here.” She’s never written a line of Python. But she’s *lived* the edge cases. Meanwhile, brilliant engineers—folks who could architect distributed systems in their sleep—get tripped up by the same schedule. The code *runs*. The tests *pass*. But the solution? Quietly bankrupts the operation. Why? Because “correct” isn’t about syntax. It’s about the unspoken rhythm of the real world—the thing you only learn after your tenth payroll disaster, your hundredth bus route mix-up.  
 
-Here’s the kicker: This isn’t some unavoidable technical debt. Certificates *can* be renewed. Microsoft *chose* not to. They could’ve pushed the fix to Office 2019. Instead, they drew a line in the sand, banking on inertia. “Just upgrade to 365!” they shrug. Meanwhile, folks running older Macs (looking at you, proud 2017 MacBook Air owners) are stranded. No update path. No grace period. Just a forced march toward subscriptions.  
+I used to think seniority meant *building* better software. Turns out, it’s about *smelling* bullshit in the output.  
 
-Now, I’m no luddite. I *love* tech. But lean thinking—my old Australian obsession—teaches you to respect the *actual work* people do. If your toolchain suddenly cripples itself? That’s not “innovation.” That’s **waste**. Pure and simple. It’s forcing teams to redo workflows, retrain staff, and rebuild trust—all because a certificate expiry became a revenue lever.  
+Ten years ago, engineers had the upper hand. They could *eventually* learn the domain—painfully, slowly, by shadowing experts and debugging live payroll fires at 2 a.m. The domain experts? Stuck. Learning to code wasn’t just hard; it was a decade-long detour they’d never take.  
 
-So what’s my play here? Simple. **Diversify your tools.** When my son’s PC glitched last year, we didn’t beg Microsoft for mercy. We spun up a little project using GitHub Actions and Python (turns out Fortnite stats make a killer intro to APIs). Same principle applies now:  
+Now? The detour’s vanished. Hand Sarah an AI copilot, and she’s *dangerous*. She spots wrongness instantly because she’s breathed this stuff for years. The agent writes the code; *she* holds the compass. But flip it: Give that same tool to an engineer who’s never touched logistics? They’ll ship a masterpiece that implodes in week two. The tool gives them speed, but zero wisdom.  
 
-- **Try LibreOffice.** It’s free, it runs everywhere, and it won’t ghost you in 2026.  
-- **Embrace the web apps** if you must—but know they’re tethered to *someone’s* roadmap.  
-- And for the love of god, **back up your docs as plain text or PDFs**. Your great-grandchildren might thank you.  
+This isn’t about replacing coders. It’s about flipping the script. That deep, gritty understanding of *how things actually work*—the stuff baked into your bones after reconciling a thousand insurance claims or tracking a hundred bus routes? **That’s the new currency.** No prompt can replicate it. No framework can abstract it away.  
 
-Funny how life comes full circle. As a kid, my brother and I treasured those brittle Garbage Pail Kids packs—not because they were *valuable*, but because they *lasted*. We could trade them, scribble on them, lose them in the couch… but the art never suddenly “expired.” Tech should feel that way. Not like a time bomb ticking toward a quiet betrayal.  
+So where do you put your energy now? Not chasing the next shiny language. *Dive into a world.* Spend time where the rubber meets the road—sit with dispatchers, nurses, chefs, farmers. Learn their jargon, their nightmares, their “this *always* breaks on Tuesdays.” Build that mental map until you dream in *their* edge cases. Because when the AI spits out code tomorrow? You’ll be the one who spots the lie before it ships.  
 
-Anyway. I’m off to tweak my chili recipe (lean principle: *always* test texture over the flame). But before I go—here’s to tools that *serve* us, not the other way ’round. And to dads everywhere, fielding the same “why does tech hate us?” questions from wide-eyed kids.  
+My son finally fixed his Fortnite tracker today. Celebrated with a round of *Döner* from the stand by our flat. As we ate, he asked how I knew the API docs were lying. I patted his shoulder: “Kid, it’s not about the code. It’s about knowing the game.”  
 
-We’ll figure it out. One open-source workaround at a time. 🥃💻
+Same goes for everything worth building.  
+
+Pull up a chair. Grab a whisky. Let’s talk about the *real* work. 🥃
