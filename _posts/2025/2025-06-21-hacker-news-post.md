@@ -11,30 +11,53 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Thursday 04 June 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Sunday 07 June 2026_
 
-## The Quiet Magic of Small-Scale AI (and Why I Got Excited About a 12-Billion-Parameter Model)
+## How AI Actually *Talks* (Over a Quiet Whisky)  
 
-You know those Tuesday nights? The ones where the kid’s finally asleep, the Weber’s been scraped down after a messy *über*-topped burger experiment, and you’re nursing a lukewarm beer at the kitchen table, scrolling through GitHub repos like it’s some kind of digital comfort food? Yeah. Last week was one of those.
+Strewth. So my kid asked me the other day: *"Dad, how do those AI things actually *know* stuff?"* He was hunched over his new PC—still warm from building it—eyes glued to the screen as he tried to explain why his Fortnite stats API kept returning `401 Unauthorized`. Classic.  
 
-I’d just finished debugging a script for my son’s latest obsession—a live tracker for his Lego Star Destroyer’s "space weather" (don’t ask; 10-year-olds have *very* specific demands)—when I stumbled across this unassuming Gemma 4 12B thing. No flashy press release, just a quiet commit in a repo I follow. And honestly? I almost scrolled past it. Another model, another set of numbers. Yawn.
+I poured us both (decaf) coffee, leaned back, and thought: *Right. How do I explain transformers to a ten-year-old without drowning him in matrix math?* Because honestly? **That’s the magic trick nobody talks about.**  
 
-But then I read the headline: *encoder-free multimodal*. And something clicked. Not the jargon-y, buzzwordy click—the kind where you remember that time you tried explaining lean principles to your brother-in-law over kangaroo sausages, and he just stared at you like *"mate, is this about BBQ or spreadsheets?"* It was one of those moments where tech suddenly stops feeling like a puzzle and starts feeling like a *tool*. Like the first time I swapped out my dad’s ancient Weber for a thermometer probe. Life-changing? No. But quietly brilliant? Absolutely.
+See, most folks think LLMs "read" text like we do. They don’t. At all. It’s more like… translating your entire life story into a secret Lego set. Every word gets snapped into tiny plastic bricks (we call them *tokens*), and the AI’s job is to rebuild the story with those bricks—even if half the pieces are missing.  
 
-What got me hooked wasn’t the 12 billion parameters (though, full disclosure, I *do* have a soft spot for models that fit on my dented 2020 MacBook without melting the thing). It was how they’d ripped out the usual clunky vision/audio encoders—no more separate pipelines, no more memory-hogging middleware. Just… raw inputs flowing straight into the language guts. Like cooking chili *"over the top"*: the meat sears *in* the pot instead of beside it, soaking up all the flavour from the start. I’ve always said the magic’s in the integration, not the isolation. Lean taught me that. Data science taught me that. Even that disastrous attempt at Australian-style pulled pork with German sauerkraut taught me that (*don’t* tell my Oma).
+**Here’s the bit that broke my brain at first:**  
+The word *"chilli"* (yes, the Aussie spelling matters!) might split into `["chil", "li"]`. Not because the AI’s dumb—it’s *clever*. It’s saving space. Like how we shorten "refrigerator" to "fridge" when we’re lazy. But this laziness? It’s why AI once told me *"strawberry"* has **two R’s**. (Spoiler: It has *three*. The token `"straw"` ate one.)  
 
-I fired it up on a whim. Grabbed my phone, snapped a pic of my half-eaten pretzel (Hamburg’s finest, obviously), dragged it into Ollama, and asked the model to riff on "why Bavarians hate our beer." The response was… weirdly human. Not just *"Bavaria has stricter purity laws"*—it *joked* about the pretzel’s salt crust looking like snow on Zugspitze. Then transcribed my mumbled voice note about next week’s sprint planning *while* interpreting a screenshot of Jira tickets. All on my laptop. No cloud, no fan screaming like a jet engine. Just… working. Quietly.
+So your words become numbers. Just… numbers. Row 247 might mean *"dad"*, row 4,096 might mean *"BBQ"*. Cold, right? But then—*bingo*—the **embedding matrix** wakes up. Picture a massive, dusty filing cabinet in your garage (you know the one, full of old tax returns). Each token’s number slides into a drawer, and *out pops a vector*: a 4,096-dimensional *feeling* about that word.  
 
-That’s the thing about tools that actually *work*. They don’t shout. They don’t need to. You notice them in the gaps—the moments *between* the big swings. Like when you’re debugging with your kid over Python scripts instead of arguing about Fortnite stats (though we did that too, let’s be real). Or when the model handles audio input without you having to wrestle with Whisper configs *again*. It’s the removal of friction, not the addition of flash. The kind of progress that feels less like a revolution and more like finally finding that third burner on the stove you’d forgotten existed.
+> **Tiny explainer for my kid**: Imagine "kangaroo" and "joey" as lego figures. Stick ’em close together in your build, and suddenly the AI *gets* they’re related. No instructions needed. Just… vibes.  
 
-Funny how these things echo life, isn’t it? I spent 20 years in boardrooms arguing that "digital transformation" isn’t about shiny dashboards—it’s about the quiet, stubborn work of aligning vision with reality. Same goes for AI. The real win isn’t scaling to 100 billion parameters. It’s building something *lean enough* to live in the messy, beautiful reality of your actual workflow. Something that runs while you’re waiting for the brisket to hit 165°F. Something your intern can tweak without a PhD.
+But here’s where it gets messy. If every *"chilli"* token feels the same whether it’s *"Chilli needs salt"* or *"I am chilli"*, we’re screwed. Enter **positional encoding**.  
 
-My son wandered in yesterday while I was testing it. Saw the pretzel photo in the chat window. *"Dad, can it turn my Lego weather into a song?"* I showed him how to pipe the JSON output into a little Sonic Pi script. He high-fived me so hard I dropped my beer.  
+Early models slapped position numbers onto tokens like sticky notes. *"You’re token #3! Here’s your sine wave!"* Cute. But useless when you’re reading *War and Peace*. Then someone had a beer-fueled epiphany: *What if we just… spin the vectors?* (**RoPE**, for the nerds.) Rotate "chilli" at position #1 slightly left, position #100 slightly right. Suddenly, *"chilli"* at the start of a sentence *feels different* than at the end. No sticky notes. Just elegant, drunken geometry.  
 
-That’s the stuff, right there. Not the benchmarks. Not the VRAM specs. The *connection*. The fact that a model designed for "agentic workflows" (whatever *that* means at 10 PM) can also turn a Lego spaceship’s humidity readings into dubstep with a kid who thinks "API" is a brand of vitamins.  
+Which brings us to **attention**. My favourite party trick.  
 
-I’ll probably brew a batch of biltong this weekend using my dehydrator—same one I scored at that flea market near Alster. Maybe I’ll try feeding the model pics of the drying meat to track progress. (Kidding. Mostly.)  
+Imagine sitting round a campfire. Everyone’s got:  
+- A **question** (*"Who’s got the tongs?"*)  
+- A **key** (*"I’ve got tongs!"*)  
+- A **value** (*the actual bloody tongs*)  
 
-But I won’t forget that quiet Tuesday night. The night another "small" tool didn’t just work… it *fit*. Like a well-worn chef’s knife. Or a favourite beer coaster. The kind of tool that doesn’t live on a pedestal. It lives on the counter, getting sticky with sauce, waiting for the next real job.  
+You scan the circle. Your *"Who’s got tongs?"* (Query) locks onto *"I’ve got tongs!"* (Key). *Bam*—you get the tongs (Value). Attention’s just that. But happening **48 times per layer** in a big model. Like 48 campfires in your skull.  
 
-Now if you’ll excuse me—I’ve got a Lego Star Destroyer to weather-proof. And possibly a pretzel to resurrect. 🌮
+> **Why your BBQ analogy fails**: Real smoke doesn’t decide *which* conversations matter. But attention does. It ignores *"pass the sauce"* if you’re elbow-deep in *"why is the brisket pink?"*. Priorities, mate.  
+
+And yeah—sometimes it loses focus. Ever ask an AI about *"meeting notes from page 52 of a 100-page doc"*? It’ll nail the intro and outro but *completely miss* page 52. (**"Lost in the middle."** Feels familiar after third beer, doesn’t it?)  
+
+---
+
+So back to my kid. He’s still wrestling with his Fortnite API, muttering about `"rate limits"`. I ruffle his hair: *"It’s just vectors spinning, son. Like your mum’s lamb shanks in the dehydrator."*  
+
+He rolls his eyes. *"Dad. That’s not how APIs work."*  
+
+I grin. *"No. But it’s how the *magic* works."*  
+
+Grab your quiet whisky. Stare at the code. And remember: **every AI is just a kid trying to spell "chilli" right.**  
+
+Some years back, I’d have written this as a bullet-pointed whitepaper. Now? I’d rather you remember *one thing*:  
+> The math isn’t the magic. The magic’s in the *mess*. The gaps. The "oops, three R’s in *strawberry*."  
+
+That’s where the humanity lives. Even in machines.  
+
+Now if you’ll excuse me—I’ve got a dehydrator full of jerky and a team to nudge about Q3 priorities. Some traditions (like burnt ends on Sundays) are worth keeping. 🥃
