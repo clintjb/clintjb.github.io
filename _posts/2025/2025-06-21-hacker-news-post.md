@@ -11,53 +11,22 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Sunday 07 June 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Wednesday 10 June 2026_
 
-## How AI Actually *Talks* (Over a Quiet Whisky)  
+## Another December Ritual: Whisky, Football, and the Quiet Hum of Progress  
 
-Strewth. So my kid asked me the other day: *"Dad, how do those AI things actually *know* stuff?"* He was hunched over his new PC—still warm from building it—eyes glued to the screen as he tried to explain why his Fortnite stats API kept returning `401 Unauthorized`. Classic.  
+Pour the single malt. Kick off the Bundesliga highlight reel. Another year, another quiet moment to unpack what the hell just happened. Feels like yesterday I was helping my son plug in his first PC, arguing that machines could do more than shoot pixelated bad guys—*remember that breakfast?*—and now here we are. Models like **Claude Fable 5** aren’t just *playing* Pokémon FireRed from screenshots alone; they’re rebuilding factories in Factorio, simulating solar eclipses from physics first principles, and designing proteins that could actually treat disease. Ten years ago, this would’ve felt like sci-fi. Today? It’s Tuesday.  
 
-I poured us both (decaf) coffee, leaned back, and thought: *Right. How do I explain transformers to a ten-year-old without drowning him in matrix math?* Because honestly? **That’s the magic trick nobody talks about.**  
+Look, I’ve spent two decades wrestling vision into reality—from aerospace hangars to military supply chains—and I’ve seen how often the gap between *what we imagine* and *what actually works* swallows good intentions whole. But this? Fable 5 isn’t just bridging that gap. It’s dissolving it. Stripe’s engineers condensed *months* of code migrations into days. IMC’s traders got senior-level analysis that *understands* not just the chart, but the *story* behind it. And that protein design? My internal bio team tells me it’s not just fast—*it’s thinking like a scientist*. Choosing binding sites, debugging failures, even proposing hypotheses our lab heads are quietly testing right now.  
 
-See, most folks think LLMs "read" text like we do. They don’t. At all. It’s more like… translating your entire life story into a secret Lego set. Every word gets snapped into tiny plastic bricks (we call them *tokens*), and the AI’s job is to rebuild the story with those bricks—even if half the pieces are missing.  
+Funny how the most profound shifts feel… ordinary. Like my chili recipe—the *over the top* method where you sear the meat first, so it carries that smoky depth into the final pot. People think it’s magic, but it’s just *attention to texture*. Fable 5’s the same. It’s not shouting about being "state-of-the-art"; it’s just *doing the work*. Parsing a million-line Ruby codebase like it’s a shopping list. Building a 3D-printable CAD model *while composing EDM to match the fluid dynamics*. No fanfare. Just results.  
 
-**Here’s the bit that broke my brain at first:**  
-The word *"chilli"* (yes, the Aussie spelling matters!) might split into `["chil", "li"]`. Not because the AI’s dumb—it’s *clever*. It’s saving space. Like how we shorten "refrigerator" to "fridge" when we’re lazy. But this laziness? It’s why AI once told me *"strawberry"* has **two R’s**. (Spoiler: It has *three*. The token `"straw"` ate one.)  
+But here’s what gets me: the *quiet* human things. How it catches harmless queries 5% of the time to keep the rest of us safe—not because it’s perfect, but because someone *cared* to tune those safeguards conservatively. Or how early users kept saying, *"It understands what I* mean*, not just what I type." That’s the lean principle in action: cut the waste, amplify what matters. Even in AI.  
 
-So your words become numbers. Just… numbers. Row 247 might mean *"dad"*, row 4,096 might mean *"BBQ"*. Cold, right? But then—*bingo*—the **embedding matrix** wakes up. Picture a massive, dusty filing cabinet in your garage (you know the one, full of old tax returns). Each token’s number slides into a drawer, and *out pops a vector*: a 4,096-dimensional *feeling* about that word.  
+I’ve been down this road before. Remember when "AI" meant chatbots that forgot your name after three sentences? Now my son and I are cooking up GitHub Actions to scrape his Fortnite stats, imagining how a model like this could turn *his* weekend project into something real. That’s the shift. It’s not about replacing us—it’s about finally having tools sharp enough to *keep up* with our curiosity.  
 
-> **Tiny explainer for my kid**: Imagine "kangaroo" and "joey" as lego figures. Stick ’em close together in your build, and suddenly the AI *gets* they’re related. No instructions needed. Just… vibes.  
+So here’s my toast: to the teams who *get it*. The ones grinding through messy data at 2 a.m., the devs who care more about clean code than shiny demos, the scientists quietly testing hypotheses no one asked for yet. You’re why all this matters. Fable 5 won’t fix everything (growth never is), but it’s a damn fine partner for the journey.  
 
-But here’s where it gets messy. If every *"chilli"* token feels the same whether it’s *"Chilli needs salt"* or *"I am chilli"*, we’re screwed. Enter **positional encoding**.  
+Grab a glass. Reflect. Celebrate how far we’ve come—*not just the wins, but the willingness to try*. And then? Let’s build what’s next.  
 
-Early models slapped position numbers onto tokens like sticky notes. *"You’re token #3! Here’s your sine wave!"* Cute. But useless when you’re reading *War and Peace*. Then someone had a beer-fueled epiphany: *What if we just… spin the vectors?* (**RoPE**, for the nerds.) Rotate "chilli" at position #1 slightly left, position #100 slightly right. Suddenly, *"chilli"* at the start of a sentence *feels different* than at the end. No sticky notes. Just elegant, drunken geometry.  
-
-Which brings us to **attention**. My favourite party trick.  
-
-Imagine sitting round a campfire. Everyone’s got:  
-- A **question** (*"Who’s got the tongs?"*)  
-- A **key** (*"I’ve got tongs!"*)  
-- A **value** (*the actual bloody tongs*)  
-
-You scan the circle. Your *"Who’s got tongs?"* (Query) locks onto *"I’ve got tongs!"* (Key). *Bam*—you get the tongs (Value). Attention’s just that. But happening **48 times per layer** in a big model. Like 48 campfires in your skull.  
-
-> **Why your BBQ analogy fails**: Real smoke doesn’t decide *which* conversations matter. But attention does. It ignores *"pass the sauce"* if you’re elbow-deep in *"why is the brisket pink?"*. Priorities, mate.  
-
-And yeah—sometimes it loses focus. Ever ask an AI about *"meeting notes from page 52 of a 100-page doc"*? It’ll nail the intro and outro but *completely miss* page 52. (**"Lost in the middle."** Feels familiar after third beer, doesn’t it?)  
-
----
-
-So back to my kid. He’s still wrestling with his Fortnite API, muttering about `"rate limits"`. I ruffle his hair: *"It’s just vectors spinning, son. Like your mum’s lamb shanks in the dehydrator."*  
-
-He rolls his eyes. *"Dad. That’s not how APIs work."*  
-
-I grin. *"No. But it’s how the *magic* works."*  
-
-Grab your quiet whisky. Stare at the code. And remember: **every AI is just a kid trying to spell "chilli" right.**  
-
-Some years back, I’d have written this as a bullet-pointed whitepaper. Now? I’d rather you remember *one thing*:  
-> The math isn’t the magic. The magic’s in the *mess*. The gaps. The "oops, three R’s in *strawberry*."  
-
-That’s where the humanity lives. Even in machines.  
-
-Now if you’ll excuse me—I’ve got a dehydrator full of jerky and a team to nudge about Q3 priorities. Some traditions (like burnt ends on Sundays) are worth keeping. 🥃
+*P.S. If you’re tinkering with Fable 5 over the holidays… drop me a line. I’ve got a dehydrator full of jerky and questions about that fluid simulation.* 🌮
