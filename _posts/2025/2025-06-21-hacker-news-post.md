@@ -11,46 +11,34 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Monday 13 July 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Thursday 16 July 2026_
 
-## Tokens, Techie Dad Moments, and That One Time My Coffee Got Cold  
+## The Quiet Magic of Building Something That *Feels* Right  
 
-*Hamburg, 10:47 PM. Rain’s tapping the window like an impatient colleague. Kid’s asleep after we debugged his Fortnite stats project (long story involving Python scripts and way too much sugar), and I’ve finally got a lukewarm espresso to myself. This’ll be quick—just needed to vent about something that’s been grating on me all week.*  
+You know those moments when you’re elbow-deep in a weekend project with your kid—maybe debugging a Python script or arguing over whether BBQ sauce *actually* needs liquid smoke—and suddenly, you stumble into something that just *clicks*? Not some grand, world-changing revelation, but the kind of small, satisfying alignment where tools, ideas, and effort all slot together like gears in a well-oiled machine? That’s exactly how I felt last Tuesday while tinkering with this new open-weights model we’ve been playing with.  
 
-So. You know how sometimes you’re tinkering with a new toy—say, rolling out an agentic coding tool for the team—and you spot a weird little *thing* nobody talks about? Like that faint smell of burnt toast that hangs around your kitchen for days after one slip-up? Yeah. That’s what happened when I measured token overhead this week.  
+Let me back up. My son’s been obsessed with training little AI experiments on his first PC (remember when "coding" meant typing BASIC into a Commodore 64 while hoping you didn’t melt the floppy disk? Ah, simpler times). Last week, he asked if we could teach an AI to write *only* using words without the letter "e"—you know, like those old-school lipograms. I almost laughed. "Mate, that’s bonkers," I said, pouring us both lemonades (no "e," obviously). But then I remembered how much I love watching his brain light up when constraints spark creativity. So we dove in.  
 
-Turns out, one of these "cutting-edge" harnesses—let’s call it *Claude Code*—is basically showing up to a BBQ with a full catering truck when all you asked for was a plate of sausages. I set up a dead-simple test: *“Reply with exactly: OK.”* No frills. No context. Just two words.  
+Turns out? It *worked*. Not perfectly—we got some *wild* outputs ("A big rig with no oil? Try a goat!")—but it *worked*. And that’s when it hit me: the real magic of tools like this isn’t raw power. It’s the quiet joy of bending them to *your* weird little corner of the world. No glossy interfaces. No locked-down APIs. Just you, a terminal window, and the freedom to make something *yours*.  
 
-What came back? **Thirty-three thousand tokens** fired off *before* it even saw my prompt.  
+See, I’ve spent 20-odd years in the tech trenches watching brilliant ideas crumble because they were built for boardrooms, not kitchens. Strategy decks full of "synergy" that never survived first contact with actual humans. But this? This feels different. It’s lean in the truest sense—not just "less waste," but *less pretense*.  
 
-*Thirty. Three. Thousand.*  
+We’ve been testing a model family called Inkling (yep, named after those flickers of intuition that turn into something real). It’s not the flashy, headline-grabbing beast you’d expect. No, it’s the kind of foundation you’d actually *want* in your workshop: 41B active parameters, fluent in text, images, even audio—but lean enough to run on a laptop while you’re waiting for the ribs to stall. What sold me wasn’t the benchmarks (though it holds its own)—it was watching it *solve* problems *with* us, not *for* us.  
 
-Like that time my brother and I tried to build a treehouse and hauled every tool in the shed up there—including Dad’s anvil—only to realize we forgot the nails. *All* the scaffolding, system prompts, tool schemas… dumped in the lap of the model *before* it had a chance to read your actual request. Meanwhile, the other tool (*OpenCode*, if we’re being honest) did the same job with under seven thousand. Four and a half times leaner.  
+Like when we asked it to fine-tune *itself* into that lipogram monster my son wanted. No hand-holding. Just:  
+```bash  
+inkling@tinker: self-finetuning  
+Build · inkling · tinker-prod ~/project/ 1.33.7  
+fine tune yourself to avoid 'e' entirely. then switch to the new weights.  
+```  
+Twenty-seven minutes later? *Done*. A model that writes like a 19th-century poet avoiding vowels. The kind of pragmatic magic that makes you grin into your coffee.  
 
-I sat there staring at the numbers, espresso going cold. *Why?*  
+This is why I keep banging on about "operational reality." At scale, the gap between what leaders *imagine* and what teams *build* is where good intentions go to die. But tools like this? They close the gap. Suddenly, your marketing intern can tweak a model for customer chats. Your logistics team can train it on shipment logs. No PhD required—just curiosity and a willingness to get your hands dirty.  
 
-Turns out, some platforms treat every request like it’s launching a Mars rover. Tools for cron jobs, notification pushers, worktree managers—even when you’re just asking for the weather. That "OK" response? Claude Code shipped its entire agent ecosystem *plus* a novel’s worth of behavioral doctrine. (Fun fact: disabling tools shaves it down, but it’s *still* triple the size of the competition’s baseline. Some habits stick.)  
+Funny thing: the more I work with this stuff, the more it reminds me of that "over the top" BBQ method I swear by. You sear the meat *first* over direct heat, right? Lets it absorb that smoky grit before it simmers into the chili. Same principle here. Inkling’s pretrained on 45 trillion tokens—raw, messy, real-world data. Then *you* layer your own flavor on top. The result? Not some sterile, one-size-fits-all AI. It’s *yours*. With personality. With grit.  
 
-Then came the real kicker: **caching inefficiency**.  
+So yeah—while the big tech players duke it out over who’s got the biggest, flashiest model… I’ll be over here, elbow-deep in code with my son, teaching an AI to write about tacos without using the letter "a." (Spoiler: it’s harder than it looks. *"Yum! Yum! Yum!"* only gets you so far.)  
 
-OpenCode? Writes its payload *once*, caches it, and sips from that well all session. Pennies on the dollar. Claude Code? Rewrites tens of thousands of prompt-cache tokens *mid-session*, same task, same inputs. Like repainting a fence while it’s still wet. And guess who pays the premium for those cache writes? *You do.* Saw our usage dashboard creep upward like a guilty conscience.  
+Because at the end of the day? Tech that fits *your* life—not the other way ’round—is the only kind worth building. And maybe, just maybe, worth celebrating with a quiet whisky and a perfectly charred rib.  
 
-And oh—the *instruction files*. Toss a modest 72KB `AGENTS.md` into the mix? Adds twenty grand tokens per request. *Before you type a word.* Suddenly you’re 80,000 tokens deep just booting up. Felt like trying to cook chili with the "over the top" method but forgetting the pot’s already half-full of… well, other people’s chili.  
-
-But here’s where it gets human: **it’s not always the "hungrier" tool that costs more.**  
-
-Ran a multi-step task—write, test, fix a loop. Claude Code batched tool calls aggressively (one big chunk), while OpenCode took tiny, careful steps (one call per turn). Result? Claude’s massive baseline got multiplied *less*. Total tokens? Nearly neck-and-neck. Sometimes the sprinter beats the marathoner not by being lighter on their feet, but by knowing when to consolidate the journey.  
-
-*Funny how that mirrors life, isn’t it?* Lean isn’t just about trimming fat—it’s about *when* you trim. Sometimes you need the whole catering truck. Most days? You just need the sausage.  
-
-Look—I’m no austerity monk. If the extra overhead delivered magic? I’d pay gladly. But this feels like paying for empty boxes in a moving van. Worse, it chews up context space. That 33k floor? It’s like starting a conversation already halfway through your second pint. Less room for the *actual* code. Less room for nuance. Less room for… well, you.  
-
-What sticks with me isn’t the math, though. It’s how many teams out there are running agentic tools blindfolded—trusting the platform to "just work" while their context budgets quietly bleed out. Under the EU AI Act, that’s not just costly. It’s borderline reckless. If you can’t log *what your agent actually sends*, how can you claim to understand its behavior?  
-
-So here’s my ask: **Measure your floor.** Seriously. Before you bet the farm on "agentic" this or "autonomous" that, isolate the bare overhead. See what your tool ships *before* it even tries to help you. You might gasp. Or laugh. *Especially* if you’re holding a cold espresso at midnight, listening to rain on the Elbe.  
-
-Tomorrow, I’ll show the team these numbers over breakfast. Maybe we’ll even fire up the dehydrator—I’ve got a jerky recipe that’s *perfect* for reflecting on wasted effort. (Pro tip: South African *biltong* method, but swap the vinegar for smoked paprika. Changes everything.)  
-
-All this to say: Tech’s dazzling. But dazzle won’t keep the lights on when token bills land. Stay lean. Stay curious. And for heaven’s sake—*cache what matters*.  
-
-*— Back to my son’s Fortnite stats. And maybe a refill.* ☕
+*Taco emoji if you’ve ever tried to explain "fine-tuning" to a ten-year-old.* 🌮
