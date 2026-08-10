@@ -11,33 +11,52 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Friday 07 August 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Monday 10 August 2026_
 
-# Mario Meets Pareto  
-**Step on the Front Line and Beat your Friends**  
-*Written by theanonymousone*  
+```markdown
+# Lessons in the Shadows — A Reflection on Dark Hours
 
-So there I was, hunched over the couch on a rainy Saturday afternoon, controller in hand, racing against my son in Mario Kart. The kid picked Cat Peach again — zippy, nimble, and annoyingly good at weaving through traffic. I, on the other hand, stubbornly stuck with Bowser, because *of course* the big guy with the spiked shell should win every time, right? Wrong. Three races later, he’s lapping me like I’m driving a kart made of bricks.  
+There's a particular kind of silence that settles in at 2am when you're staring at lines of code that aren’t yours. Not consciously taken, but unconsciously regurgitated by a machine that’s been fed more of the internet than I’ll ever read in a lifetime. This is where my week ended up — not in triumph, but in that quiet, fluorescent-lit corner of accountability.
 
-That’s when it hit me: Mario Kart isn’t just about button-mashing or dodging turtle shells. It’s about *choices*. Should you prioritize speed over handling? Acceleration over weight? It’s a puzzle that feels both trivial and deeply human — like trying to decide what’s for dinner when half the fridge is yelling “use me!”  
+## Family, Football & the Fragility of Originality  
 
-Let’s talk about the Pareto principle — yeah, that one you’ve heard in the context of 80/20 rules and lean methodologies. But here’s the kicker: it’s hiding in plain sight every time you pick a character in Mario Kart.  
+Last weekend, my daughter asked me to explain how constellations work. We stepped outside with her tablet, pointing at stars while the device stubbornly tried to autocomplete "Southern Cross" into "Southern Fried Chicken". She laughed. I groaned. We settled on calling them "space hieroglyphs" and gave up to watch the rugby instead.
 
-Here’s how it played out for us. My son, all 10 years of him, wanted to “build the ultimate kart.” We dove into the stats — drivers, bodies, tires, gliders — and quickly got lost in a sea of numbers. Did you know there are over 200 possible setups? Probably more if you count the wacky color schemes. But Pareto doesn’t care about your aesthetic. He’s here to tell you: “Some choices are just worse.”  
+There’s something beautifully human in that chaos — the way we mash metaphors and mistakes into meaning. Which makes the story of Dark Hours sting so much more.  
 
-Take Koopa. Slow and sluggish compared to Cat Peach? Yeah, he’s a dud. If you can get higher speed *and* acceleration elsewhere (you can), why pick him? Same goes for most of the “B-tier” drivers. Pareto calls them “dominated options” — they’re always beaten in at least one stat by someone else.  
+## The Project That Wasn’t  
 
-The real magic is in the *Pareto front*. Imagine plotting every driver’s speed vs. acceleration. The front is the line where no one’s better than someone else in *both* stats. Pick any point on that line, and you’ve got yourself a trade-off. Do you want Cat Peach’s speed? Lose some acceleration. Go for Toadette’s zip? Kiss handling goodbye.  
+I’d spent a week building what I thought was a simple astronomy tool. Just a little thing: moon phases, light pollution data, star charts. The kind of project I’d usually prototype while grilling steaks and pretending I’m still earning my scout badge. Except this time, I leaned too hard on AI to do the heavy lifting.  
 
-This is where the game becomes life. You don’t just *pick* a setup — you decide what matters. If you’re like me and rely on luck more than skill, maybe acceleration’s your jam (because you’ll need it to recover after hitting a banana peel). If you’re my son, smooth turns and mini-turbo bursts are king. Pareto doesn’t choose for you — he just cuts the fluff and leaves you with the essentials.  
+Within hours of launching, I discovered another developer — [Andrew](https://darkhours.app) — had created almost the exact same tool three years ago. Not just similar. *Identical.* Same feature set. Same name. Even the same damn bug in the API integration that he’d painstakingly fixed six months ago. My AI assistant had eaten his open-source work for breakfast and vomited it back as "innovation".
 
-And isn’t that how the best decisions work? Whether you’re optimizing a process at work, designing a leaner supply chain, or arguing with your spouse about the “best” pizza toppings (pineapple is non-negotiable in my house), you’re always trading off. Pareto’s front is the menu of options where you stop asking, “Is this perfect?” and start asking, “What matters most here?”  
+## The Wake-Up Call  
 
-We ended up picking a build that balanced speed and handling — mostly because my son got tired of waiting for me to finish the lap. But the lesson stuck. Sometimes the best solution isn’t the fastest, the flashiest, or the one with the most stats. It’s the one that *fits* what you value — even if that’s just surviving the first 10 seconds of the race.  
+Let me be clear: this wasn’t accidental overlap. This was a mirror.  
 
-So next time you’re lining up at the starting grid, ask yourself: Where’s the front? What’s your priority? And more importantly — are you choosing to win, or choosing to *enjoy*?  
+I’ve spent my career chasing the thrill of solving problems nobody’s tackled before. When you’re knee-deep in transformation projects for aerospace giants or teaching your son how to solder Raspberry Pi sensors, you learn to respect the blood, sweat and *time* it takes to build something real. Which is why deleting Dark Hours felt less like shutting down a project and more like burning a counterfeit flag.  
 
-Either way, leave Cat Peach for me — we’ve got a score to settle. 🎮🏁  
+## What Changed?  
 
----  
-*P.S. The Pareto frontier isn’t just for Mario Kart. Apply it to your next project, your next meal prep, or that “we need to talk” convo with your teenager. Sometimes the best way forward is to subtract the noise first.*
+First, I redirected my domain to Andrew’s site. His work deserves the spotlight — go see it. Then I poured myself a whisky and thought about why this hurt so much.  
+
+We romanticize "failing fast" in tech, but we rarely talk about the weight of wasting someone else’s journey. Andrew had done this work alone. I had taken a shortcut, and in doing so, almost erased his effort. There’s no trophy for being first when you trample the trail others have blazed.  
+
+## Moving Forward  
+
+I’ve always believed tools should be bridges, not barriers. So here’s my reset:  
+
+- **No more AI crutches**: I’ll use it for debugging or learning syntax, but never to write core functionality.  
+- **Double-check everything**: If a tool feels "too easy", I’ll spend twice as long Googling for ghosts.  
+- **Name changes are soul changes**: If I relaunch something similar (unlikely), it’ll be called *Shadows* — a reminder that every bright idea casts a dark history somewhere.  
+
+## Final Thoughts  
+
+The other night, I showed my daughter Andrew’s version of Dark Hours. She frowned and said, “So… you stole his homework?” I winced. Then she added, “But at least you apologized. That gets you extra credit, right?”  
+
+Maybe that’s the takeaway. We’re all fumbling through this digital wilderness, but the compass points that matter haven’t changed: honesty, humility, and occasionally, knowing when to pour a drink, delete a GitHub repo, and start over.  
+
+Cheers to Andrew for building something real.  
+
+And to all of us still learning — may your code be clean, your mistakes be teachable, and your constellations always look slightly less like fried chicken. 🥃  
+```
