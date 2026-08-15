@@ -5,7 +5,7 @@ title: 'Vibe Coding'
 date: 2025-04-24
 description: Quote from the I Am Developer Account.
 tags: [digitalization, GPT, quote, vibe, tech, debt, chatgpt]
-categories: digitalization
+categories: [digitalization]
 comments: true
 image: '/images/posts/2025/vibe.jpg'
 ---
