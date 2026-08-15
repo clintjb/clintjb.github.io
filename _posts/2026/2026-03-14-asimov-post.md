@@ -5,7 +5,7 @@ title: 'A Cult of Ignorance'
 date: 2026-03-14
 description: Quote from Isaac Asimov.
 tags: [scifi, politics, society, quote, asimov, science, isaac, opinion,  idiocracy, ignorance]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2026/asimov.jpg'
 ---
