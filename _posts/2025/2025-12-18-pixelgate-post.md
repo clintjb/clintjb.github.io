@@ -5,7 +5,7 @@ title: 'PixelGate NFT Experiment'
 date: 2025-12-18
 description: An extended experiment run over the 2025 Christmas holidays.
 tags: [digitalization, experiment, serverless, NFT, AI, blockchain, Cloudflare, workers, base, funkopop]
-categories: digitalization
+categories: [digitalization]
 comments: true
 image: '/images/posts/2025/pixelgate.jpg'
 ---
