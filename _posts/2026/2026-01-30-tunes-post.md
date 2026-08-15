@@ -4,7 +4,7 @@ title: 'Tunes'
 date: 2026-01-30
 description: Dynamic visualization of last weeks top 5 albums.
 tags: [stuff, pop culture, music, albums, listenbrainz]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2026/tunes.jpg'
 ---
