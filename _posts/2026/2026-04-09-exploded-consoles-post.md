@@ -5,7 +5,7 @@ title: 'Exploded Consoles'
 date: 2026-04-09
 description: Various systems with classic games and charecters represented inside.
 tags: [pop culture, stuff, consoles, games, illustrations, technical, poster]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2026/consoles.jpg'
 ---
