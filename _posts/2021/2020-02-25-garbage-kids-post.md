@@ -5,7 +5,7 @@ title: 'Garbage Pail Kids'
 date: 2021-02-25
 description: Combining spectacular artwork and over the top satire.
 tags: [pop culture, stuff, 80s, stickers, remake, garbage kids, GPK]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2021/garbagekids.jpg'
 ---

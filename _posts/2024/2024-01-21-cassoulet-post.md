@@ -5,7 +5,7 @@ title: 'Cassoulet'
 date: 2024-01-21
 description: A hearty southwest French classic perfect for the cold months. 
 tags: [cooking, cassoulet, comfort food, french, traditional]
-categories: cooking
+categories: [cooking]
 comments: true
 image: '/images/posts/2024/cassoulet.jpg'
 ---

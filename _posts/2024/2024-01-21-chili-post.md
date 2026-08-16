@@ -5,7 +5,7 @@ title: 'Over The Top Chili'
 date: 2024-01-21
 description: Our favorite chili recipe cooked with the "over the top" method.
 tags: [cooking, chili, smoker, con carne, recipe]
-categories: cooking
+categories: [cooking]
 comments: true
 image: '/images/posts/2024/chili.jpg'
 ---

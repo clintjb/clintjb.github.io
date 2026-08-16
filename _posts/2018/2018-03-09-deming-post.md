@@ -5,7 +5,7 @@ title: 'Without Data'
 date: 2018-03-09
 description: Quote from Edward Deming.
 tags: [business, digitalization, deming, quote, data, science, edward, opinion, continuous improvement]
-categories: digitalization
+categories: [digitalization]
 comments: true
 image: '/images/posts/2018/deming.jpg'
 ---

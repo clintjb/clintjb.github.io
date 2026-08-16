@@ -5,7 +5,7 @@ title: 'BBQ Biscuits'
 date: 2019-08-24
 description: My goto recipe for biscuits.
 tags: [cooking, bbq, biscuits, scones, sourdough, cornbread]
-categories: cooking
+categories: [cooking]
 comments: true
 image: '/images/posts/2019/cornbread.jpg'
 ---

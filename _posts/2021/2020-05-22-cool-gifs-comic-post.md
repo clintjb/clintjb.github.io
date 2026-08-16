@@ -5,7 +5,7 @@ title: 'Cool Gifs - Comic Edition'
 date: 2021-05-22
 description: Some random comic based animated gifs I’ve stumbled across...
 tags: [pop culture, stuff, gifs, animation, animated, comics, spiderman, avengers, batman, marvel]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2021/comics.jpg'
 ---

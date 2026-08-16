@@ -5,7 +5,7 @@ title: 'Cool Gifs v2'
 date: 2022-02-04
 description: Some *more* random animated gifs I’ve stumbled across...
 tags: [pop culture, stuff, gifs, animation, animated, cool, fun]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2022/gifs2.jpg'
 ---

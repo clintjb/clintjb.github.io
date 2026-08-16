@@ -5,7 +5,7 @@ title: 'Batmans Rogues'
 date: 2022-01-28
 description: Really nice illustrations of Batmans villains.
 tags: [pop culture, stuff, batman, joker, illustrations, villains, rougue]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2022/batman.jpg'
 ---

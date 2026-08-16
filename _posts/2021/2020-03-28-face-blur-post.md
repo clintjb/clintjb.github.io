@@ -5,7 +5,7 @@ title: 'Face Detection & Blurring'
 date: 2021-03-28
 description: An afternoon experiment with dynamic face detection utilizing Python & OpenCV.
 tags: [digitalization, python, face, opencv, anonymization, webcam, blurring, detection, dynamic]
-categories: digitalization
+categories: [digitalization]
 comments: true
 image: '/images/posts/2021/face-blur.jpg'
 ---

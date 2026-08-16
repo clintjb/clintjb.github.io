@@ -5,7 +5,7 @@ title: 'Why German Companies Fail At Digital Innovation'
 date: 2019-01-25
 description: Germany risks being left in the digital dark age.
 tags: [digitalization, transformation, change, Germany, Deutschland, continual, improvement]
-categories: digitalization
+categories: [digitalization]
 comments: true
 image: '/images/posts/2019/fail.jpg'
 ---

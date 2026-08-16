@@ -5,7 +5,7 @@ title: 'Choc Hot Cross Buns'
 date: 2018-04-20
 description: My annual hot cross bun fix.
 tags: [cooking, easter, choc, hot cross buns, hot, cross, buns, chocolate]
-categories: cooking
+categories: [cooking]
 comments: true
 image: '/images/posts/2018/hot-cross-buns.jpg'
 ---

@@ -5,7 +5,7 @@ title: 'Cryptocurrencies'
 date: 2018-02-23
 description: My view on the future of crypto and why I'll HODL on XRP.
 tags: [digitalization, ripple, XRP, crypto, tron, TRX, bitcoin, bubble, DLT, currency]
-categories: digitalization
+categories: [digitalization]
 comments: true
 image: '/images/posts/2018/crypto.jpg'
 ---

@@ -5,7 +5,7 @@ title: 'Melbourne Weather Analysis'
 date: 2019-03-28
 description: Global warming analysis utilising Python, Plotly & SQL.
 tags: [digitalization, python, global, warming, analysis, plotly, sql, termpaerature, weather, dash, plot.ly]
-categories: digitalization
+categories: [digitalization]
 comments: true
 image: '/images/posts/2019/melbourne-weather.jpg'
 ---

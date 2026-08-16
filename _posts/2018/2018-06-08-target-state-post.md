@@ -5,7 +5,7 @@ title: 'The Target State'
 date: 2018-06-08
 description: Digital transformation & preparing for constant change.
 tags: [digitalization, transformation, change, agile, target, continual, improvement]
-categories: digitalization
+categories: [digitalization]
 comments: true
 image: '/images/posts/2018/target.jpg'
 ---
