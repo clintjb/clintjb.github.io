@@ -5,7 +5,7 @@ title: 'Audrey Hepburn'
 date: 2016-07-12
 description: A few little illustrations & paintings.
 tags: [pop culture, stuff, illustrations, audrey, hepburn]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2016/audrey.jpg'
 ---

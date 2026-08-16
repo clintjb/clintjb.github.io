@@ -5,7 +5,7 @@ title: 'Bowie + Buscemi'
 date: 2015-04-28
 description: A mash-up of Steve Buscemi and David Bowies many varied personas
 tags: [stuff, pop culture, david bowie, steve buscemi, mashup, portrait]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2015/buscemi.jpg'
 ---

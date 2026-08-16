@@ -5,7 +5,7 @@ title: 'Pop Mobiles'
 date: 2016-05-05
 description: Portraits based on all kinds of film/TV vehicles.
 tags: [pop culture, stuff, cars, vehicles]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2016/vehicles.jpg'
 ---

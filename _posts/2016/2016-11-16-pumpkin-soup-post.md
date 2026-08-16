@@ -5,7 +5,7 @@ title: 'Pumpkin Soup'
 date: 2016-11-16
 description: Sprinkle with crunchy croutons and a touch of pumpkin seed oil.
 tags: [cooking, soup, home made, pumpkin, curry, recipe]
-categories: cooking
+categories: [cooking]
 comments: true
 image: '/images/posts/2016/pumpkin-soup.jpg'
 ---

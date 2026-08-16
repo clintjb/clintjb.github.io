@@ -5,7 +5,7 @@ title: 'Life Rules For Being A Man'
 date: 2016-06-14
 description: A list of rules for boys of all ages.
 tags: [stuff, life rules, man, manliness, wisdom]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2016/manliness.jpg'
 ---

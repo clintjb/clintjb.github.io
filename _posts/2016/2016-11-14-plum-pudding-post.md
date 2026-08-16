@@ -5,7 +5,7 @@ title: 'Plum Pudding'
 date: 2016-11-14
 description: Christmas just wouldn't be Christmas without a plum pudding at the end of the evening.
 tags: [cooking, plum, pudding, Christmas, recipe, tradition]
-categories: cooking
+categories: [cooking]
 comments: true
 image: '/images/posts/2016/plum-pudding.jpg'
 ---

@@ -5,7 +5,7 @@ title: 'Budgets'
 date: 2016-12-02
 description: Budget deficits simplified.
 tags: [business, budget, credit, crisis, financial, government, simple, deficit, explanation]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2016/budget.jpg'
 ---

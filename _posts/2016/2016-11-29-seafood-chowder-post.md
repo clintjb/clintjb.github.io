@@ -5,7 +5,7 @@ title: 'Seafood Chowder'
 date: 2016-11-29
 description: A chunky, creamy stew with mixed shellfish and potatoes.
 tags: [cooking, chowder, home made, seafood, recipe]
-categories: cooking
+categories: [cooking]
 comments: true
 image: '/images/posts/2016/seafood-chowder.jpg'
 ---

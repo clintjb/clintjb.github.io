@@ -5,7 +5,7 @@ title: 'Chicken Curry'
 date: 2016-06-30
 description: Simple but tasty chicken curry.
 tags: [cooking, curry, chicken, masala, tandoori]
-categories: cooking
+categories: [cooking]
 comments: true
 image: '/images/posts/2016/curry.jpg'
 ---

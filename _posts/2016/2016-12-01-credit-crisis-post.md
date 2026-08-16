@@ -5,7 +5,7 @@ title: 'The Crisis Of Credit'
 date: 2016-05-15
 description: A brilliant visual explanation so simple everyone can understand.
 tags: [business, wall st, credit, crisis, financial, video, simple, explanation]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2016/credit.jpg'
 ---

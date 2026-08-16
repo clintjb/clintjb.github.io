@@ -5,7 +5,7 @@ title: 'The Biggest Challenges Of Data-Driven Manufacturing'
 date: 2016-05-20
 description: A refreshing look at Industry 4.0.
 tags: [digitalization, development, industry, 4.0, industrial, iot]
-categories: digitalization
+categories: [digitalization]
 comments: true
 image: '/images/posts/2016/industry.jpg'
 ---

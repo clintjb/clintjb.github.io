@@ -5,7 +5,7 @@ title: 'Pop Gifs'
 date: 2016-05-27
 description: Some fun pixelated animated gifs.
 tags: [pop culture, stuff, cars, vehicles]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2016/animation.jpg'
 ---

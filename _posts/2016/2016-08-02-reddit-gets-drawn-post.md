@@ -5,7 +5,7 @@ title: 'Gets Drawn'
 date: 2016-08-02
 description: I got drawn on Reddit!
 tags: [pop culture, stuff, illustrations, reddit, getdrawn]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2016/drawn.jpg'
 ---

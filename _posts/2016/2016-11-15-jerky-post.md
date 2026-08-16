@@ -5,7 +5,7 @@ title: 'Jerky'
 date: 2016-11-15
 description: What's better to go with football and beer?
 tags: [cooking, jerky, home made, beer, recipe]
-categories: cooking
+categories: [cooking]
 comments: true
 image: '/images/posts/2016/jerkey.jpg'
 ---

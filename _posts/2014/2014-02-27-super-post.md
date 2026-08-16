@@ -5,7 +5,7 @@ title: 'Super!'
 date: 2014-02-27
 description: Characters based on the styling and pose from the first appearance of Superman
 tags: [stuff, pop culture, mike mitchell, portraits, superman]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2014/super.jpg'
 ---

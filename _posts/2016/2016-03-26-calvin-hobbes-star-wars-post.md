@@ -5,7 +5,7 @@ title: 'Calvin & Hobbes Inspired Star Wars'
 date: 2016-03-26
 description: Let's go exploring in a galaxy far, far away.
 tags: [stuff, pop culture, calvin and hobbes, cartoons, mashup, star wars]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2016/starwars.jpg'
 ---

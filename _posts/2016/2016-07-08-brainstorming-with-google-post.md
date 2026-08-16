@@ -5,7 +5,7 @@ title: 'How To Brainstorm Like A Googler'
 date: 2016-07-08
 description: A simple three-step process Google uses to come up with its most innovative ideas.
 tags: [business, brainstorm, google, innovate, brainstorming]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2016/brainstorming.jpg'
 ---

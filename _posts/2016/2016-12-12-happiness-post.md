@@ -5,7 +5,7 @@ title: 'Happiness?'
 date: 2016-12-12
 description: The purpose of life is not happiness - its usefulness.
 tags: [happiness, happy, life, meaning, balance, stuff, work life, family]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2016/happy.jpg'
 ---

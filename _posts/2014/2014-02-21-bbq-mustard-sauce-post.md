@@ -5,7 +5,7 @@ title: 'Sweet Mustard BBQ Sauce'
 date: 2014-02-21
 description: Goes great with pork, chicken - well just about anything actually!
 tags: [cooking, bbq, sauce, mustard]
-categories: cooking
+categories: [cooking]
 comments: true
 image: '/images/posts/2014/bbqsauce.jpg'
 ---

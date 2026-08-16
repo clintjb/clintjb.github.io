@@ -5,7 +5,7 @@ title: '(Still) Learning From Toyota'
 date: 2014-02-27
 description: Time to move from one off ‘toolbox’ approaches, and go back to continual incremental improvements
 tags: [business, lean, toyota, kaizen]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2014/toyota.jpg'
 ---

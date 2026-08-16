@@ -5,7 +5,7 @@ title: 'Manufacturing By The Numbers'
 date: 2015-07-14
 description: A detailed overview on the numbers and costs of bringing a product into existence
 tags: [business, manufacturing, costs, dtc]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2015/manufacturing.jpg'
 ---

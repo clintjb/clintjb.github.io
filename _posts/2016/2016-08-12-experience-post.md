@@ -5,7 +5,7 @@ title: 'Experience'
 date: 2016-08-12
 description: Quote from Vernon Law.
 tags: [business, vernon, quote, experience]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2016/vernon.jpg'
 ---

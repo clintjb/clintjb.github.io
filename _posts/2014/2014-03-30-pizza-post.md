@@ -5,7 +5,7 @@ title: 'Basic Pizza Base + Sauce'
 date: 2014-03-30
 description: My go-to pizza recipe that's ridiculously simple
 tags: [cooking, pizza, dough, sauce]
-categories: cooking
+categories: [cooking]
 comments: true
 image: '/images/posts/2014/pizza.jpg'
 ---

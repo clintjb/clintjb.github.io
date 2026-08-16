@@ -4,7 +4,7 @@ title: 'Duck + Sauces!'
 date: 2017-01-10
 description: Simple duck breast and some delicious sauces.
 tags: [cooking, duck, orange, pears, breast, sauce, recipe]
-categories: cooking
+categories: [cooking]
 comments: true
 image: '/images/posts/2017/duck.jpg'
 ---

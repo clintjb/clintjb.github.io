@@ -5,7 +5,7 @@ title: 'Whats Truly Important'
 date: 2014-02-21
 description: Quote from Barack Obama
 tags: [business, obama, quote, barack]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2014/obama.jpg'
 ---

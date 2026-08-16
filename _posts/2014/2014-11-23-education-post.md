@@ -5,7 +5,7 @@ title: 'Education'
 date: 2014-11-23
 description: Quote from Albert Einstein
 tags: [business, einstein, quote, education]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2014/einstein.jpg'
 ---

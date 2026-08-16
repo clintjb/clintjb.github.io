@@ -5,7 +5,7 @@ title: 'NBA VS 80s Cartoons'
 date: 2016-03-02
 description: A mashup of 1980s cartoons and NBA logos.
 tags: [stuff, pop culture, nba, cartoons, mashup, 80s]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2016/nbatoons.jpg'
 ---

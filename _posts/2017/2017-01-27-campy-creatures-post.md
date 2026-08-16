@@ -4,7 +4,7 @@ title: 'Campy Creatures'
 date: 2017-01-27
 description: B-grade film inspired monster illustrations
 tags: [stuff, pop culture, monsters, film, classic]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2017/creatures.jpg'
 ---

@@ -5,7 +5,7 @@ title: 'Stress Or Passion'
 date: 2016-08-29
 description: Quote from Simon Sinek.
 tags: [business, sinek, quote, stress, passion]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2016/sinek.jpg'
 ---

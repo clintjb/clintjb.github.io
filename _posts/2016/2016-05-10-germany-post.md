@@ -5,7 +5,7 @@ title: 'Green Lights'
 date: 2016-05-10
 description: One of my few pet-peeves here in Germany.
 tags: [pop culture, stuff, germany, joke, integration, traffic]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2016/germany.jpg'
 ---

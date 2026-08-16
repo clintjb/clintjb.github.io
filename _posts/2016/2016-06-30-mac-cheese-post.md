@@ -5,7 +5,7 @@ title: 'Mac & Cheese'
 date: 2016-06-30
 description: My take on the classic...
 tags: [cooking, macaroni, cheese, comfort, gourmet]
-categories: cooking
+categories: [cooking]
 comments: true
 image: '/images/posts/2016/maccheese.jpg'
 ---

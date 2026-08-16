@@ -4,7 +4,7 @@ title: 'Popscene'
 date: 2017-10-20
 description: A cool little scene will all kinds of randomness.
 tags: [stuff, pop culture, illustration, anime, mashup]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2017/popscene.jpg'
 ---

@@ -5,7 +5,7 @@ title: 'Putting The ‘Continuous’ Back Into Health Care Improvement'
 date: 2014-02-27
 description: Time to move from one off ‘toolbox’ approaches, and go back to continual incremental improvements
 tags: [business, lean, healthcare, kaizen]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2014/healthcare.jpg'
 ---

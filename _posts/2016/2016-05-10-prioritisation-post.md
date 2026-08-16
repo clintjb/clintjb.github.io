@@ -5,7 +5,7 @@ title: 'The Insanely Simple Way To Prioritize Your Work And Life'
 date: 2016-05-10
 description: How to find some work / life balance.
 tags: [business, priorities, balance, development, work life, family]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2016/agenda.jpg'
 ---

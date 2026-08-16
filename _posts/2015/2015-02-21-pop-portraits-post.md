@@ -5,7 +5,7 @@ title: 'Pop Portraits'
 date: 2015-02-21
 description: Side facing portraits based on all kinds of film characters
 tags: [stuff, pop culture, mike mitchell, portraits]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2015/portraits.jpg'
 ---

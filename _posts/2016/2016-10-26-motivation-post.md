@@ -5,7 +5,7 @@ title: 'Life Coach'
 date: 2016-10-26
 description: Some awesome 'motivational' illustrations.
 tags: [pop culture, stuff, illustration, motivation, funny]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2016/motivation.jpg'
 ---

@@ -4,7 +4,7 @@ title: 'Inheriting Underperformers'
 date: 2017-06-08
 description: How to handle underperformers on a team you inherit.
 tags: [business, underperformers, team, performance, new, manage]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2017/underperformers.jpg'
 ---

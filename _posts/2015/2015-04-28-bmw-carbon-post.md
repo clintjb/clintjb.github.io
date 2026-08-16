@@ -5,7 +5,7 @@ title: 'Automotive Embracing Composites'
 date: 2015-04-28
 description: For airframers it is hundreds of aircraft a year; for automakers hundreds of cars a day
 tags: [business, cfrp, bmw, i3, carbon, fibre, aerospace]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2015/bmw.jpg'
 ---

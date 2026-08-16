@@ -5,7 +5,7 @@ title: 'My Personal Life Hacks'
 date: 2016-03-31
 description: Just a few little tricks I've picked up and use almost on a daily basis.
 tags: [business, development, career, hacks, productivity]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2016/lifehack.jpg'
 ---

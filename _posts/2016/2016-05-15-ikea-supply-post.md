@@ -5,7 +5,7 @@ title: 'What Startups Can Learn From IKEA'
 date: 2016-05-15
 description: Some insights for anyone involved in cost convergence or DtX in general.
 tags: [business, development, ikea, supply chain, dtc, dtx]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2016/ikea.jpg'
 ---

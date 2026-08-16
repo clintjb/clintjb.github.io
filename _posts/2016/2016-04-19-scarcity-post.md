@@ -5,7 +5,7 @@ title: 'Scarcity'
 date: 2016-04-19
 description: Life lesson from Rufus Griscom.
 tags: [stuff, pop culture, quote, life lessons]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2016/scarcity.jpg'
 ---

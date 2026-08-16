@@ -5,7 +5,7 @@ title: 'Pixel Film Scenes'
 date: 2016-04-27
 description: Famous film scenes in some classic 486 inspired styles.
 tags: [stuff, pop culture, scumm, film, Gustavo Viselner, star wars, pixels]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2016/pixels.jpg'
 ---

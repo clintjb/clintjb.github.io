@@ -5,7 +5,7 @@ title: 'Pork Injection'
 date: 2015-10-13
 description: Perfect injection to keep your cuts juicy during smoking
 tags: [cooking, bbq, injection, pork, smoking]
-categories: cooking
+categories: [cooking]
 comments: true
 image: '/images/posts/2015/injection.jpg'
 ---

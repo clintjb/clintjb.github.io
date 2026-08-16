@@ -5,7 +5,7 @@ title: 'Management Theory & The Dead Ideas'
 date: 2016-12-16
 description: What luther did for the catholic church needs to be done to business gurus.
 tags: [business, management theory, luther, strategy, consultants, economics]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2016/lightbulb.jpg'
 ---

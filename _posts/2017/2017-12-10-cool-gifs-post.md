@@ -4,7 +4,7 @@ title: 'Cool Gifs'
 date: 2017-12-10
 description: Some fun, random animated gifs I’ve stumbled across....
 tags: [pop culture, stuff, gifs, animation, animated]
-categories: stuff
+categories: [stuff]
 comments: true
 image: '/images/posts/2017/gifs.jpg'
 ---

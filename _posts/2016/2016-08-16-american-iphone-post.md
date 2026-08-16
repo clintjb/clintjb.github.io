@@ -5,7 +5,7 @@ title: 'The All-American iPhone'
 date: 2016-08-16
 description: A deep dive into the costs of an American built iPhone.
 tags: [business, free trade, iphone, apple, trump, globalization]
-categories: business
+categories: [business]
 comments: true
 image: '/images/posts/2016/iphone.jpg'
 ---

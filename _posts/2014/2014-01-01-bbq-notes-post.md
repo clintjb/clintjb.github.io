@@ -5,7 +5,7 @@ title: 'BBQ Notes'
 date: 2014-01-01
 description: Personal notes on temps and times while BBQing
 tags: [cooking, bbq]
-categories: cooking
+categories: [cooking]
 comments: true
 image: '/images/posts/2014/notebook.jpg'
 ---
