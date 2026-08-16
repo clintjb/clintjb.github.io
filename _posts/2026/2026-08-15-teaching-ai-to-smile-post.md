@@ -2,10 +2,10 @@
 layout: post
 tags_color: '#666e76'
 title: "Teaching AI To Smile For The Cameras"
-date: 2026-08-01
+date: 2026-08-15
 description: What are we actually teaching AI to optimize for?
 tags: [digital, parenting, RL, hack, reinforcement learning, reward hacking, AI ethics, alignment, frontier models]
-categories: [digitalization]
+categories: digitalization
 comments: true
 image: '/images/posts/2026/smile.jpg'
 ---
