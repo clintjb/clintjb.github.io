@@ -30,7 +30,7 @@ Just some of my personal notes on temps and times while BBQ'ing
 * 30 Mins Unwrapped
 
 *Next Time Plan For 12 Hours With 2.7kgs*
-
+{% include test_flights.html %}
 #### Brisket
 
 #### Chicken Wings
