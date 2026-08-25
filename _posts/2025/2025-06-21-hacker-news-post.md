@@ -11,22 +11,34 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Saturday 22 August 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Tuesday 25 August 2026_
 
-## Quiet Moments & Clean Signals  
+## Everything I Own (Or At Least, Everything I *Think* Owns Me)  
 
-Another rainy Hamburg evening—just the kind where the city feels like it’s wrapped in a thick wool blanket. I’m sitting here with a flat white (sorry, *proper* coffee snobs, but sometimes instant wins), replaying the week in my head. Funny how the simplest things stick with you: yesterday, my son asked why some websites "just won’t show up" when he searches for Fortnite stats. "Like when the milkbar ran out of Garbage Pail Kids, Dad," he said, squinting at his screen the same way we did back in ’98, waiting for that brittle gum to dissolve into something worth laughing at.  
+August 23, 2026  
 
-Turns out, he’d stumbled into the exact problem I’ve been wrestling with for years—digital noise. You know the feeling: that frustration when paywalls pop up like weeds in a freshly tilled garden. You’re hunting for a *single useful insight*, not the "premium experience" that costs your sanity more than it’s worth. For two decades now, I’ve chased lean principles everywhere—shop floors, boardrooms, even my brisket rubs (more on that later)—and one truth echoes louder than the rest: **if it doesn’t add value, it’s waste**. And paywalled links in search results? Pure waste.  
+You know that weirdly satisfying moment when you realize your toaster has more personality than your last project manager? Yeah. That’s been me for the past few weeks. Only swap "toaster" for "webcam," "monitor," and "microphone," and "personality" for "a terrifyingly open backdoor."  
 
-So when I spotted Kagi’s update this week—*a setting to strip those paywalls out of results entirely*—I nearly knocked over my coffee. Not because it’s revolutionary tech (though it is slick), but because it *gets it*. This isn’t just another toggle buried in menus; it’s a quiet rebellion against the idea that information should be locked behind velvet ropes. I fired it up immediately. No fanfare, no tutorial—just typed "best BBQ rub for beginners" and watched the fluff vanish. Suddenly, it was just recipes, ratios, real talk from backyard legends. *That’s* the signal we’ve all been starving for.  
+It started innocently enough. My son’s new PC had him buzzing over breakfast—*actual* breakfast, not the digital kind. "Dad, is there *anything* you can do on a PC besides Fortnite?" he asked, eyes wide like he’d just discovered fire. Fair question, kid. So we noodled around: what if we scraped his Fortnite stats, slapped them on a snazzy card, and made it update itself while we napped? Simple, right?  
 
-Funny how tools like this mirror life, isn’t it? In my old aerospace days, we’d obsess over "closing the gap" between the big vision and what actually happened on the hangar floor. Same thing here. Most search engines shout about AI wonders while ignoring the bloody obvious: if your results are choked with dead ends, no amount of "smart algorithms" matters. Kagi didn’t overcomplicate it. They just cleared the clutter. Lean, through and through.  
+Except… it wasn’t. Because once you poke at one "smart" device, you realize they’re all whispering secrets to each other. And *oh*, the secrets.  
 
-Which brings me back to my son. After we fixed his Fortnite tracker (GitHub Actions + a dash of Python—*chef’s kiss*), we fired up the Weber. I showed him my "over the top" chili method: meat seared first, dripping flavor into the pot below until it’s all one glorious symphony. He wrinkled his nose at the smell. "Too much, Dad?" I asked. He grinned: "Nah. Just like when we cut through the paywalls."  
+Turns out, my Insta360 webcam—the one that politely *tracks my face* like it’s auditioning for a sci-fi thriller—has a whole RTOS humming under the hood. ThreadX, Ambarella vision models, the works. Cool? Absolutely. Until you realize the "recording" LED? Yeah, that green little lie? Patchable. One modified firmware later, it *silently* films while the light stays dark. Chilling. And no, the gimbal doesn’t lie—it dips when idle—but still. Feels like living in a Black Mirror episode directed by a slightly bored engineer.  
 
-Point is, whether it’s search results or chili, **value hides in the details you don’t skip**. The grind, the simmer, the willingness to throw out what doesn’t serve the end goal. Kagi’s got that right. Not with hype, but with a humble little switch that says: *We see you. Let’s get to the good stuff.*  
+Then there’s the ASUS monitor. Beautiful, pricey, and apparently built on the firmware equivalent of duct tape. That annoying "pixel cleaning" pop-up? It *never stops*. Like a toddler demanding juice. I dug into the firmware hoping for a stealth "off" switch. Found it. But flashing a patched ROM to a $1,500 screen? My palms are sweating just typing this. For now, I’ve settled for a shell script that flips crosshairs and timers via DDC/CI—because *of course* I need a countdown overlay while eating cereal.  
 
-I’ll be testing this new setting all week—probably while the rain keeps tapping at the window. And if it sticks? Well, that’s how you know something’s lean: it stops feeling like a feature and starts feeling like second nature. Like that moment when your kid finally tastes the difference between store-bought jerky and the stuff you dehydrate yourself. (Recipe’s coming. Trust me—it’s worth the wait.)  
+The Shure mic? Oh, this one’s fun. Buried inside MOTIV Mix (which Claude had to fish out of Wine like digital archaeology) is a full *plaintext command shell* over USB HID. Forty-eight commands. "su sup" just… works. Want to mute the mic *while the LED stays lit*? Go ahead. Break your device? The WebHID interface I built basically hands you a flamethrower. (Pro tip: Don’t.)  
 
-Now, if you’ll excuse me, the A350 tracking script’s pinging, and this week’s brisket won’t flip itself. Cheers to tools that stay out of your way—*just like a quiet whisky after a long day’s work*. 🌮
+By the time I got to the Elgato Key Light—the little ring light that’s basically a WiFi hotspot for your ego—I’d accepted my fate: everything’s broken. Except *this* one actually tries. Ed25519 signatures! SHA-512 hashes! But here’s the kicker: it only checks the firmware *during updates*. Once it’s running? You’re in. Memory writes for *anyone* on the network. Because nothing says "professional lighting" like strangers tweaking your brightness mid-Zoom.  
+
+Look, I get it. Peripherals are tiny, cheap computers glued to bigger computers. Why bother securing them? But here’s what keeps me up: these aren’t just *accessories*. They’re the quiet gatekeepers of my digital life. The mic hears my meetings. The webcam sees my home. The monitor *is* my window to work. And they’re all running on "hope it’s okay" security.  
+
+So yeah—I patched the LED. I scripted the monitor. I even built a web shell for the mic (don’t judge). Not because I’m some hacker. But because it turns out "owning" your gadgets means *actually* owning them. Not trusting the box. Not assuming the light tells the truth.  
+
+Funny thing? My son’s Fortnite card *did* work. GitHub Actions, Python script, all running while we grilled burgers. He stared at his stats scrolling on the screen, grinning. "So this is what PCs *really* do?" he asked.  
+
+I handed him a spatula. "Nah, mate. This is what *we* do."  
+
+Turns out, the best tech isn’t in the gadgets. It’s in the questions we ask them. And maybe—just maybe—the quiet satisfaction of flipping a switch *nobody* meant for you to find.  
+
+(Now if you’ll excuse me, I’ve got a $900 monitor waiting to be bricked. Cheers.) 🥃
