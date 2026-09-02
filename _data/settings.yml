@@ -70,7 +70,7 @@ tag__settings:
 author__section:
   enable: false
   author__section__title: Hi, I'm Clint
-  author__section__description: A father, husband, lean, digital enthusiast and aspiring chef! I'm originally from Australia, but due to some of life's unforeseen adventures am now happily settled in Hamburg Germany.<br><br>During my work day, I lead up data and digital transformation programs for large organizations - in my private time I'm usually automating something in my home lab (that likely doesn't need automating!) tinkering with some new tech, reading / writing or just trying to perfect a new BBQ recipe.<br><br>I've set this site up to act mainly just as a repository of stuff I find interesting & fun, part notebook, part playground . If you would like to connect with me, share a story or just have a chat about anything, then feel free to have a look around and get in touch.
+  author__section__description: A father, husband, lean, digital enthusiast and aspiring chef! I'm originally from Australia, but due to some of life's unforeseen adventures am now happily settled in Hamburg Germany.<br><br>During my work day, I lead up data and digital transformation programs for large organizations - in my private time I'm usually automating something in my home lab (that likely doesn't need automating!) tinkering with some new tech, reading / writing or just trying to perfect a new BBQ recipe.<br><br>I've set this site up to act mainly as a repository of stuff I find interesting & fun, part notebook, part playground. If you would like to connect with me, share a story or just have a chat about anything, then feel free to have a look around and get in touch.
   aurhor__section__button__text: More About Me
   aurhor__section__button__link: /cv
   author__section__big__image: /images/clint.webp
@@ -91,7 +91,7 @@ mailchimp__settings:
 
 #-------------------------------
 # Footer Settings
-footer__description: A father, husband, lean, digital enthusiast and aspiring chef! I'm originally from Australia, but due to some of life's unforeseen adventures am now happily settled in Hamburg Germany.<br><br>During my work day, I lead up data and digital transformation programs for large organizations - in my private time I'm usually automating something in my home lab (that likely doesn't need automating!) tinkering with some new tech, reading / writing or just trying to perfect a new BBQ recipe.<br><br>I've set this site up to act mainly just as a repository of stuff I find interesting & fun, part notebook, part playground . If you would like to connect with me, share a story or just have a chat about anything, then feel free to have a look around and get in touch.
+footer__description: A father, husband, lean, digital enthusiast and aspiring chef! I'm originally from Australia, but due to some of life's unforeseen adventures am now happily settled in Hamburg Germany.<br><br>During my work day, I lead up data and digital transformation programs for large organizations - in my private time I'm usually automating something in my home lab (that likely doesn't need automating!) tinkering with some new tech, reading / writing or just trying to perfect a new BBQ recipe.<br><br>I've set this site up to act mainly as a repository of stuff I find interesting & fun, part notebook, part playground. If you would like to connect with me, share a story or just have a chat about anything, then feel free to have a look around and get in touch.
 
 
 # Social Links
