@@ -1,0 +1,22 @@
+{% assign icon = include.name %}
+<svg class="icon{% if include.class %} {{ include.class }}{% endif %}" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+{% case icon %}
+{% when 'arrow-down' %}<path d="m6 9 6 6 6-6"/>
+{% when 'arrow-forward' %}<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>
+{% when 'arrow-up' %}<path d="M12 19V5"/><path d="m5 12 7-7 7 7"/>
+{% when 'search' %}<circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/>
+{% when 'close' %}<path d="M18 6 6 18M6 6l12 12"/>
+{% when 'moon' %}<path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/>
+{% when 'sun' %}<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+{% when 'pin' %}<path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>
+{% when 'link' %}<path d="M10 13a5 5 0 0 0 7.07.07l2-2a5 5 0 0 0-7.07-7.07l-1.15 1.15"/><path d="M14 11a5 5 0 0 0-7.07-.07l-2 2A5 5 0 0 0 12 20l1.15-1.15"/>
+{% when 'logo-twitter' %}<path fill="currentColor" stroke="none" d="M21.5 6.2c-.7.3-1.4.5-2.2.6.8-.5 1.4-1.2 1.7-2.1-.7.5-1.6.8-2.5 1A3.7 3.7 0 0 0 12.2 9c0 .3 0 .6.1.8-3-.1-5.7-1.6-7.5-3.8a3.7 3.7 0 0 0 1.1 5c-.6 0-1.2-.2-1.7-.5 0 1.8 1.3 3.4 3.1 3.7-.3.1-.7.1-1 .1-.2 0-.5 0-.7-.1.5 1.6 2 2.8 3.7 2.8A7.5 7.5 0 0 1 4 18.5 10.6 10.6 0 0 0 9.7 20c6.9 0 10.7-5.8 10.7-10.7v-.5c.7-.5 1.3-1.2 1.8-1.9-.7.3-1.4.5-2.1.6.7-.4 1.2-1.1 1.4-1.8Z"/>
+{% when 'logo-facebook' %}<path fill="currentColor" stroke="none" d="M13.7 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5H17V3.9c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V10H7.8v3h2.7v8h3.2Z"/>
+{% when 'logo-linkedin' %}<path fill="currentColor" stroke="none" d="M6.5 8.3H3.2V21h3.3V8.3ZM4.8 3A1.9 1.9 0 1 0 4.8 6.8 1.9 1.9 0 0 0 4.8 3ZM21 13.7c0-3.8-2-5.6-4.7-5.6-2.2 0-3.2 1.2-3.8 2.1V8.3H9.2V21h3.3v-6.3c0-1.7.3-3.3 2.4-3.3 2.1 0 2.1 2 2.1 3.4V21h3.3v-7.3Z"/>
+{% when 'logo-github' %}<path fill="currentColor" stroke="none" d="M12 2.7a9.5 9.5 0 0 0-3 18.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .9.1-.6.4-1.1.7-1.3-2.3-.3-4.7-1.1-4.7-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c2-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.7 5 .4.3.7 1 .7 2v3c0 .3.2.6.7.5A9.5 9.5 0 0 0 12 2.7Z"/>
+{% when 'logo-rss' %}<path d="M5 19a2 2 0 1 0 0 .01"/><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/>
+{% when 'md-mail' %}<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>
+{% when 'md-headset' %}<path d="M4 14v-2a8 8 0 0 1 16 0v2"/><path d="M18 19h-2a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h4v5a2 2 0 0 1-2 2ZM6 19h2a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H4v5a2 2 0 0 0 2 2Z"/>
+{% else %}<circle cx="12" cy="12" r="9"/>
+{% endcase %}
+</svg>
