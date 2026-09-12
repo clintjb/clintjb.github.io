@@ -299,12 +299,17 @@
   display: flex;
   align-items: center;
   margin-left: auto;
-  font-size: 24px;
   color: var(--link-color);
   cursor: pointer;
 
   .icon__search {
+    display: flex;
     transition: color .25s ease;
+
+    .icon-svg {
+      width: 20px;
+      height: 20px;
+    }
 
     &:hover {
       color: var(--brand-color);
@@ -337,9 +342,14 @@
 .toggle-sun,
 .toggle-moon {
   position: absolute;
-  font-size: 23px;
   transition: color .25s ease;
   color: var(--heading-font-color);
+
+  .icon-svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
 
   &:hover {
     color: var(--brand-color);

@@ -226,12 +226,20 @@
   }
 
   img, .js-reframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 8px;
     overflow: hidden;
 
     &.lightense-open {
       border-radius: 0;
     }
+  }
+
+  .gallery img {
+    margin-left: 24px;
+    margin-right: 0;
   }
 
   img[src$='#wide'] {

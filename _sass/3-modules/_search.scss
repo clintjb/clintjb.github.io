@@ -77,7 +77,6 @@
     justify-content: center;
     width: 28px;
     height: 28px;
-    font-size: 21px;
     line-height: 1;
     border-radius: 50%;
     color: var(--background-color);
@@ -85,6 +84,11 @@
     will-change: transform;
     transition: all .25s;
     background: var(--heading-font-color);
+
+    .icon-svg {
+      width: 14px;
+      height: 14px;
+    }
 
     &:hover {
       transform: translateY(-50%) rotate(90deg);
