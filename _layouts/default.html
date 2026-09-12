@@ -5,10 +5,6 @@
 
 <body>
 
-  {% if site.data.settings.google-analytics %}
-    {% include google-analytics.html %}
-  {% endif %}
-
   <!-- begin global wrap -->
   <div class="global-wrap">
 
@@ -16,7 +12,7 @@
     <!-- begin hero image -->
     <div class="hero__image">
       <div class="hero__image__inner">
-        <img class="lazy" data-src="{{site.data.settings.hero.hero__image}}" alt="{{site.data.settings.title}}">
+        <img src="{{site.data.settings.hero.hero__image}}" alt="{{site.data.settings.title}}" fetchpriority="high">
       </div>
     </div>
     <!-- end hero image -->
@@ -35,8 +31,12 @@
   </div>
   <!-- end global wrap -->
 
-  <script src="{{ site.baseurl }}/js/scripts.js"></script>
-  <script src="{{ site.baseurl }}/js/common.js"></script>
+  <script src="{{ site.baseurl }}/js/scripts.js" defer></script>
+  <script src="{{ site.baseurl }}/js/common.js" defer></script>
+
+  {% if site.data.settings.google-analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
 </body>
 
 </html>

@@ -1,29 +1,20 @@
-<!-- Google Analytics: loaded after the initial page work is complete -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script>
-(function () {
-  let analyticsLoaded = false;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZGNEJ3RZ6F');
 
-  function loadAnalytics() {
-    if (analyticsLoaded) return;
-    analyticsLoaded = true;
-
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () { window.dataLayer.push(arguments); };
-    window.gtag('js', new Date());
-
-    const script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-ZGNEJ3RZ6F';
-    script.async = true;
-    script.onload = function () {
-      window.gtag('config', 'G-ZGNEJ3RZ6F');
-    };
-    document.head.appendChild(script);
+  function loadGtagScript() {
+    var s = document.createElement('script');
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-ZGNEJ3RZ6F';
+    s.async = true;
+    document.head.appendChild(s);
   }
 
-  if ('requestIdleCallback' in window) {
-    requestIdleCallback(loadAnalytics, { timeout: 3000 });
+  if (document.readyState === 'complete') {
+    loadGtagScript();
   } else {
-    setTimeout(loadAnalytics, 2000);
+    window.addEventListener('load', loadGtagScript);
   }
-})();
 </script>

@@ -42,13 +42,13 @@
             {% if site.data.settings.color_scheme == "auto" %}
             <div class="toggle-theme">
               <div class="toggle-moon" title="Enable dark mode" aria-hidden="true">{% include icon.html name="moon" %}</div>
-              <div class="toggle-sun" title="Enable light mode" aria-hidden="true">{% include icon.html name="sun" %}</div>
+              <div class="toggle-sun" title="Enable light mode" aria-hidden="true">{% include icon.html name="sunny" %}</div>
             </div>
             {% elsif site.data.settings.color_scheme == "light" or site.data.settings.color_scheme == "dark" %}
             {% else %}
             <div class="toggle-theme">
               <div class="toggle-moon" title="Enable dark mode">{% include icon.html name="moon" %}</div>
-              <div class="toggle-sun" title="Enable light mode">{% include icon.html name="sun" %}</div>
+              <div class="toggle-sun" title="Enable light mode">{% include icon.html name="sunny" %}</div>
             </div>
             {% endif %}
             <span class="nav__icon icon__search">{% include icon.html name="search" %}</span>
