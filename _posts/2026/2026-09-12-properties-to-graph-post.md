@@ -28,13 +28,7 @@ topics:
 ---
 ```
 
-Adding `department` in the settings above creates a single `Digital` node in that property's color. Adding `topics` creates `Data` and `AI` nodes in their own color, both connected back to the note.
-
-From there it behaves just like a tag node would:
-
-* Click a property node to filter the graph down to just those notes
-* Shift + click a node to fold its notes away, shift + click again to unfold
-* Rename a property's display name or toggle it on / off directly from the graph's own filters panel
+Adding `department` in the settings above creates a single `Digital` node in that property's color. Adding `topics` creates `Data` and `AI` nodes in their own color, both connected back to the note. From there it behaves just like a tag node would - if you click a node, it filters the graph down to just those notes - shift + click a node to fold its notes away, shift + click again to unfold and lastly toggle a property on / off directly from the graph's own filters panel.
 
 It's built around the same graph injection approach I shamelessly borrowed from the [Folders to Graph](https://github.com/ratibus11/folders2graph) plugin. Biggest issue is that it utilities Obsidian's internal (and undocumented) graph renderer APIs rather than the public plugin APIs - this means it's likely a bit more fragile to future Obsidian updates than I'd like, but time will tell on this one.
 
