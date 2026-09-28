@@ -45,3 +45,5 @@ Just some of my personal notes on temps and times while BBQ'ing
 * @ 100 Degrees
 * Internal temp 50-55 degrees
 * 1 - 1.5 Hours
+
+{% include airbus_test_flights.html %}
