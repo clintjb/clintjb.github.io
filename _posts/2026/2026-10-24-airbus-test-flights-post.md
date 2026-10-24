@@ -14,6 +14,7 @@ Probably like many others I spend way too much time scrolling through Reddit - o
 
 {% include airbus_test_flights.html %}
 
+
 Airbus has some pretty big facilities across Europe and their test, delivery and Beluga flights I thought could create a cool little ecosystem that looks nothing like standard commercial aviation. Building on what I learned from my previous [A350 tracking project](https://clintbird.com/blog/ghactions-a350-flights-post), I wondered could I build something similar for Airbus test flights?
 
 Here I was thinking to create an automated pipeline to fetch the actual flight paths and publish a rolling 14 day timelapse - as its a Jekyll site it should come out as a standalone HTML widget (a big chunk based on the work from [chillchamp1](https://github.com/chillchamp1)) - with that in mind the high level plan was basically as follows:
