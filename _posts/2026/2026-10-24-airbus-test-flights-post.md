@@ -2,8 +2,8 @@
 layout: post
 tags_color: '#666e76'
 title: 'Airbus Test Flight Tracker'
-date: 2026-24-10
-description: An automated timelapse visualisatiton of Airbus test and operational flights from Hamburg and Toulouse.
+date: 2026-10-24
+description: An automated timelapse visualization of Airbus test and operational flights from Hamburg and Toulouse.
 tags: [digitalization, stuff, Airbus, finkenwerder, tracking, toulouse, flight, automation, timelapse, beluga]
 categories: [digitalization, stuff]
 comments: true
