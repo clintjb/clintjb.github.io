@@ -23,3 +23,5 @@ Here's some cool little animations I've come across over the course of this year
   	<img src="/images/posts/2017/gifs-9.gif" loading="lazy">
   </div>
 </div>
+
+{% include agent-hp/hp-006.html %}
