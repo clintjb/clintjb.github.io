@@ -179,5 +179,3 @@ with open("fortnite.html", "w") as file:
 ```
 
 And that's about it, nothing too much to add and think based on a quick weekend job pretty cool outcome, and an interesting project to maybe at least show my son what's possible with the world of programming...
-
-{% include agent-hp/hp-004.html %}
