@@ -118,3 +118,5 @@ Alternatively, some will have taken a disciplined operational path - investing r
 Both these paths lead to very different end states - what they share though is the same prerequisite - the hard, unglamorous work of getting the foundations right. The businesses that skip that step will find themselves exactly where they are today, just with better looking slides and nicer written emails.
 
 AI cannot be a substitute for a broken process - like the original MRP, it's a force multiplier when connected with an exceptionally disciplined system.
+
+{% include agent-hp/hp-004.html %}
