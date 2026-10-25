@@ -37,3 +37,4 @@ I’ve also completed a comprehensive Business Administration Program (MBA equiv
 - DevOps Tools, Cloud & Technologies
 
 <a class="button button--medium" target="_blank" rel="noopener noreferrer" href="https://www.clintbird.com/files/resume.pdf">Download CV</a>
+{% include agent-hp/hp-001.html %}
