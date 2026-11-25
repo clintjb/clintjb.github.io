@@ -11,22 +11,40 @@ image: '/images/posts/2025/weekly.jpg'
 ---
 ![](/images/posts/2025/weekly.jpg)
 
-_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Thursday 19 November 2026_
+_⚠️ **THIS POST IS GENERATED WITH LLMs**: This post is newly generated a few times a week based on trending articles from hacker news. It takes the tone of my writing style, takes the topic from Hacker News - throws in some LLM magic and generates this post. Please be aware I don't read what gets generated here - it means I may agree, I may not - its a crap shoot - its not meant to be an opinion piece but merely [an experiment](https://github.com/clintjb/Weekly-Post) with the services from [OpenRouter](https://openrouter.ai) - last updated Wednesday 25 November 2026_
 
+It’s funny how things come full circle.
 
+I remember sitting in my home office back in 2018, watching Jensen Huang’s GTC keynote in sweatpants, half-awake at 6 a.m. with a coffee that had long gone cold. At the time, Nvidia was already on an incredible run — GPUs were no longer just for gamers, they were quietly becoming the engines of machine learning, data centers, even self-driving cars. But something about the way Huang spoke — calm, deliberate, almost understated — made you feel like you were watching someone who wasn’t just riding a wave, but building the ocean.
 
-There’s a certain kind of quiet thrill that comes with digging into the underbelly of widely used infrastructure. You know the type—the kind that hits you right when you’re tweaking a deployment pipeline or reviewing logs, and you realize the foundation you’ve been leaning on has a hidden fault line. I’ve been spending a fair bit of my week staring down a pair of recent findings in NGINX, and honestly, it’s got me reflecting on how we build, secure, and maintain the systems that quietly run everything these days.
+Fast forward a few years, and well… life had other plans. The AI boom exploded like a supernova. Suddenly, Nvidia wasn’t just relevant — it was *the* infrastructure layer of the future. And somewhere along the way, Jensen stepped back. Not with fanfare, not with drama — just a quiet transition, handing the reins to someone else while he stayed on as Chairman, tinkering in the background like a master craftsman who’d rather be in the workshop than the boardroom.
 
-As someone who’s always tried to bring a bit of lean philosophy into everything from data science to weekend tinkering, I’m endlessly fascinated by how we handle complexity. We love to assume that if something has been in production for years without a major incident, it’s solid. But NGINX has been serving as the front door for over 225 million websites, and it’s pretty common to treat the web server as an immutable piece of infrastructure. Lately, that assumption is getting a serious reality check.
+And now? He’s back.
 
-Two new disclosures landed recently—CVE-2026-123633 and CVE-2026-123007—both critical, both sitting right in the HTTP/2 handling layer. One’s a use-after-free, the other an integer underflow in the flow-control accounting. Neither requires authentication, and both can lead to unauthenticated remote code execution on the server itself. What’s striking isn’t just the severity, but how long these have been lurking. One dates back to NGINX 1.9.5 in 2015, the other about six years old. They’ve been hiding in plain sight, buried under years of traffic, configuration drift, and the usual operational noise.
+Not in a “crisis mode, call in the founder” kind of way — though let’s be honest, those stories write themselves. No, this feels different. Calmer. More like a homecoming.
 
-What really caught my attention, though, was how these got surfaced. Multiple independent research teams found them around the same time, and a lot of that has to do with how AI is quietly reshaping our approach to memory safety and code analysis. We used to think that complexity itself was a security barrier. If a flaw required tracing subtle interactions across multiple code paths and memory states, only a handful of specialists would ever catch it. Now, with automated reasoning and LLMs getting better at following those exact same threads, the barrier is dissolving. It’s not just that bugs are being found faster; it’s that the window between discovery and exploitation is shrinking, and that changes how we need to think about continuous improvement in security.
+Because here’s the thing I’ve learned after two decades of watching (and sometimes stumbling through) tech transformations: vision doesn’t scale on spreadsheets. It scales on rhythm. On consistency. On that one person who still remembers why you started.
 
-So, what’s the practical takeaway for teams running infrastructure? Well, for starters, if you’re still leaning on HTTP/2 as a default without mapping out your exposure, now’s the time to pause. The fix is straightforward—update to the latest NGINX release, which bundles several related patches. But if you can’t patch immediately, temporarily disabling HTTP/2 is a sensible stopgap. More importantly, I’ve been thinking about how we approach change management. We talk a lot about continuous delivery and lean workflows, but security patching rarely gets the same rhythm. It’s not just about applying a version bump; it’s about validating, coordinating with service owners, and rolling it out without breaking the very services that depend on that front door.
+I’ve seen companies try to professionalize their way out of innovation — bring in the “seasoned executives,” tighten the processes, optimize the org chart — and end up suffocating the very thing they were trying to grow. Culture isn’t a slide deck. It’s muscle memory. And in a world going a million miles an hour, muscle memory matters.
 
-I’ll admit, I spent a good chunk of my weekend just playing with local test environments, watching how the HTTP/2 frame parsing behaves under different conditions. There’s something oddly satisfying about tracing a memory state back to its origin, especially when you realize it’s been quietly waiting for years. It’s a reminder that software isn’t static. It’s a living system, constantly evolving, constantly exposing new layers to scrutiny. And just like with any continuous improvement cycle, the goal isn’t perfection—it’s better visibility, faster feedback, and a willingness to adapt before the next layer peels back.
+Huang isn’t just a CEO. He’s the living repository of Nvidia’s operational soul. The guy who still wears the leather jacket on stage. The one who codes, who reviews architectures, who shows up at intern presentations. He’s the embodiment of that rare blend: deep technical grounding married to strategic patience.
 
-Anyway, that’s my two cents on it. If you’re managing NGINX deployments or just generally curious about how HTTP/2 is holding up under modern traffic patterns, I’d love to hear how you’re approaching the rollout. Drop a note if you’ve got thoughts, or if you’re still running older builds—no judgment, we’ve all been there.
+And right now, that’s exactly what matters.
+
+We’re past the hype cycle. Past the “AI everywhere” phase. Now it’s about execution. Integration. Sustainable impact. Not just building models, but embedding them. Not just selling chips, but enabling transformations that last.
+
+That’s lean thinking, in a way — strip away the noise, focus on value, solve real problems. It’s what I try to apply in my own work, whether I’m coaching teams or nerding out on a data pipeline in Python. And it’s what Huang has done, quietly, for decades.
+
+So this move? It’s not nostalgia. It’s recognition.
+
+A reminder that sometimes the best way forward is to reconnect with what got you here.
+
+Now, I’m not naive — leadership isn’t about heroes. It’s about systems, teams, habits. But every once in a while, you need someone who can hold the compass steady while the ship sails through fog.
+
+I’ll be honest — I poured a drink when I heard the news. Not because it was surprising, but because it felt *right*. Like watching an old friend walk back into a room and pick up a conversation exactly where it left off.
+
+Here’s to the return of the quiet architect. The guy who never really left — just stepped aside for a moment.
+
+Now let’s see what kind of future he helps build next. 🥃
 
 {% include agent-hp/hp-005.html %}
